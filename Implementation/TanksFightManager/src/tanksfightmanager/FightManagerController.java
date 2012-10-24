@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
 import java.util.ResourceBundle;
+import java.util.UUID;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
@@ -33,7 +34,7 @@ public class FightManagerController extends Controller implements Initializable
         this.getDoer().start();
         this.createBindings();
     }
-    
+        
     private void createBindings()
     {
         TanksFightManagerModel.getStatusList().bindBidirectional(this.statusListView.itemsProperty());
@@ -50,7 +51,14 @@ public class FightManagerController extends Controller implements Initializable
         port = props.getProperty("portNumber");
         TanksFightManagerModel.setPortNumber(Integer.parseInt(port));
         
+        
+        
         this.getLogger().debug("readProperties\n\tproperties read correctly");
+    }
+    
+    private void readAndSetWebServiceProperties(Properties props)
+    {
+        props.get("a");
     }
     // </editor-fold>
     
