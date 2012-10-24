@@ -1,0 +1,19 @@
+When running unit tests on ClientDoer, ShellManagerDoer, FightManagerDoer, and GunpowderManagerDoer, you may see an exception about the application not being a subclass of Application. 
+This concern is known, and does not effect the output of the tests.
+
+You can run each component (i.e. fightmanager, client, etc.) from the .jar in the dist folder inside each project. Be aware that the server_settings file in the parent directory must be present in order to run (this file is deleted from dist on build).
+If you want to change IP settings or port number settings used by a component, modify the server_settings file that it reads properties from
+Included in the dependencies folder are the required .jars for logging. You should only need to references the slf4j and logback-classic files in each of the component projects
+
+If you try to run tanks client inside netbeans and it fails, try again. For some odd reason it fails to recompile the TanksMessageClasses .jar every so often.
+
+New unit tests have been done in TanksMessageClasses. These include: FightTest, LocationTest, PlayerTest, RateTest, ShellTest
+New unit tests have also been done for in FillShellReply and GetShellReply
+Unit tests exist for all Doers (fightmanagerdoer, shellmanagerdoer, etc.)
+An initial UI for the client has been started, and a MVC pattern implemented, though its functionality is limited
+
+The assignment said to unit test the communicator, listener, and messagequeue.
+In my project, the responsibilties of the communicator and listener are combined into the same class, so the tests for both these resides in TanksCommon CommunicatorTest
+I used a ConcurrentQueue as a messagequeue, which is available from the standard java library. The instructor said that if we took this approach, we need not test the messagequeue
+
+The new section of the document starts at section 5, page 30. The diagrams and descriptions there should be adequate in describing the structure of the system.
