@@ -1,0 +1,23 @@
+15:59:57.733 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+15:59:57.733 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+15:59:57.736 [main] INFO  tanks.ClientDoer - Doer Constructor: constructing
+15:59:57.736 [main] INFO  tanks.ClientDoer - BackgroundThread Start: 
+	Thread Started
+15:59:57.736 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+15:59:58.248 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+15:59:58.248 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+15:59:58.248 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+15:59:58.248 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+15:59:58.248 [main] ERROR TanksCommon.Communicator4 - ERROR CREATING SOCKET:
+	Port Number: 12006
+15:59:58.251 [main] INFO  TanksCommon.Communicator4 - Communicator sendMessage
+	 Starting to try to send message of length: 72
+15:59:58.251 [main] INFO  TanksCommon.Communicator3 - BackgroundThread Stop:
+	 Thread Stopped

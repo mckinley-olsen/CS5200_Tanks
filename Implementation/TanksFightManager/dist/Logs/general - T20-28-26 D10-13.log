@@ -1,0 +1,42 @@
+20:28:26.625 [JavaFX Application Thread] DEBUG t.FightManagerController - setupPropertiesReader
+	properties reader setup correctly
+20:28:26.629 [JavaFX Application Thread] DEBUG t.FightManagerController - readProperties
+	properties read correctly
+20:28:39.445 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	read classID from bytes, got: 202
+	Write: 1024
+	Read: 4
+20:28:39.445 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	got object length; got: 64
+	Write: 1024
+	Read: 6
+20:28:39.445 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	decoding super
+	Write: 1024
+	Read: 6
+20:28:39.445 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	got classID: 201
+	Write: 1024
+	Read: 10
+20:28:39.445 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	got length: 42
+	Write: 1024
+	Read: 12
+20:28:39.445 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	decoding super42
+	Write: 1024
+	Read: 12
+20:28:39.445 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	setting requestType
+	Write: 1024
+	Read: 46
+20:28:39.445 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	setting sessionID
+	Write: 1024
+	Read: 50
+20:28:39.446 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	setting player name to: Mickey
+	Write: 1024
+	Read: 70
+20:28:58.665 [JavaFX Application Thread] DEBUG t.FightManagerController - Controller stopBackgroundTasks 
+	Starting to stop background tasks

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TanksClient.jnlp">
+  <information>
+    <title>TanksClient</title>
+    <vendor>McKinley</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TanksClient.jar" size="34112" download="eager" />
+    <jar href="lib/TanksCommon.jar" size="31569" download="eager" />
+    <jar href="lib/TanksMessageClasses.jar" size="135370" download="eager" />
+    <jar href="lib/jfxrt.jar" size="15472435" download="eager" />
+    <jar href="lib/junit-4.10.jar" size="281055" download="eager" />
+    <jar href="lib/logback-classic-1.0.7.jar" size="270631" download="eager" />
+    <jar href="lib/logback-core-1.0.7.jar" size="397561" download="eager" />
+    <jar href="lib/slf4j-api-1.7.1.jar" size="29952" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TanksClient" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="tanks.Tanks"  name="TanksClient" />
+  <update check="always"/>
+</jnlp>

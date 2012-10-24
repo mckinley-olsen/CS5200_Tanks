@@ -1,0 +1,245 @@
+20:03:11.328 [main] INFO  tanks.ClientDoer - BackgroundThread Start: 
+	Thread Started
+20:03:11.328 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.328 [ClientDoer] INFO  tanks.ClientDoer - tanks.ClientDoerrun:
+	 Got envelope from communicator inputqueue
+20:03:11.330 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.380 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.380 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.430 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.430 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.480 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.480 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.530 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.530 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.580 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.580 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.630 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.630 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.680 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.680 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.730 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.730 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.780 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:11.780 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:11.828 [main] INFO  tanks.ClientDoer - BackgroundThread Stop:
+	 Stopping Thread
+20:03:12.829 [main] INFO  tanks.ClientDoer - BackgroundThread Stop:
+	 Thread Stopped
+20:03:12.830 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+20:03:12.830 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+20:03:12.831 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+20:03:12.831 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+20:03:12.832 [main] INFO  TanksCommon.Communicator3 - Communicator sendMessage
+	 Starting to try to send message of length: 72
+20:03:12.832 [main] INFO  TanksCommon.Communicator3 - Communicator sendMessage
+	 Sent successfully length: 72
+20:03:12.833 [main] INFO  TanksCommon.Communicator2 - BackgroundThread Start: 
+	Thread Started
+20:03:12.833 [main] INFO  tanks.ClientDoer - BackgroundThread Start: 
+	Thread Started
+20:03:12.833 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator run:
+	 at beginning of run
+20:03:12.833 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:12.833 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage:
+	 starting to try to get message
+20:03:12.833 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:12.833 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage:
+	 got message successfully
+20:03:12.837 [Communicator] INFO  TanksCommon.Communicator2 - Communicator run:
+	 adding envelope to inputQueue
+20:03:12.837 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator sleepWorker:
+	 sleeping worker
+20:03:12.883 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:12.883 [ClientDoer] INFO  tanks.ClientDoer - tanks.ClientDoerrun:
+	 Got envelope from communicator inputqueue
+20:03:12.883 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:12.887 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator run:
+	 at beginning of run
+20:03:12.887 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage:
+	 starting to try to get message
+20:03:12.933 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:12.933 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:12.937 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage socket timed out:
+	 SocketTimeoutException
+20:03:12.937 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator sleepWorker:
+	 sleeping worker
+20:03:12.983 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:12.983 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:12.987 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator run:
+	 at beginning of run
+20:03:12.987 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage:
+	 starting to try to get message
+20:03:13.033 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.033 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.037 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage socket timed out:
+	 SocketTimeoutException
+20:03:13.037 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.083 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.083 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.087 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator run:
+	 at beginning of run
+20:03:13.087 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage:
+	 starting to try to get message
+20:03:13.133 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.133 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.137 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage socket timed out:
+	 SocketTimeoutException
+20:03:13.137 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.183 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.183 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.187 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator run:
+	 at beginning of run
+20:03:13.187 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage:
+	 starting to try to get message
+20:03:13.233 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.233 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.237 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage socket timed out:
+	 SocketTimeoutException
+20:03:13.237 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.283 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.283 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.287 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator run:
+	 at beginning of run
+20:03:13.287 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage:
+	 starting to try to get message
+20:03:13.333 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.333 [main] INFO  TanksCommon.Communicator2 - BackgroundThread Stop:
+	 Stopping Thread
+20:03:13.333 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.337 [Communicator] DEBUG TanksCommon.Communicator2 - getMessage socket timed out:
+	 SocketTimeoutException
+20:03:13.337 [Communicator] DEBUG TanksCommon.Communicator2 - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.383 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.383 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.433 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.433 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.483 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.483 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.533 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.533 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.583 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.583 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.633 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.633 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.683 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.683 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.734 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.734 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.784 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.784 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.834 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.834 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.884 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.884 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.934 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.934 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:13.984 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:13.984 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:14.034 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:14.034 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:14.084 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:14.084 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:14.134 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:14.134 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:14.184 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:14.184 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:14.234 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:14.234 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:14.284 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:14.284 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:14.334 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+20:03:14.334 [main] INFO  TanksCommon.Communicator2 - BackgroundThread Stop:
+	 Thread Stopped
+20:03:14.334 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+20:03:14.335 [main] INFO  tanks.ClientDoer - Doer Constructor: constructing

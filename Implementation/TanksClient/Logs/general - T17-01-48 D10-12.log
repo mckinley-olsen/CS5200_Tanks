@@ -1,0 +1,318 @@
+17:01:48.881 [JavaFX Application Thread] DEBUG tanks.TanksUIController - setupPropertiesReader
+	properties reader setup correctly
+17:01:48.883 [JavaFX Application Thread] DEBUG tanks.TanksUIController - readServerAddresses
+	server addresses read correctly
+17:01:48.883 [JavaFX Application Thread] DEBUG tanks.TanksUIController - createBackgroundTasks
+	creating background tasks
+17:01:50.949 [JavaFX Application Thread] INFO  Strategy.RegisterStrategy - RegisterStrategy constructor
+	RegisterStrategy created
+17:01:50.987 [ClientDoer] INFO  Strategy.RegisterStrategy - RegisterStrategy createPackAndSendRequest
+	RegisterRequest created with name: 
+	To: /127.0.0.1:12005
+17:01:51.037 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:01:51.038 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest encode
+	adding messageLength placeholder
+	Write: 4
+	Read: 0
+17:01:51.038 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest encode
+	adding classID
+	Write: 6
+	Read: 0
+17:01:51.038 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest encode
+	encoding super
+	Write: 12
+	Read: 0
+17:01:51.038 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest encode
+	adding ordinal of request type: 1
+	Write: 46
+	Read: 0
+17:01:51.038 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 50
+	Read: 0
+17:01:51.038 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest encode
+	adding length: 42
+	Write: 54
+	Read: 0
+17:01:51.038 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest encode
+	encoding player name
+	Write: 54
+	Read: 0
+17:01:52.148 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:01:52.190 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:01:52.239 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:01:52.239 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:01:52.239 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:01:52.239 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:01:52.239 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:01:58.356 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:01:58.394 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:01:58.443 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:01:58.443 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:01:58.443 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:01:58.443 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:01:58.443 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:02:00.836 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:02:00.846 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:02:00.945 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:02:00.945 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:02:00.945 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:02:00.945 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:02:00.945 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:02:00.988 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:02:00.996 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:02:01.045 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:02:01.045 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:02:01.045 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:02:01.045 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:02:01.045 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:02:01.124 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:02:01.146 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:02:01.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:02:01.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:02:01.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:02:01.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:02:01.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:02:01.636 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:02:01.646 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:02:01.745 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:02:01.745 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:02:01.745 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:02:01.745 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:02:01.745 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:02:01.787 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:02:01.796 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:02:01.845 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:02:01.845 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:02:01.845 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:02:01.845 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:02:01.845 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:02:02.027 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:02:02.046 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:02:02.145 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:02:02.145 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:02:02.145 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:02:02.145 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:02:02.145 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:02:02.187 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:02:02.196 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:02:02.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:02:02.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:02:02.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:02:02.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:02:02.245 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:02:02.340 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:02:02.347 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:02:02.446 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:02:02.446 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:02:02.446 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:02:02.446 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:02:02.446 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0
+17:02:03.164 [JavaFX Application Thread] INFO  Strategy.GetShellStrategy - GetShellStrategy constructor
+	GetShellStrategy created
+17:02:03.197 [ClientDoer] INFO  Strategy.GetShellStrategy - GetShellStrategy createPackAndSendRequest
+	GetShellRequest created
+	To: /127.0.0.1:12006
+17:02:03.246 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding classID
+	Write: 0
+	Read: 0
+17:02:03.246 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	encoding super
+	Write: 6
+	Read: 0
+17:02:03.246 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding ordinal of request type: 10
+	Write: 40
+	Read: 0
+17:02:03.246 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding sessionID: 0
+	Write: 44
+	Read: 0
+17:02:03.246 [Communicator] TRACE M.GetShellProtocol.GetShellRequest - RegisterRequest encode
+	adding length: 42
+	Write: 48
+	Read: 0

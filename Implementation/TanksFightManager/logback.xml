@@ -1,0 +1,49 @@
+<configuration>
+
+	<timestamp key="bySecond" datePattern="'T'HH-mm-ss 'D'MM-dd"/>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>Logs/general - ${bySecond}.log</file>
+	<append>false</append>
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  
+  <appender name="DOER" class="ch.qos.logback.core.FileAppender">
+    <file>Logs/DOER - ${bySecond}.log</file>
+	<append>false</append>
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  
+  <appender name="COMM1" class="ch.qos.logback.core.FileAppender">
+    <file>Logs/COMM1 - ${bySecond}.log</file>
+	<append>false</append>
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  
+  <logger name="TanksCommon.Communicator1" level="INFO" additivity="false">
+        <appender-ref ref="COMM1"/>
+	</logger>
+  
+  <logger name="TanksCommon.Doer.Doer" level="INFO" additivity="false">
+        <appender-ref ref="DOER"/>
+	</logger>
+
+  <root level="debug">
+	<appender-ref ref="FILE" />
+  </root>
+  
+  
+</configuration>

@@ -1,0 +1,33 @@
+\BOOKMARK [1][-]{section.1}{Functional Requirements}{}% 1
+\BOOKMARK [1][-]{section.2}{Protocols}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Introduction}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Overview}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Message Types and their Definitions}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Introduction}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Diagrams}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.2.1}{General Message Classes}{subsection.3.2}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Register Protocol}{subsection.3.2}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Unregister Protocol}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Location List Protocol}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Player List Protocol}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.6}{Fight List Protocol}{subsection.3.2}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.7}{Join Fight Protocol}{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.8}{Create Fight Protocol}{subsection.3.2}% 15
+\BOOKMARK [3][-]{subsubsection.3.2.9}{Fire Shell Protocol}{subsection.3.2}% 16
+\BOOKMARK [3][-]{subsubsection.3.2.10}{Fill Shell Protocol}{subsection.3.2}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.11}{Get Shell Protocol}{subsection.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.3}{Message Descriptions}{section.3}% 19
+\BOOKMARK [1][-]{section.4}{Message Sequences and Timing}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.2}{General Request-Reply}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.3}{Player List Protocol}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.4}{Fight List Protocol}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.5}{Location List Protocol}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.6}{Fire Shell Protocol}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.7}{Create Fight Protocol}{section.4}% 27
+\BOOKMARK [1][-]{section.5}{Structure}{}% 28
+\BOOKMARK [2][-]{subsection.5.1}{Introduction}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.2}{Classes}{section.5}% 30
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Worker Classes}{subsection.5.2}% 31
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Models and Strategies}{subsection.5.2}% 32
+\BOOKMARK [2][-]{subsection.5.3}{Components}{section.5}% 33

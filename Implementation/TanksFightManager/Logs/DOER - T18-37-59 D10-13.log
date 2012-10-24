@@ -1,0 +1,14 @@
+18:37:59.186 [main] INFO  TanksCommon.Doer.Doer - BackgroundThread Start: 
+	Thread Started
+18:37:59.186 [FightManagerDoer] INFO  TanksCommon.Doer.Doer - tanksfightmanager.FightManagerDoerrun:
+	 Got envelope from communicator inputqueue
+18:37:59.186 [FightManagerDoer] INFO  TanksCommon.Doer.Doer - FightManagerDoer process
+	detected register request
+18:37:59.186 [FightManagerDoer] INFO  TanksCommon.Doer.Doer - FightManagerDoer processRegisterRequest
+	Processing register request
+18:37:59.197 [FightManagerDoer] INFO  TanksCommon.Doer.Doer - FightManagerDoer processRegisterRequest
+	Set player ID to: 2
+18:37:59.687 [main] INFO  TanksCommon.Doer.Doer - BackgroundThread Stop:
+	 Stopping Thread
+18:38:00.687 [main] INFO  TanksCommon.Doer.Doer - BackgroundThread Stop:
+	 Thread Stopped

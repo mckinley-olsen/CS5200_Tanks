@@ -1,0 +1,26 @@
+07:29:01.094 [main] ERROR GeneralPackage.Serializer - Serializer Serialize
+	Unable to serialize: Logger[MessagePackage.RegisterProtocol.RegisterRequest]
+07:29:01.099 [main] ERROR GeneralPackage.Deserializer - Deserializer findCorrespondingSet
+	No setter found for: getLogName
+07:29:01.099 [main] ERROR GeneralPackage.Deserializer - Deserializer findCorrespondingSet
+	No setter found for: getLogger
+07:29:01.100 [main] ERROR GeneralPackage.Deserializer - Deserializer Deserialize
+	Unexpected classID found in ByteList
+	 Found: 6619235
+	Expected: 1
+07:31:34.936 [main] ERROR GeneralPackage.Deserializer - Deserializer findCorrespondingSet
+	No setter found for: getLogName
+07:31:34.938 [main] ERROR GeneralPackage.Deserializer - Deserializer findCorrespondingSet
+	No setter found for: getLogger
+07:31:34.939 [main] ERROR GeneralPackage.Deserializer - Deserializer Deserialize
+	Unexpected classID found in ByteList
+	 Found: 65544
+	Expected: 1
+07:31:57.550 [main] ERROR GeneralPackage.Deserializer - Deserializer Deserialize
+	Unexpected classID found in ByteList
+	 Found: 65544
+	Expected: 1
+07:33:51.671 [main] ERROR GeneralPackage.Deserializer - Deserializer Deserialize
+	Unexpected classID found in ByteList
+	 Found: 101
+	Expected: 302
