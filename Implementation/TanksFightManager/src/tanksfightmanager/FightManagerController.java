@@ -12,6 +12,12 @@ import java.util.UUID;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
+import javax.xml.namespace.QName;
+import javax.xml.transform.Source;
+import javax.xml.ws.Dispatch;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.ws.Service;
+import java.io.StringReader;
 
 
 public class FightManagerController extends Controller implements Initializable
@@ -51,14 +57,52 @@ public class FightManagerController extends Controller implements Initializable
         port = props.getProperty("portNumber");
         TanksFightManagerModel.setPortNumber(Integer.parseInt(port));
         
-        
+        this.readAndSetWebServiceProperties(props);
         
         this.getLogger().debug("readProperties\n\tproperties read correctly");
     }
     
     private void readAndSetWebServiceProperties(Properties props)
     {
-        props.get("a");
+        String URL=props.getProperty("WFSStatusURL");
+        String managerName=props.getProperty("managerName");
+        String guid = props.getProperty("guid");
+        String operatorName=props.getProperty("operatorName");
+        String operatorAddress = props.getProperty("operatorAddress");
+        
+        if(guid==null)
+        {
+            guid = UUID.randomUUID().toString();
+            props.setProperty("guid", guid);
+            this.writeProperties(props);
+        }
+        
+        Webservice.Register register = new Webservice.Register();
+        register.setFightManagerId(guid);
+        register.setFightManagerName(managerName);
+        register.setOperatorEmail(operatorAddress);
+        register.setOperatorName(operatorName);
+        
+        
+        
+        Webservice.WFStats service = new Webservice.WFStats();
+
+        QName portQName = new QName(URL, "WFStatsSoap");
+        String req = "<Register  xmlns=\""+URL+"\"><fightManagerId>"+guid+"</fightManagerId><fightManagerName>"+managerName+"</fightManagerName><operatorName>"+operatorName+"</operatorName><operatorEmail>"+operatorAddress+"</operatorEmail></Register>";
+
+        try
+        { // Call Web Service Operation
+
+            Dispatch<Source> sourceDispatch = null;
+            sourceDispatch = service.createDispatch(portQName, Source.class, Service.Mode.PAYLOAD);
+            Source result = sourceDispatch.invoke(new StreamSource(new StringReader(req)));
+        } 
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+            this.getLogger().error("error registering via webservice");
+            System.err.println("error registering via webservice");
+        }
     }
     // </editor-fold>
     
