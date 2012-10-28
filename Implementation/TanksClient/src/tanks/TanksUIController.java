@@ -42,6 +42,8 @@ public class TanksUIController extends Controller implements Initializable
     private Label emptyShellsLabel;
     @FXML
     private Label filledShellsLabel;
+    @FXML
+    private Pane mapPane;
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc=" Button Handlers ">
@@ -78,6 +80,11 @@ public class TanksUIController extends Controller implements Initializable
         this.startBackgroundTasks();
         this.createBindings();
         TanksClientModel.Initialize();
+        
+        GameRules.setMapMaxX(100);
+        GameRules.setMapMaxY(100);
+        mapPane.getChildren().add(new GameMap());
+        
     }
     
     // <editor-fold defaultstate="collapsed" desc=" Initialization Methods ">

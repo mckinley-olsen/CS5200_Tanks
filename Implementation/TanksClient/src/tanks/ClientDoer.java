@@ -76,6 +76,8 @@ public class ClientDoer extends Doer
             {
                 TanksClientModel.setPlayerID(reply.getPlayerID());
                 TanksClientModel.setMaxTravelRate(reply.getMaxTravelRate());
+                GameRules.setMapMaxX(reply.getGameMapMaxX());
+                GameRules.setMapMaxY(reply.getGameMapMaxY());
             }
         });                
     }
