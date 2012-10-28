@@ -2,6 +2,7 @@ package tanksfightmanager;
 
 import TanksCommon.Communicator;
 import TanksCommon.UI.Controller;
+import Webservice.WFStats;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -18,6 +19,7 @@ import javax.xml.ws.Dispatch;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.ws.Service;
 import java.io.StringReader;
+import java.util.Iterator;
 
 
 public class FightManagerController extends Controller implements Initializable
@@ -52,10 +54,14 @@ public class FightManagerController extends Controller implements Initializable
         Properties props = new Properties();
         this.setupPropertiesReader(props);
         
-        String port;
+        String port, gameMapMaxX, gameMapMaxY;
         
         port = props.getProperty("portNumber");
+        gameMapMaxX = props.getProperty("gameMapMaxX");
+        gameMapMaxY = props.getProperty("gameMapMaxY");
         TanksFightManagerModel.setPortNumber(Integer.parseInt(port));
+        TanksFightManagerModel.setGameMapMaxX(Integer.parseInt(gameMapMaxX));
+        TanksFightManagerModel.setGameMapMaxY(Integer.parseInt(gameMapMaxY));
         
         this.readAndSetWebServiceProperties(props);
         
@@ -74,7 +80,7 @@ public class FightManagerController extends Controller implements Initializable
         {
             guid = UUID.randomUUID().toString();
             props.setProperty("guid", guid);
-            this.writeProperties(props);
+            //this.writeProperties(props);
         }
         
         Webservice.Register register = new Webservice.Register();
@@ -83,27 +89,24 @@ public class FightManagerController extends Controller implements Initializable
         register.setOperatorEmail(operatorAddress);
         register.setOperatorName(operatorName);
         
+        this.register();
         
-        
+    }
+    // </editor-fold>
+
+    private void register() 
+    {
         Webservice.WFStats service = new Webservice.WFStats();
-
-        QName portQName = new QName(URL, "WFStatsSoap");
-        String req = "<Register  xmlns=\""+URL+"\"><fightManagerId>"+guid+"</fightManagerId><fightManagerName>"+managerName+"</fightManagerName><operatorName>"+operatorName+"</operatorName><operatorEmail>"+operatorAddress+"</operatorEmail></Register>";
-
-        try
-        { // Call Web Service Operation
-
+        QName portQName = new QName("http://tempuri.org/", "WFStatsSoap");
+        String req = "<Register  xmlns=\"http://tempuri.org/\"><fightManagerId>ENTER VALUE</fightManagerId><fightManagerName>ENTER VALUE</fightManagerName><operatorName>ENTER VALUE</operatorName><operatorEmail>ENTER VALUE</operatorEmail></Register>";
+        try {
+            // Call Web Service Operation
             Dispatch<Source> sourceDispatch = null;
             sourceDispatch = service.createDispatch(portQName, Source.class, Service.Mode.PAYLOAD);
             Source result = sourceDispatch.invoke(new StreamSource(new StringReader(req)));
-        } 
-        catch (Exception ex)
-        {
-            ex.printStackTrace();
-            this.getLogger().error("error registering via webservice");
-            System.err.println("error registering via webservice");
+        } catch (Exception ex) {
+            // TODO handle custom exceptions here
         }
     }
-    // </editor-fold>
     
 }

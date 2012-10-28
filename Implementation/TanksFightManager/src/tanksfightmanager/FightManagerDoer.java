@@ -1,5 +1,6 @@
 package tanksfightmanager;
 
+import GeneralPackage.Location;
 import GeneralPackage.Rate;
 import MessagePackage.Message;
 import MessagePackage.RegisterProtocol.RegisterReply;
@@ -8,6 +9,7 @@ import MessagePackage.Reply.Status;
 import TanksCommon.Communicator;
 import TanksCommon.Doer.Doer;
 import TanksCommon.Envelope;
+import java.util.Random;
 import javafx.application.Platform;
 
 
@@ -37,7 +39,8 @@ public class FightManagerDoer extends Doer
         this.getLogger().info("FightManagerDoer processRegisterRequest\n\tProcessing register request");
         
         //MessageNumber number = request.getMessageID();
-        RegisterReply reply = new RegisterReply(Status.OKAY, " ", new Rate(1));
+        
+        RegisterReply reply = new RegisterReply(Status.OKAY, " ", new Rate(1), this.getNewStartingLocation(), TanksFightManagerModel.getGameMapMaxX(), TanksFightManagerModel.getGameMapMaxY());
         //reply.setMessageID(number);
         int playerID = TanksFightManagerModel.getNextPlayerID();
         this.getLogger().info("FightManagerDoer processRegisterRequest\n\tSet player ID to: "+playerID);
@@ -58,6 +61,13 @@ public class FightManagerDoer extends Doer
         });
     }
     
+    private Location getNewStartingLocation()
+    {
+        Random rand = new Random();
+        int x = rand.nextInt();
+        int y = rand.nextInt();
+        return new Location(x,y);
+    }
 
     @Override
     public String getThreadName()

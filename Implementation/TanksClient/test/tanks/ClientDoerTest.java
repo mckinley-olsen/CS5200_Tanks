@@ -1,5 +1,6 @@
 package tanks;
 
+import GeneralPackage.Location;
 import GeneralPackage.Rate;
 import GeneralPackage.Shell;
 import MessagePackage.GetShellProtocol.GetShellReply;
@@ -68,8 +69,14 @@ public class ClientDoerTest extends JFXPanel
         
         Integer sentPlayerID = 67;
         int sentRateValue = 1;
+
+        int startLocationX=2;
+        int startLocationY=2;
+        Location l = new Location(startLocationX, startLocationY);
+        int gameMapMaxX=1;
+        int gameMapMaxY=1;
         
-        registerReply = new RegisterReply(Reply.Status.OKAY, "", new Rate(sentRateValue));
+        registerReply = new RegisterReply(Reply.Status.OKAY, "", new Rate(sentRateValue), l, gameMapMaxX, gameMapMaxY);
         registerReply.setPlayerID(sentPlayerID);
         toComm1Envelope.setMessage(registerReply);
         comm2.sendMessage(toComm1Envelope);

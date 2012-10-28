@@ -5,6 +5,7 @@
 package MessagePackage.RegisterProtocol;
 
 import GeneralPackage.ByteList;
+import GeneralPackage.Location;
 import GeneralPackage.Rate;
 import MessagePackage.Reply;
 import org.junit.After;
@@ -18,10 +19,9 @@ import static org.junit.Assert.*;
  *
  * @author McKinley
  */
-public class RegisterReplyTest {
-    
-    public RegisterReplyTest() {
-    }
+public class RegisterReplyTest 
+{    
+    public RegisterReplyTest() {}
     
     @BeforeClass
     public static void setUpClass() {
@@ -49,20 +49,26 @@ public class RegisterReplyTest {
         String aNote="a";
         int someRate=1;
         Rate rate = new Rate(someRate);
+        int startLocationX=2;
+        int startLocationY=2;
+        Location l = new Location(startLocationX, startLocationY);
+        int gameMapMaxX=1;
+        int gameMapMaxY=1;
+        
 
-        RegisterReply reply1 = new RegisterReply(Reply.Status.OKAY, aNote, rate);
+        RegisterReply reply1 = new RegisterReply(Reply.Status.OKAY, aNote, rate, l, gameMapMaxX, gameMapMaxY);
         assertEquals(aNote, reply1.getNote());
         
         //test null status
-        reply1 = new RegisterReply(null, aNote, rate);
+        reply1 = new RegisterReply(null, aNote, rate, l, gameMapMaxX, gameMapMaxY);
         assertNull("", reply1.getStatus());
         
         //test empty note
-        reply1 = new RegisterReply(null, "", rate);
+        reply1 = new RegisterReply(null, "", rate, l, gameMapMaxX, gameMapMaxY);
         assertEquals("", reply1.getNote());
         
         //test empty note
-        reply1 = new RegisterReply(null, "", null);
+        reply1 = new RegisterReply(null, "", null, l, gameMapMaxX, gameMapMaxY);
         assertNull(reply1.getMaxTravelRate());
     }
     
@@ -72,7 +78,14 @@ public class RegisterReplyTest {
         String aNote="a";
         int someRate=1;
         Rate rate = new Rate(someRate);
-        RegisterReply reply1 = new RegisterReply(Reply.Status.OKAY, aNote, rate);
+        
+        int startLocationX=2;
+        int startLocationY=2;
+        Location l = new Location(startLocationX, startLocationY);
+        int gameMapMaxX=1;
+        int gameMapMaxY=1;
+        
+        RegisterReply reply1 = new RegisterReply(Reply.Status.OKAY, aNote, rate, l, gameMapMaxX, gameMapMaxY);
         ByteList messageBytes = new ByteList();
         reply1.encode(messageBytes);
         
@@ -88,13 +101,20 @@ public class RegisterReplyTest {
         assertEquals(reply1.getPlayerID(), reply2.getPlayerID());
         assertEquals(reply1.getMaxTravelRate().getSomeRate(), reply2.getMaxTravelRate().getSomeRate());
         assertEquals(reply1.getNote(), reply2.getNote());
+        
+        assertEquals(reply1.getStartingLocation().getX(), reply2.getStartingLocation().getX());
+        assertEquals(reply1.getStartingLocation().getY(), reply2.getStartingLocation().getY());
+        
+        assertEquals(reply1.getGameMapMaxX(), reply2.getGameMapMaxX());
+        assertEquals(reply1.getGameMapMaxY(), reply2.getGameMapMaxY());
     }
 
     /**
      * Test of getMaxTravelRate method, of class RegisterReply.
      */
     @Test
-    public void testGetMaxTravelRate() {
+    public void testGetMaxTravelRate() 
+    {
         RegisterReply instance = new RegisterReply();
         Rate expResult = instance.getMaxTravelRate();
         Rate result = instance.getMaxTravelRate();
@@ -120,6 +140,34 @@ public class RegisterReplyTest {
     public void testGetClassID() {
         int expResult = 302;
         int result = RegisterReply.getClassID();
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of getGameMapMaxX method, of class RegisterReply.
+     */
+    @Test
+    public void testGetGameMapMaxX() 
+    {
+        int expResult = 2;
+        RegisterReply instance = new RegisterReply();
+        instance.setGameMapMaxX(2);
+        
+        int result = instance.getGameMapMaxX();
+        assertEquals(expResult, result);
+    }
+    
+    /**
+     * Test of getGameMapMaxY method, of class RegisterReply.
+     */
+    @Test
+    public void testGetGameMapMaxY() 
+    {
+        int expResult = 2;
+        RegisterReply instance = new RegisterReply();
+        instance.setGameMapMaxY(2);
+        
+        int result = instance.getGameMapMaxY();
         assertEquals(expResult, result);
     }
 
