@@ -45,7 +45,8 @@ public class FightManagerDoer extends Doer
         int playerID = TanksFightManagerModel.getNextPlayerID();
         this.getLogger().info("FightManagerDoer processRegisterRequest\n\tSet player ID to: "+playerID);
         reply.setPlayerID(playerID);
-        FightManagerDoer.addStatus("Processed RegisterRequest; New playerID: "+playerID);
+        //FightManagerDoer.addStatus("Processed RegisterRequest; New playerID: "+playerID);
+        TanksFightManagerModel.addStatus("Processed RegisterRequest; New playerID: "+playerID);
         return Envelope.createOutgoingEnvelope(reply, envelope.getSenderEndPoint());
     }
     

@@ -20,6 +20,7 @@ import javax.xml.transform.stream.StreamSource;
 import javax.xml.ws.Service;
 import java.io.StringReader;
 import java.util.Iterator;
+import java.util.List;
 
 
 public class FightManagerController extends Controller implements Initializable
@@ -31,11 +32,11 @@ public class FightManagerController extends Controller implements Initializable
 
     // </editor-fold>
     
-    
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-        this.readProperties();
+        this.readAndSetProperties();
+        this.registerWithWebService();
         Communicator comm = new Communicator(TanksFightManagerModel.getPortNumber());
         this.setDoer(new FightManagerDoer(comm));
         this.getDoer().getCommunicator().start();
@@ -49,11 +50,18 @@ public class FightManagerController extends Controller implements Initializable
     }
     
     // <editor-fold defaultstate="collapsed" desc=" Properties reading ">
-    private void readProperties()
+    private void readAndSetProperties()
     {
         Properties props = new Properties();
         this.setupPropertiesReader(props);
         
+        this.readAndSetGeneralProperties(props);
+        this.readAndSetWebServiceProperties(props);
+        
+        this.getLogger().debug("readProperties\n\tproperties read correctly");
+    }
+    private void readAndSetGeneralProperties(Properties props)
+    {
         String port, gameMapMaxX, gameMapMaxY;
         
         port = props.getProperty("portNumber");
@@ -62,12 +70,7 @@ public class FightManagerController extends Controller implements Initializable
         TanksFightManagerModel.setPortNumber(Integer.parseInt(port));
         TanksFightManagerModel.setGameMapMaxX(Integer.parseInt(gameMapMaxX));
         TanksFightManagerModel.setGameMapMaxY(Integer.parseInt(gameMapMaxY));
-        
-        this.readAndSetWebServiceProperties(props);
-        
-        this.getLogger().debug("readProperties\n\tproperties read correctly");
     }
-    
     private void readAndSetWebServiceProperties(Properties props)
     {
         String URL=props.getProperty("WFSStatusURL");
@@ -83,30 +86,35 @@ public class FightManagerController extends Controller implements Initializable
             //this.writeProperties(props);
         }
         
-        Webservice.Register register = new Webservice.Register();
-        register.setFightManagerId(guid);
-        register.setFightManagerName(managerName);
-        register.setOperatorEmail(operatorAddress);
-        register.setOperatorName(operatorName);
-        
-        this.register();
-        
+        TanksFightManagerModel.setManagerName(managerName);
+        TanksFightManagerModel.setGuid(guid);
+        TanksFightManagerModel.setOperatorName(operatorName);
+        TanksFightManagerModel.setOperatorAddress(operatorAddress);
     }
     // </editor-fold>
 
-    private void register() 
+    private void registerWithWebService()
     {
         Webservice.WFStats service = new Webservice.WFStats();
-        QName portQName = new QName("http://tempuri.org/", "WFStatsSoap");
-        String req = "<Register  xmlns=\"http://tempuri.org/\"><fightManagerId>ENTER VALUE</fightManagerId><fightManagerName>ENTER VALUE</fightManagerName><operatorName>ENTER VALUE</operatorName><operatorEmail>ENTER VALUE</operatorEmail></Register>";
-        try {
-            // Call Web Service Operation
-            Dispatch<Source> sourceDispatch = null;
-            sourceDispatch = service.createDispatch(portQName, Source.class, Service.Mode.PAYLOAD);
-            Source result = sourceDispatch.invoke(new StreamSource(new StringReader(req)));
-        } catch (Exception ex) {
-            // TODO handle custom exceptions here
+        try 
+        {
+            String registrationResult = service.getWFStatsSoap().register(TanksFightManagerModel.getGuid(), 
+                                              TanksFightManagerModel.getManagerName(), 
+                                              TanksFightManagerModel.getOperatorName(), 
+                                              TanksFightManagerModel.getOperatorAddress());
+            System.out.println("Result: "+registrationResult);
+            Webservice.ArrayOfString string = service.getWFStatsSoap().getRegisterFightManagers();
+            List<String> strings = string.getString();
+            System.out.println(strings.size());
+            for(String i: strings)
+            {
+                System.out.println(i);
+            }
+        } catch (Exception ex) 
+        {
+            ex.printStackTrace();
         }
+       
     }
     
 }

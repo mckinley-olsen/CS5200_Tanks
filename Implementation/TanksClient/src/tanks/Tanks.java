@@ -16,7 +16,7 @@ public class Tanks extends Application implements EventHandler<WindowEvent>
     private Stage stage;
     
     @Override
-    public void start(Stage stage) throws Exception 
+    public void start(Stage stage) throws Exception
     {
         this.initializeUI(stage);
     }

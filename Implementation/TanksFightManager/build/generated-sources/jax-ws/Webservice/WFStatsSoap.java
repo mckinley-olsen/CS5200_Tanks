@@ -87,4 +87,57 @@ public interface WFStatsSoap {
         @WebParam(name = "stats", targetNamespace = "http://tempuri.org/")
         GameStats stats);
 
+    /**
+     * 
+     * @return
+     *     returns javax.xml.datatype.XMLGregorianCalendar
+     */
+    @WebMethod(operationName = "GetServerTime", action = "http://tempuri.org/GetServerTime")
+    @WebResult(name = "GetServerTimeResult", targetNamespace = "http://tempuri.org/")
+    @RequestWrapper(localName = "GetServerTime", targetNamespace = "http://tempuri.org/", className = "Webservice.GetServerTime")
+    @ResponseWrapper(localName = "GetServerTimeResponse", targetNamespace = "http://tempuri.org/", className = "Webservice.GetServerTimeResponse")
+    public XMLGregorianCalendar getServerTime();
+
+    /**
+     * 
+     * @return
+     *     returns Webservice.ArrayOfString
+     */
+    @WebMethod(operationName = "GetRegisterFightManagers", action = "http://tempuri.org/GetRegisterFightManagers")
+    @WebResult(name = "GetRegisterFightManagersResult", targetNamespace = "http://tempuri.org/")
+    @RequestWrapper(localName = "GetRegisterFightManagers", targetNamespace = "http://tempuri.org/", className = "Webservice.GetRegisterFightManagers")
+    @ResponseWrapper(localName = "GetRegisterFightManagersResponse", targetNamespace = "http://tempuri.org/", className = "Webservice.GetRegisterFightManagersResponse")
+    public ArrayOfString getRegisterFightManagers();
+
+    /**
+     * 
+     * @param fightManagerId
+     * @return
+     *     returns Webservice.ArrayOfInt
+     */
+    @WebMethod(operationName = "GetGameIds", action = "http://tempuri.org/GetGameIds")
+    @WebResult(name = "GetGameIdsResult", targetNamespace = "http://tempuri.org/")
+    @RequestWrapper(localName = "GetGameIds", targetNamespace = "http://tempuri.org/", className = "Webservice.GetGameIds")
+    @ResponseWrapper(localName = "GetGameIdsResponse", targetNamespace = "http://tempuri.org/", className = "Webservice.GetGameIdsResponse")
+    public ArrayOfInt getGameIds(
+        @WebParam(name = "fightManagerId", targetNamespace = "http://tempuri.org/")
+        String fightManagerId);
+
+    /**
+     * 
+     * @param gameId
+     * @param fightManagerId
+     * @return
+     *     returns Webservice.ArrayOfGameStats
+     */
+    @WebMethod(operationName = "GetGameStats", action = "http://tempuri.org/GetGameStats")
+    @WebResult(name = "GetGameStatsResult", targetNamespace = "http://tempuri.org/")
+    @RequestWrapper(localName = "GetGameStats", targetNamespace = "http://tempuri.org/", className = "Webservice.GetGameStats")
+    @ResponseWrapper(localName = "GetGameStatsResponse", targetNamespace = "http://tempuri.org/", className = "Webservice.GetGameStatsResponse")
+    public ArrayOfGameStats getGameStats(
+        @WebParam(name = "fightManagerId", targetNamespace = "http://tempuri.org/")
+        String fightManagerId,
+        @WebParam(name = "gameId", targetNamespace = "http://tempuri.org/")
+        int gameId);
+
 }

@@ -30,6 +30,46 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetServerTimeResponse }
+     * 
+     */
+    public GetServerTimeResponse createGetServerTimeResponse() {
+        return new GetServerTimeResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetGameStats }
+     * 
+     */
+    public GetGameStats createGetGameStats() {
+        return new GetGameStats();
+    }
+
+    /**
+     * Create an instance of {@link GetGameIds }
+     * 
+     */
+    public GetGameIds createGetGameIds() {
+        return new GetGameIds();
+    }
+
+    /**
+     * Create an instance of {@link GetGameIdsResponse }
+     * 
+     */
+    public GetGameIdsResponse createGetGameIdsResponse() {
+        return new GetGameIdsResponse();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfInt }
+     * 
+     */
+    public ArrayOfInt createArrayOfInt() {
+        return new ArrayOfInt();
+    }
+
+    /**
      * Create an instance of {@link LogGameStats }
      * 
      */
@@ -46,19 +86,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LogGameStatsResponse }
+     * Create an instance of {@link GetRegisterFightManagers }
      * 
      */
-    public LogGameStatsResponse createLogGameStatsResponse() {
-        return new LogGameStatsResponse();
-    }
-
-    /**
-     * Create an instance of {@link LogNewGame }
-     * 
-     */
-    public LogNewGame createLogNewGame() {
-        return new LogNewGame();
+    public GetRegisterFightManagers createGetRegisterFightManagers() {
+        return new GetRegisterFightManagers();
     }
 
     /**
@@ -67,6 +99,62 @@ public class ObjectFactory {
      */
     public Register createRegister() {
         return new Register();
+    }
+
+    /**
+     * Create an instance of {@link LogGameStatsResponse }
+     * 
+     */
+    public LogGameStatsResponse createLogGameStatsResponse() {
+        return new LogGameStatsResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetGameStatsResponse }
+     * 
+     */
+    public GetGameStatsResponse createGetGameStatsResponse() {
+        return new GetGameStatsResponse();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfGameStats }
+     * 
+     */
+    public ArrayOfGameStats createArrayOfGameStats() {
+        return new ArrayOfGameStats();
+    }
+
+    /**
+     * Create an instance of {@link GetServerTime }
+     * 
+     */
+    public GetServerTime createGetServerTime() {
+        return new GetServerTime();
+    }
+
+    /**
+     * Create an instance of {@link GetRegisterFightManagersResponse }
+     * 
+     */
+    public GetRegisterFightManagersResponse createGetRegisterFightManagersResponse() {
+        return new GetRegisterFightManagersResponse();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfString }
+     * 
+     */
+    public ArrayOfString createArrayOfString() {
+        return new ArrayOfString();
+    }
+
+    /**
+     * Create an instance of {@link LogNewGame }
+     * 
+     */
+    public LogNewGame createLogNewGame() {
+        return new LogNewGame();
     }
 
     /**
