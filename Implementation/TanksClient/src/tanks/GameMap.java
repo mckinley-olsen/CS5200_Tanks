@@ -1,5 +1,6 @@
 package tanks;
 
+import TanksCommon.Model.GameRulesModel;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.canvas.Canvas;
@@ -22,8 +23,8 @@ public class GameMap extends Canvas
     public GameMap()
     {
         //GameModel.currentPlayerLocationXProperty().addListener(listener);
-        GameRules.mapMaxXProperty().addListener(listener);
-        GameRules.mapMaxYProperty().addListener(listener);
+        GameRulesModel.mapMaxXProperty().addListener(listener);
+        GameRulesModel.mapMaxYProperty().addListener(listener);
         this.drawGrid();
     }
     
@@ -34,8 +35,8 @@ public class GameMap extends Canvas
         double width = this.getWidth();
         double height = this.getHeight();
         
-        int maxX = GameRules.getMapMaxX();
-        int maxY = GameRules.getMapMaxY();
+        int maxX = GameRulesModel.getMapMaxX();
+        int maxY = GameRulesModel.getMapMaxY();
         
         double everyX = width/maxX;
         double everyY = height/maxY;

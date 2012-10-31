@@ -1,81 +1,60 @@
 package tanksfightmanager;
 
+import GeneralPackage.Player;
 import TanksCommon.Model.TanksResourceManagerModel;
+import java.util.HashMap;
+import javafx.collections.FXCollections;
+import javafx.collections.MapChangeListener;
+import javafx.collections.ObservableMap;
 
 public class TanksFightManagerModel extends TanksResourceManagerModel
 {
-    //<editor-fold defaultstate="collapsed" desc="webservice properties">
-    private static String guid;
-    private static String managerName;
-    private static String operatorName;
-    private static String operatorAddress;
-    //</editor-fold>
+    private static int nextPlayerID=1;
     
+    private static HashMap <Integer, Player> players = new HashMap<>();
+    private static ObservableMap <Integer, Player> observablePlayers = FXCollections.observableMap(TanksFightManagerModel.getPlayers());
     
-    private static int playerID=1;
-    
-    private static int gameMapMaxX;
-    private static int gameMapMaxY;
     
     public static int getNextPlayerID()
     {
-        TanksFightManagerModel.playerID++;
-        if(TanksFightManagerModel.playerID<0)
+        TanksFightManagerModel.nextPlayerID++;
+        if(TanksFightManagerModel.nextPlayerID<0)
         {
-            TanksFightManagerModel.playerID=1;
+            TanksFightManagerModel.nextPlayerID=1;
         }
-        return TanksFightManagerModel.playerID;
+        return TanksFightManagerModel.nextPlayerID;
     }
     
+    public static void addPlayer(Player p)
+    {
+        TanksFightManagerModel.getPlayers().put(p.getPlayerID(), p);
+    }
+    public static void removePlayerByID(int id)
+    {
+        TanksFightManagerModel.getPlayers().remove(id);
+    }
+    
+    // <editor-fold defaultstate="collapsed" desc="Listener Registration Methods">
+    public static void addPlayersListener(MapChangeListener m)
+    {
+        TanksFightManagerModel.getObservablePlayers().addListener(m);
+    }
+
+    // </editor-fold>
+    
     //<editor-fold defaultstate="collapsed" desc="getters">
-    public static String getGuid()
+    public static HashMap getPlayers()
     {
-        return TanksFightManagerModel.guid;
-    }
-    public static int getGameMapMaxX()
-    {
-        return TanksFightManagerModel.gameMapMaxX;
-    }
-    public static int getGameMapMaxY()
-    {
-        return TanksFightManagerModel.gameMapMaxY;
-    }
-    public static String getManagerName() {
-        return managerName;
+        return TanksFightManagerModel.players;
     }
 
-    public static String getOperatorName() {
-        return operatorName;
-    }
-
-    public static String getOperatorAddress() {
-        return operatorAddress;
+    public static ObservableMap<Integer, Player> getObservablePlayers()
+    {
+        return observablePlayers;
     }
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="setters">
-    public static void setGameMapMaxX(int gameMapMaxX)
-    {
-        TanksFightManagerModel.gameMapMaxX = gameMapMaxX;
-    }
-    public static void setGameMapMaxY(int gameMapMaxY)
-    {
-        TanksFightManagerModel.gameMapMaxY = gameMapMaxY;
-    }
-    public static void setGuid(String guid)
-    {
-        TanksFightManagerModel.guid = guid;
-    }
-    public static void setManagerName(String managerName) {
-        TanksFightManagerModel.managerName = managerName;
-    }
 
-    public static void setOperatorName(String operatorName) {
-        TanksFightManagerModel.operatorName = operatorName;
-    }
-
-    public static void setOperatorAddress(String operatorAddress) {
-        TanksFightManagerModel.operatorAddress = operatorAddress;
-    }
     //</editor-fold>
 }

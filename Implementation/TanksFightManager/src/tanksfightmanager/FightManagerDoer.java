@@ -1,6 +1,7 @@
 package tanksfightmanager;
 
 import GeneralPackage.Location;
+import GeneralPackage.Player;
 import GeneralPackage.Rate;
 import MessagePackage.Message;
 import MessagePackage.RegisterProtocol.RegisterReply;
@@ -9,6 +10,7 @@ import MessagePackage.Reply.Status;
 import TanksCommon.Communicator;
 import TanksCommon.Doer.Doer;
 import TanksCommon.Envelope;
+import TanksCommon.Model.GameRulesModel;
 import java.util.Random;
 import javafx.application.Platform;
 
@@ -40,9 +42,14 @@ public class FightManagerDoer extends Doer
         
         //MessageNumber number = request.getMessageID();
         
-        RegisterReply reply = new RegisterReply(Status.OKAY, " ", new Rate(1), this.getNewStartingLocation(), TanksFightManagerModel.getGameMapMaxX(), TanksFightManagerModel.getGameMapMaxY());
-        //reply.setMessageID(number);
         int playerID = TanksFightManagerModel.getNextPlayerID();
+        String playerName = request.getPlayerName();
+        Player newPlayer = new Player(playerName, playerID);
+        TanksFightManagerModel.addPlayer(newPlayer);
+        
+        RegisterReply reply = new RegisterReply(Status.OKAY, " ", new Rate(1), this.getNewStartingLocation(), GameRulesModel.getMapMaxX(), GameRulesModel.getMapMaxY());
+        //reply.setMessageID(number);
+        
         this.getLogger().info("FightManagerDoer processRegisterRequest\n\tSet player ID to: "+playerID);
         reply.setPlayerID(playerID);
         //FightManagerDoer.addStatus("Processed RegisterRequest; New playerID: "+playerID);

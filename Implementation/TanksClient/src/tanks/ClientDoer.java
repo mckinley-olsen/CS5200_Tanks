@@ -1,6 +1,7 @@
 
 package tanks;
 
+import TanksCommon.Model.GameRulesModel;
 import MessagePackage.GetShellProtocol.GetShellReply;
 import MessagePackage.Message;
 import MessagePackage.RegisterProtocol.RegisterReply;
@@ -76,8 +77,8 @@ public class ClientDoer extends Doer
             {
                 TanksClientModel.setPlayerID(reply.getPlayerID());
                 TanksClientModel.setMaxTravelRate(reply.getMaxTravelRate());
-                GameRules.setMapMaxX(reply.getGameMapMaxX());
-                GameRules.setMapMaxY(reply.getGameMapMaxY());
+                GameRulesModel.setMapMaxX(reply.getGameMapMaxX());
+                GameRulesModel.setMapMaxY(reply.getGameMapMaxY());
             }
         });                
     }

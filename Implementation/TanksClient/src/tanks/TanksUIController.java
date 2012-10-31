@@ -1,5 +1,6 @@
 package tanks;
 
+import TanksCommon.Model.GameRulesModel;
 import Strategy.GetShellStrategy;
 import Strategy.RegisterStrategy;
 import Strategy.Strategy;
@@ -81,8 +82,8 @@ public class TanksUIController extends Controller implements Initializable
         this.createBindings();
         TanksClientModel.Initialize();
         
-        GameRules.setMapMaxX(100);
-        GameRules.setMapMaxY(100);
+        GameRulesModel.setMapMaxX(100);
+        GameRulesModel.setMapMaxY(100);
         mapPane.getChildren().add(new GameMap());
         
     }

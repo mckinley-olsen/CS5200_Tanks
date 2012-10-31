@@ -1,8 +1,8 @@
-package tanks;
+package TanksCommon.Model;
 
 import javafx.beans.property.SimpleIntegerProperty;
 
-public class GameRules
+public class GameRulesModel
 {
     private static SimpleIntegerProperty mapMaxX = new SimpleIntegerProperty(0);
     private static SimpleIntegerProperty mapMaxY = new SimpleIntegerProperty(0);
@@ -19,11 +19,11 @@ public class GameRules
     }
     public static SimpleIntegerProperty mapMaxXProperty()
     {
-        return GameRules.mapMaxX;
+        return GameRulesModel.mapMaxX;
     }
     public static SimpleIntegerProperty mapMaxYProperty()
     {
-        return GameRules.mapMaxY;
+        return GameRulesModel.mapMaxY;
     }
 
 // </editor-fold>
@@ -31,12 +31,12 @@ public class GameRules
     // <editor-fold defaultstate="collapsed" desc=" setters ">
     public static void setMapMaxX(int mapMaxX)
     {
-        GameRules.mapMaxX.set(mapMaxX);
+        GameRulesModel.mapMaxX.set(mapMaxX);
     }
     
     public static void setMapMaxY(int mapMaxY)
     {
-        GameRules.mapMaxY.set(mapMaxY);
+        GameRulesModel.mapMaxY.set(mapMaxY);
     }
 // </editor-fold>
 }
