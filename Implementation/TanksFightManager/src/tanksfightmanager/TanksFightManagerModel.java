@@ -2,6 +2,7 @@ package tanksfightmanager;
 
 import GeneralPackage.Player;
 import TanksCommon.Model.TanksResourceManagerModel;
+import java.util.ArrayList;
 import java.util.HashMap;
 import javafx.collections.FXCollections;
 import javafx.collections.MapChangeListener;
@@ -14,6 +15,7 @@ public class TanksFightManagerModel extends TanksResourceManagerModel
     private static HashMap <Integer, Player> players = new HashMap<>();
     private static ObservableMap <Integer, Player> observablePlayers = FXCollections.observableMap(TanksFightManagerModel.getPlayers());
     
+    private static ArrayList<PendingLocationsRequest> locationsRequests = new ArrayList();
     
     public static int getNextPlayerID()
     {

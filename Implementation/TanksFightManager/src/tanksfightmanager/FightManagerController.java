@@ -12,7 +12,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import java.util.List;
 
-
 public class FightManagerController extends Controller implements Initializable
 {
     

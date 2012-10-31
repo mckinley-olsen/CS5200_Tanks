@@ -3,6 +3,7 @@ package tanksfightmanager;
 import GeneralPackage.Location;
 import GeneralPackage.Player;
 import GeneralPackage.Rate;
+import MessagePackage.LocationListProtocol.LocationListRequest;
 import MessagePackage.Message;
 import MessagePackage.RegisterProtocol.RegisterReply;
 import MessagePackage.RegisterProtocol.RegisterRequest;
@@ -35,6 +36,10 @@ public class FightManagerDoer extends Doer
             Envelope reply = this.processRegisterRequest(envelope, (RegisterRequest)m);
             this.getCommunicator().addToOutputQueue(reply);
         }
+        else if(m instanceof LocationListRequest)
+        {
+            this.getLogger().info("FightManagerDoer process\n\tdetected LocationList request");
+        }
     }
     private Envelope processRegisterRequest(Envelope envelope, RegisterRequest request)
     {
@@ -55,6 +60,13 @@ public class FightManagerDoer extends Doer
         //FightManagerDoer.addStatus("Processed RegisterRequest; New playerID: "+playerID);
         TanksFightManagerModel.addStatus("Processed RegisterRequest; New playerID: "+playerID);
         return Envelope.createOutgoingEnvelope(reply, envelope.getSenderEndPoint());
+    }
+    
+    private void processLocationListRequest(Envelope envelope, LocationListRequest request)
+    {
+        this.getLogger().info("FightManagerDoer processLocationListRequest\n\tProcessing LocationList request");
+        
+        
     }
     
     private static void addStatus(final String status)

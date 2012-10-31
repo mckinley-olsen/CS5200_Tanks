@@ -19,6 +19,13 @@ public class StatsManager
     private static int currentNumberOfPlayers=0;
     private static int maxNumberOfPlayers=0;
     
+    private static int yearOffset;
+    private static int monthOffset;
+    private static int dayOffset;
+    private static int hourOffset;
+    private static int minuteOffset;
+    private static int timezone;
+    
     private static String guid;
     private static String managerName;
     private static String operatorName;
@@ -66,6 +73,13 @@ public class StatsManager
     
     private static void computeTimeOffsets(XMLGregorianCalendar serverTime, XMLGregorianCalendar localTime)
     {
+        StatsManager.setYearOffset(serverTime.getYear()-localTime.getYear());
+        StatsManager.setMonthOffset(serverTime.getMonth()-localTime.getMonth());
+        StatsManager.setDayOffset(serverTime.getDay()-localTime.getDay());
+        
+        StatsManager.setHourOffset(serverTime.getHour()-localTime.getHour());
+        StatsManager.setMinuteOffset(serverTime.getMinute()-localTime.getMinute());
+        
         
     }
     
@@ -162,6 +176,10 @@ public class StatsManager
     {
         return StatsManager.logger;
     }
+    public static int getTimezone()
+    {
+        return StatsManager.timezone;
+    }
 // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="setters">
@@ -194,6 +212,29 @@ public class StatsManager
     {
         StatsManager.operatorAddress = operatorAddress;
     }
-    
+
+    public static void setYearOffset(int yearOffset) {
+        StatsManager.yearOffset = yearOffset;
+    }
+
+    public static void setMonthOffset(int monthOffset) {
+        StatsManager.monthOffset = monthOffset;
+    }
+
+    public static void setDayOffset(int dayOffset) {
+        StatsManager.dayOffset = dayOffset;
+    }
+
+    public static void setHourOffset(int hourOffset) {
+        StatsManager.hourOffset = hourOffset;
+    }
+
+    public static void setMinuteOffset(int minuteOffset) {
+        StatsManager.minuteOffset = minuteOffset;
+    }
+    public static void setTimezone(int timezone)
+    {
+        StatsManager.timezone=timezone;
+    }
     // </editor-fold>
 }
