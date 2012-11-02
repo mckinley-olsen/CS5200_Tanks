@@ -3,9 +3,12 @@ import GeneralPackage.ByteList;
 
 public class AckNak extends Reply
 {
-    
     private final static int CLASS_ID = 303;
     protected AckNak(){}
+    public AckNak(Status status, String note)
+    {
+        super(ReplyType.ACK_NAK, status, note);
+    }
     
     public static AckNak Create(ByteList messageBytes) throws Exception
     {
@@ -14,7 +17,7 @@ public class AckNak extends Reply
         {
             throw new Exception("Invalid message byte array");
         }
-        if (messageBytes.peekShort() != AckNak.getClassID() )
+        if (messageBytes.peekInt() != AckNak.getClassID() )
         {
             throw new Exception("Invalid message type");
         }
@@ -44,7 +47,7 @@ public class AckNak extends Reply
     
     @Override
     public void decode(ByteList messageBytes) throws Exception {
-        short objectType = messageBytes.getShort();
+        int objectType = messageBytes.getInt();
         if (objectType != this.getClassID()) {
             throw new Exception("Invalid byte array for Request message");
         }

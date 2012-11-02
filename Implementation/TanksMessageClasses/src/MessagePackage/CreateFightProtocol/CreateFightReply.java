@@ -27,7 +27,7 @@ public class CreateFightReply extends FireShellReply
         {
             throw new Exception("Invalid message byte array");
         }
-        if (messageBytes.peekShort() != CreateFightReply.getClassID() )
+        if (messageBytes.peekInt() != CreateFightReply.getClassID() )
         {
             throw new Exception("Invalid message type");
         }
@@ -56,8 +56,9 @@ public class CreateFightReply extends FireShellReply
     
     @Override
     public void decode(ByteList messageBytes) throws Exception {
-        short objectType = messageBytes.getShort();
-        if (objectType != this.getClassID()) {
+        int objectType = messageBytes.getInt();
+        if (objectType != this.getClassID()) 
+        {
             throw new Exception("Invalid byte array for Request message");
         }
         
@@ -73,7 +74,7 @@ public class CreateFightReply extends FireShellReply
     }
 // </editor-fold>
     
-// <editor-fold defaultstate="collapsed" desc="getters/setters">
+    // <editor-fold defaultstate="collapsed" desc="getters/setters">
 //getters
     public static int getClassID() {
         return CreateFightReply.CLASS_ID;

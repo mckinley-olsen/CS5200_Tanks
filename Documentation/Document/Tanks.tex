@@ -69,11 +69,33 @@
 	\item{Players can request an empty shell from the shell manager, but only hold up to 4 shells at a time.}
 	
 	\item{A player can fill an empty shell by making a request to the gun powder manager to fill the shell to a specified percentage.}
-
-
 	
 	\item{Once a player has been hit with shell(s) that contained an accumulated 100 or more cups of gunpowder, the player is removed from all fights and de-registered.}
 	
+	\item{A fight manager must be able to update a SOAP webservice with information about itself and the game}
+	\begin{enumerate}
+		\item{The manager must provide the following information when started, which should be easily specifiable before starting the manager:}
+		\begin{enumerate}
+			\item{The URL of the webservice}
+			\item{A name for the manager}
+			\item{The name of the person operating the manager}
+			\item{The e-mail address of the person operating the manager}
+			\item{A global unique identifier (GUID) to identify the manager}
+		\end{enumerate}
+		\item{The manager must inform the webservice when a new fight is started, providing to it the id of the fight and the manager's GUID}
+		\item{The manager must update the webservice on the current state of the game periodically. This should include information such as:}
+		\begin{enumerate}
+			\item{The time the update message was sent}
+			\item{The current status of the game}
+			\item{The current number of players}
+			\item{The maximum number of players that have played}
+			\item{The number of shells that have been launched in the game}
+			\item{The amount of gunpowder that has been launched}
+			\item{The amount of shells that hit players}
+			\item{The amount of gunpowder that hit players}
+			\item{The name of the winning player, if the game has been won}
+		\end{enumerate}
+	\end{enumerate}
 \end{enumerate}
 
 \section{Protocols}

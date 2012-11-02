@@ -32,6 +32,11 @@ public class Request extends Message
     {
         this.requestType = type;
     }
+    protected Request(int playerID, RequestType type)
+    {
+        this.setPlayerID(playerID);
+        this.setRequestType(type);
+    }
     
     public static Request Create(ByteList messageBytes) throws Exception
     {
@@ -66,7 +71,7 @@ public class Request extends Message
         return result;
     }
     
-// <editor-fold defaultstate="collapsed" desc=" endoder/decoder ">
+    // <editor-fold defaultstate="collapsed" desc=" endoder/decoder ">
 
     @Override
     public void encode(ByteList messageBytes)
@@ -82,8 +87,8 @@ public class Request extends Message
         int i = this.getRequestType().ordinal();
         this.addTraceLog("Request encode\n\tadding ordinal of request type: "+i, messageBytes);
         messageBytes.add(i);
-        this.addTraceLog("Request encode\n\tadding sessionID: "+this.getSessionID(), messageBytes);
-        messageBytes.add(this.getSessionID());
+        this.addTraceLog("Request encode\n\tadding playerID: "+this.getPlayerID(), messageBytes);
+        messageBytes.add(this.getPlayerID());
         this.addTraceLog("Request encode\n\tadding length: "+(messageBytes.getCurrentWritePosition() - messageLengthPos - 2), messageBytes);
         short length = (short) (messageBytes.getCurrentWritePosition() - messageLengthPos - 2);
         messageBytes.writeShortTo(messageLengthPos, length);
@@ -121,20 +126,20 @@ public class Request extends Message
         
         this.addTraceLog("RegisterRequest decode\n\tsetting requestType", messageBytes);
         this.setRequestType((RequestType) messageBytes.getEnum(RequestType.FIGHT_LIST));
-        this.addTraceLog("RegisterRequest decode\n\tsetting sessionID", messageBytes);
-        this.setSessionID(messageBytes.getInt());
+        this.addTraceLog("RegisterRequest decode\n\tsetting playerID", messageBytes);
+        this.setPlayerID(messageBytes.getInt());
         
         messageBytes.restorePreviousReadLimit();        
     }
 // </editor-fold>
     
-// <editor-fold defaultstate="collapsed" desc=" getters/setters ">
+    // <editor-fold defaultstate="collapsed" desc=" getters ">
 //getters
     public RequestType getRequestType() {
         return this.requestType;
     }
 
-    public int getSessionID() {
+    public int getPlayerID() {
         return this.playerID;
     }
     
@@ -146,14 +151,19 @@ public class Request extends Message
     {
         return this.getClass().getName();
     }
-
+// </editor-fold>
+    
+    //<editor-fold defaultstate="collapsed" desc="setters">
     //setters
-    public void setRequestType(RequestType sentRequestType) {
+    public void setRequestType(RequestType sentRequestType)
+    {
         this.requestType = sentRequestType;
     }
-
-    public void setSessionID(int sentPlayerID) {
+    
+    public void setPlayerID(int sentPlayerID)
+    {
         this.playerID = sentPlayerID;
     }
-// </editor-fold>
+    //</editor-fold>
+
 }

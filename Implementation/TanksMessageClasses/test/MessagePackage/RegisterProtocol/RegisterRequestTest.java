@@ -80,7 +80,8 @@ public class RegisterRequestTest {
      * Test of getClassID method, of class RegisterRequest.
      */
     @Test
-    public void testGetClassID() {
+    public void testGetClassID() 
+    {
         int expResult = 202;
         int result = RegisterRequest.getClassID();
         assertEquals(expResult, result);
@@ -90,7 +91,8 @@ public class RegisterRequestTest {
      * Test of setPlayerName method, of class RegisterRequest.
      */
     @Test
-    public void testSetPlayerName() {
+    public void testSetPlayerName() 
+    {
         String sentPlayerName = "Alec";
         RegisterRequest request1 = new RegisterRequest();
         request1.setPlayerName(sentPlayerName);

@@ -11,13 +11,13 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="TanksClient.jar" size="39002" download="eager" />
-    <jar href="lib/TanksCommon.jar" size="31380" download="eager" />
-    <jar href="lib/TanksMessageClasses.jar" size="136403" download="eager" />
-    <jar href="lib/jfxrt.jar" size="15472432" download="eager" />
-    <jar href="lib/junit-4.10.jar" size="281054" download="eager" />
-    <jar href="lib/logback-classic-1.0.7.jar" size="270629" download="eager" />
-    <jar href="lib/logback-core-1.0.7.jar" size="397558" download="eager" />
+    <jar href="TanksClient.jar" size="38977" download="eager" />
+    <jar href="lib/TanksCommon.jar" size="33243" download="eager" />
+    <jar href="lib/TanksMessageClasses.jar" size="137477" download="eager" />
+    <jar href="lib/jfxrt.jar" size="15472431" download="eager" />
+    <jar href="lib/junit-4.10.jar" size="281052" download="eager" />
+    <jar href="lib/logback-classic-1.0.7.jar" size="270628" download="eager" />
+    <jar href="lib/logback-core-1.0.7.jar" size="397560" download="eager" />
     <jar href="lib/slf4j-api-1.7.1.jar" size="29949" download="eager" />
   </resources>
 <security>

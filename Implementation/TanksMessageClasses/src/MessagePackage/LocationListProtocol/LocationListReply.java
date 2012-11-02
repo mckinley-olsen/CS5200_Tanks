@@ -7,16 +7,18 @@ import MessagePackage.Reply;
 
 public class LocationListReply extends Reply
 {
-    public static final int CLASS_ID=305;
+    public static final int CLASS_ID=312;
     
     private Location[] locations;
+    private int playerID;
     
     protected LocationListReply(){}
     
-    public LocationListReply(Status sentStatus, String sentNote, Location[] locations)
+    public LocationListReply(Status sentStatus, String sentNote, Location[] locations, int playerID)
     {
         super(Reply.ReplyType.LOCATION_LIST, sentStatus, sentNote);
         this.setLocations(locations);
+        this.setPlayerID(playerID);
     }
     
     public static LocationListReply Create(ByteList messageBytes) throws Exception
@@ -26,7 +28,7 @@ public class LocationListReply extends Reply
         {
             throw new Exception("Invalid message byte array");
         }
-        if (messageBytes.peekShort() != LocationListReply.getClassID() )
+        if (messageBytes.peekInt() != LocationListReply.getClassID() )
         {
             throw new Exception("Invalid message type");
         }
@@ -53,13 +55,15 @@ public class LocationListReply extends Reply
             this.getLocations()[count].encode(messageBytes);
         }
         
+        messageBytes.add(this.getPlayerID());
+        
         short length = (short) (messageBytes.getCurrentWritePosition() - messageLengthPos - 2);
         messageBytes.writeShortTo(messageLengthPos, length);
     }
     
     @Override
     public void decode(ByteList messageBytes) throws Exception {
-        short objectType = messageBytes.getShort();
+        int objectType = messageBytes.getInt();
         if (objectType != this.getClassID()) {
             throw new Exception("Invalid byte array for Request message");
         }
@@ -77,12 +81,12 @@ public class LocationListReply extends Reply
             temp[count] = Location.Create(messageBytes);
         }
         this.setLocations(temp);
-        
+        this.setPlayerID(messageBytes.getInt());
         messageBytes.restorePreviousReadLimit();
     }
 // </editor-fold>
     
-// <editor-fold defaultstate="collapsed" desc="getters/setters">
+    // <editor-fold defaultstate="collapsed" desc="getters/setters">
 //getters
     public static int getClassID() {
         return LocationListReply.CLASS_ID;
@@ -91,10 +95,18 @@ public class LocationListReply extends Reply
     {
         return this.locations;
     }
+    public int getPlayerID()
+    {
+        return this.playerID;
+    }
     //setters
     public void setLocations(Location[] locations)
     {
         this.locations = locations;
+    }
+    public void setPlayerID(int playerID)
+    {
+        this.playerID=playerID;
     }
 // </editor-fold>
 }

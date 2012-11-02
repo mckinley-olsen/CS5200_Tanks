@@ -3,6 +3,7 @@ package TanksCommon.UI;
 import TanksCommon.Doer.Doer;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 import org.slf4j.Logger;
@@ -46,6 +47,26 @@ public abstract class Controller
         {
             System.err.println("error");
             this.getLogger().error("readServerAddresses \n\tIOException");
+        }
+    }
+    
+    protected void writeProperties(Properties props)
+    {
+        FileOutputStream out;
+        try
+        {
+            out = new FileOutputStream("server_settings");
+            
+            props.store(out, "-*-"); //properties file requires a comment
+            out.close();
+        }
+        catch(FileNotFoundException e)
+        {
+            System.err.println("File Not Found; Error creating settings file");
+        }
+        catch(IOException e)
+        {
+            System.err.println("IOException; Error creating settings file");
         }
     }
 // <editor-fold defaultstate="collapsed" desc=" Getters ">

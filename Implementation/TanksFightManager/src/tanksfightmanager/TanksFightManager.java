@@ -35,6 +35,7 @@ public class TanksFightManager extends Application  implements EventHandler<Wind
     public void handle(WindowEvent t)
     {
         this.getController().stopBackgroundTasks();
+        this.getController().persistProperties();
     }
     
     private void initializeUI(Stage stage) throws Exception

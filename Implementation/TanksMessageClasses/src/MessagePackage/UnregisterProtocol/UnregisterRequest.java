@@ -22,10 +22,10 @@ public class UnregisterRequest extends Request
     
     protected UnregisterRequest(){}
     
-    public UnregisterRequest(UnregisterReason reason, String note)
+    public UnregisterRequest(int playerID, UnregisterReason reason, String note)
     {
-        super(Request.RequestType.UNREGISER);
-        this.setUnregisterReason(unregisterReason);
+        super(playerID, Request.RequestType.UNREGISER);
+        this.setUnregisterReason(reason);
         this.setNote(note);
     }
     
@@ -36,7 +36,7 @@ public class UnregisterRequest extends Request
         {
             throw new Exception("Invalid message byte array");
         }
-        if (messageBytes.peekShort() != UnregisterRequest.getClassID() )
+        if (messageBytes.peekInt() != UnregisterRequest.getClassID() )
         {
             throw new Exception("Invalid message type");
         }
@@ -57,7 +57,7 @@ public class UnregisterRequest extends Request
         
         messageBytes.add((short) 0);
         super.encode(messageBytes);
-        
+
         messageBytes.add(this.getUnregisterReason().ordinal());
         messageBytes.add(this.getNote());
         
@@ -66,8 +66,9 @@ public class UnregisterRequest extends Request
     }
     
     @Override
-    public void decode(ByteList messageBytes) throws Exception {
-        short objectType = messageBytes.getShort();
+    public void decode(ByteList messageBytes) throws Exception 
+    {
+        int objectType = messageBytes.getInt();
         if (objectType != this.getClassID()) {
             throw new Exception("Invalid byte array for Request message");
         }
@@ -78,7 +79,7 @@ public class UnregisterRequest extends Request
         
         super.decode(messageBytes);
         
-        this.setUnregisterReason((UnregisterReason) messageBytes.getEnum(this.getUnregisterReason()));
+        this.setUnregisterReason((UnregisterReason) messageBytes.getEnum(UnregisterReason.APP_ERROR));
         this.setNote(messageBytes.getString());
         
         messageBytes.restorePreviousReadLimit();
@@ -102,7 +103,8 @@ public class UnregisterRequest extends Request
     }
 
     //setters
-    public void setUnregisterReason(UnregisterReason sentUnregisterReason) {
+    public void setUnregisterReason(UnregisterReason sentUnregisterReason) 
+    {
         this.unregisterReason = sentUnregisterReason;
     }
 

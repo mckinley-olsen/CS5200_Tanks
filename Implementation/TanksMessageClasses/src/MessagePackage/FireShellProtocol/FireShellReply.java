@@ -53,7 +53,7 @@ public class FireShellReply extends Reply
         {
             throw new Exception("Invalid message byte array");
         }
-        if (messageBytes.peekShort() != FireShellReply.getClassID() )
+        if (messageBytes.peekInt() != FireShellReply.getClassID() )
         {
             throw new Exception("Invalid message type");
         }
@@ -87,8 +87,9 @@ public class FireShellReply extends Reply
     
     @Override
     public void decode(ByteList messageBytes) throws Exception {
-        short objectType = messageBytes.getShort();
-        if (objectType != this.getClassID()) {
+        int objectType = messageBytes.getInt();
+        if (objectType != this.getClassID()) 
+        {
             throw new Exception("Invalid byte array for Request message");
         }
         
@@ -98,7 +99,7 @@ public class FireShellReply extends Reply
         
         super.decode(messageBytes);
 
-        this.setFireResult((FireResult)messageBytes.getEnum(this.getFireResult()));
+        this.setFireResult((FireResult)messageBytes.getEnum(FireResult.HIT));
         int length = messageBytes.getInt();
         Player[] a = new Player[length];
         for(int count=0; count<length; ++count)
@@ -111,7 +112,7 @@ public class FireShellReply extends Reply
     }
 // </editor-fold>
     
-// <editor-fold defaultstate="collapsed" desc="getters/setters">
+    // <editor-fold defaultstate="collapsed" desc="getters/setters">
 //getters
     public static int getClassID() {
         return FireShellReply.CLASS_ID;

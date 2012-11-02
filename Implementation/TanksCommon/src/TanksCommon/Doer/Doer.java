@@ -78,6 +78,10 @@ public abstract class Doer extends BackgroundThread
     {
         return Doer.class.getName();
     }
+    public int getWorkerSleepInterval()
+    {
+        return Doer.WORKER_SLEEP_INTERVAL;
+    }
     public void setCommunicator(Communicator communicator) 
     {
         this.communicator = communicator;

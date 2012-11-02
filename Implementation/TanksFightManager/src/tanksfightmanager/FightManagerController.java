@@ -14,6 +14,7 @@ import java.util.List;
 
 public class FightManagerController extends Controller implements Initializable
 {
+    private Properties properties;
     
     // <editor-fold defaultstate="collapsed" desc=" GUI Component Fill ">
     @FXML
@@ -32,6 +33,7 @@ public class FightManagerController extends Controller implements Initializable
         this.createBindings();
         
         StatsManager.register();
+        TanksFightManagerModel.startNewGame();
     }
         
     private void createBindings()
@@ -47,17 +49,25 @@ public class FightManagerController extends Controller implements Initializable
         
         this.readAndSetGeneralProperties(props);
         this.readAndSetWebServiceProperties(props);
-        
+        this.properties=props;
         this.getLogger().debug("readProperties\n\tproperties read correctly");
     }
     private void readAndSetGeneralProperties(Properties props)
     {
-        String port, gameMapMaxX, gameMapMaxY;
+        String port, gameMapMaxX, gameMapMaxY, statsRefreshRate, currentGameID;
         
         port = props.getProperty("portNumber");
+        currentGameID = props.getProperty("currentGameID");
+        if(currentGameID==null)
+        {
+            currentGameID="1";
+        }
+        statsRefreshRate = props.getProperty("statsRefreshRate");
         gameMapMaxX = props.getProperty("gameMapMaxX");
         gameMapMaxY = props.getProperty("gameMapMaxY");
         TanksFightManagerModel.setPortNumber(Integer.parseInt(port));
+        TanksFightManagerModel.setStatsRefreshRate(Integer.parseInt(statsRefreshRate));
+        TanksFightManagerModel.setCurrentGameID(Integer.parseInt(currentGameID));
         GameRulesModel.setMapMaxX(Integer.parseInt(gameMapMaxX));
         GameRulesModel.setMapMaxY(Integer.parseInt(gameMapMaxY));
     }
@@ -73,9 +83,14 @@ public class FightManagerController extends Controller implements Initializable
         {
             guid = UUID.randomUUID().toString();
             props.setProperty("guid", guid);
-            //this.writeProperties(props);
+            this.writeProperties(props);
         }
         StatsManager.initialize(guid, managerName, operatorName, operatorAddress);
     }
+    public void persistProperties()
+    {
+        this.properties.setProperty("currentGameID", ((Integer)TanksFightManagerModel.getCurrentGameID()).toString());
+        this.writeProperties(properties);
+    }   
     // </editor-fold>    
 }

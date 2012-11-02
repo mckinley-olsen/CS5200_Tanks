@@ -10,12 +10,11 @@ public class PendingLocationsRequest
     private LinkedList<Integer> requesters = new LinkedList();
     private int queriedPlayer;
     private Date lastQuerySentAt;
-    private LastLocationsRequest requestSent;
     
     private static Calendar calendar = Calendar.getInstance();
    
     
-    public PendingLocationsRequest(LastLocationsRequest requestSent, int requesterID, int queriedPlayer)
+    public PendingLocationsRequest(int requesterID, int queriedPlayer)
     {
         this.addRequester(requesterID);
         this.setQueriedPlayer(queriedPlayer);
@@ -29,13 +28,17 @@ public class PendingLocationsRequest
     }
     
     //<editor-fold defaultstate="collapsed" desc="gettters">
-    private LinkedList getRequesters()
+    public LinkedList getRequesters()
     {
         return this.requesters;
     }
     private Date getLastQuerySentAt()
     {
         return this.lastQuerySentAt;
+    }
+    public int getQueriedPlayer()
+    {
+        return this.queriedPlayer;
     }
     private static Calendar getCalendar()
     {

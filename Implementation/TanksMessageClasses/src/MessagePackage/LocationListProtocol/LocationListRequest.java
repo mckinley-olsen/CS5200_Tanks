@@ -8,13 +8,13 @@ public class LocationListRequest extends Request
 {
     public static final int CLASS_ID = 206;
     
-    private int playerID;
+    private int playerIDRequested;
     
     protected LocationListRequest(){}
-    public LocationListRequest(int playerID)
+    public LocationListRequest(int playerID,int playerIDRequested)
     {
-        super(Request.RequestType.LOCATION_LIST);
-        this.setPlayerID(playerID);
+        super(playerID, Request.RequestType.LOCATION_LIST);
+        this.setPlayerIDRequested(playerIDRequested);
     }
     
     public static LocationListRequest Create(ByteList messageBytes) throws Exception
@@ -24,7 +24,7 @@ public class LocationListRequest extends Request
         {
             throw new Exception("Invalid message byte array");
         }
-        if (messageBytes.peekShort() != LocationListRequest.getClassID() )
+        if (messageBytes.peekInt() != LocationListRequest.getClassID() )
         {
             throw new Exception("Invalid message type");
         }
@@ -38,7 +38,8 @@ public class LocationListRequest extends Request
     
     // <editor-fold defaultstate="collapsed" desc=" encode/deode ">
     @Override
-    public void encode(ByteList messageBytes) {
+    public void encode(ByteList messageBytes) 
+    {
         messageBytes.add(this.getClassID());
         
         short messageLengthPos = messageBytes.getCurrentWritePosition();
@@ -46,7 +47,7 @@ public class LocationListRequest extends Request
         messageBytes.add((short) 0);
         super.encode(messageBytes);
 
-        messageBytes.add(this.getPlayerID());
+        messageBytes.add(this.getPlayerIDRequested());
         
         short length = (short) (messageBytes.getCurrentWritePosition() - messageLengthPos - 2);
         messageBytes.writeShortTo(messageLengthPos, length);
@@ -54,7 +55,7 @@ public class LocationListRequest extends Request
     
     @Override
     public void decode(ByteList messageBytes) throws Exception {
-        short objectType = messageBytes.getShort();
+        int objectType = messageBytes.getInt();
         if (objectType != this.getClassID()) {
             throw new Exception("Invalid byte array for Request message");
         }
@@ -65,7 +66,7 @@ public class LocationListRequest extends Request
         
         super.decode(messageBytes);
         
-        this.setPlayerID(messageBytes.getInt());
+        this.setPlayerIDRequested(messageBytes.getInt());
         
         messageBytes.restorePreviousReadLimit();
     }
@@ -73,16 +74,19 @@ public class LocationListRequest extends Request
 // </editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="getters/setters">
-    public static int getCLASS_ID() {
+    public static int getClassID() 
+    {
         return CLASS_ID;
     }
     
-    public int getPlayerID() {
-        return this.playerID;
+    public int getPlayerIDRequested() 
+    {
+        return this.playerIDRequested;
     }
     
-    public void setPlayerID(int playerID) {
-        this.playerID = playerID;
+    public void setPlayerIDRequested(int playerID) 
+    {
+        this.playerIDRequested = playerID;
     }
     //</editor-fold>
 }

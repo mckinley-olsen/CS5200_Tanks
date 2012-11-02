@@ -1,0 +1,16 @@
+13:50:27.251 [JavaFX Application Thread] INFO  TanksCommon.Communicator1 - Communicator initializeSocket:
+	 Socket initialized
+13:50:27.256 [JavaFX Application Thread] INFO  TanksCommon.Communicator1 - BackgroundThread Start: 
+	Thread Started
+13:50:47.920 [Communicator] INFO  TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+13:50:47.921 [Communicator] INFO  TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+13:50:47.921 [Communicator] INFO  TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+13:50:48.075 [Communicator] INFO  TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+13:51:21.707 [JavaFX Application Thread] INFO  TanksCommon.Communicator1 - BackgroundThread Stop:
+	 Stopping Thread
+13:51:22.708 [JavaFX Application Thread] INFO  TanksCommon.Communicator1 - BackgroundThread Stop:
+	 Thread Stopped

@@ -17,6 +17,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 
 
@@ -44,7 +45,7 @@ public class TanksUIController extends Controller implements Initializable
     @FXML
     private Label filledShellsLabel;
     @FXML
-    private Pane mapPane;
+    private BorderPane mapPane;
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc=" Button Handlers ">
@@ -84,7 +85,10 @@ public class TanksUIController extends Controller implements Initializable
         
         GameRulesModel.setMapMaxX(100);
         GameRulesModel.setMapMaxY(100);
-        mapPane.getChildren().add(new GameMap());
+        GameMap gameMap = new GameMap();
+        //gameMap.setHeight(100);
+        //gameMap.setWidth(100);
+        mapPane.setCenter(gameMap);
         
     }
     

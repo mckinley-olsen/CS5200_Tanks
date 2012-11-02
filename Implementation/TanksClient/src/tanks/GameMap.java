@@ -27,6 +27,10 @@ public class GameMap extends Canvas
         GameRulesModel.mapMaxYProperty().addListener(listener);
         this.drawGrid();
     }
+    public void initialize()
+    {
+        
+    }
     
     private void drawGrid()
     {
@@ -48,15 +52,9 @@ public class GameMap extends Canvas
         gc.setStroke(paint);
         while(count < 100)
         {
+            System.out.println("Painting at X: "+count+" Y: "+0+" X: "+count+" Y: "+height);
             gc.strokeLine(count, 0, count, height);
             count=count+2;
         }
-        gc.setFill(Color.GREEN);
-        gc.setStroke(Color.BLUE);
-        gc.setLineWidth(5);
-        gc.strokeLine(40, 10, 10, 40);
-        gc.fillOval(10, 60, 30, 30);
-        gc.strokeOval(60, 60, 30, 30);
-        gc.fillRoundRect(110, 60, 30, 30, 10, 10);
     }
 }

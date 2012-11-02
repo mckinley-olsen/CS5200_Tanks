@@ -7,10 +7,12 @@ public class LastLocationsRequest extends Request
 {
     public static final int CLASS_ID = 207;
     
+    protected LastLocationsRequest()
+    {}
     
-    public LastLocationsRequest()
+    public LastLocationsRequest(int playerID)
     {
-        super(Request.RequestType.LOCATION_LIST);
+        super(playerID, Request.RequestType.LAST_LOCATIONS);
     }
     
     public static LastLocationsRequest Create(ByteList messageBytes) throws Exception
@@ -20,7 +22,7 @@ public class LastLocationsRequest extends Request
         {
             throw new Exception("Invalid message byte array");
         }
-        if (messageBytes.peekShort() != LocationListRequest.getClassID() )
+        if (messageBytes.peekInt() != LastLocationsRequest.getClassID() )
         {
             throw new Exception("Invalid message type");
         }
@@ -48,7 +50,7 @@ public class LastLocationsRequest extends Request
     
     @Override
     public void decode(ByteList messageBytes) throws Exception {
-        short objectType = messageBytes.getShort();
+        int objectType = messageBytes.getInt();
         if (objectType != this.getClassID()) {
             throw new Exception("Invalid byte array for Request message");
         }
@@ -65,7 +67,7 @@ public class LastLocationsRequest extends Request
 // </editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="getters/setters">
-    public static int getCLASS_ID() {
+    public static int getClassID() {
         return CLASS_ID;
     }
     //</editor-fold>
