@@ -83,7 +83,7 @@ public class TanksFightManagerModel extends TanksResourceManagerModel
     // <editor-fold defaultstate="collapsed" desc="add/remove players">
     public static void addPlayer(Player p)
     {
-        TanksFightManagerModel.getPlayers().put(p.getPlayerID(), p);
+        TanksFightManagerModel.getObservablePlayers().put(p.getPlayerID(), p);
     }
 
     public static void removePlayerByID(int id)

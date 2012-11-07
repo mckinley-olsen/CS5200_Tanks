@@ -253,7 +253,7 @@
 			\begin{supertabular}{|p{2cm}|p{5cm}|p{3cm}|p{4cm}|}
 				%REGISTER PROTOCOL
 				Register Request & Intended to be used when a client needs to register with the Fight Manager. This message is used to notify the Fight Manager of a new player that must be assigned a player ID. & Register Protocol & playerName: "John Smith" \\ \hline
-				Register Reply & Sent in reply to a Register Request, a client receiving this message knows they have been registered with the Fight Manager, assigned a unique player ID, and are available to be fired upon. & Register Protocol & playerID: 1 \\&&& rate: Rate \\ \hline
+				Register Reply & Sent in reply to a Register Request, a client receiving this message knows they have been registered with the Fight Manager, assigned a unique player ID, and are available to be fired upon. & Register Protocol & playerID: 1 \\&&& rate: Rate \\&&& gameMapMaxX: 100 \\&&& gameMapMaxY: 100 \\&&& startingLocation: Location \\ \hline
 				
 				%UNREGISTER PROTOCOL
 				Unregister Request & Means that a player will be unregistered with the Fight Manager, and that their communication will break. Used when the player quits the game, used by the Fight Manager to inform a player of their forced disconnect. & Unregister protocol & unregisterReason: UNSPECIFIED \\ &&&note:``System Restart" \\ \hline
@@ -394,4 +394,15 @@
 				\item{Gunpowder Manager: Responsible for filling shells provided to it. These shells are filled to a specified percentage, and are returned to the player, ready to be fired.}
 			\end{itemize} 
 			While the above diagram gives a good idea of which components interact with each, it would be best to describe a general sequence of events that happen. When a communicator sees it has received something on its socket, it tries to form a meaningful message from the bytes. Once a message has been reconstituted, it is placed inside of an Envelope(not pictured) that is stamped with the sender and receiver of the message, and put in the communicator's inputqueue. A Doer continually checks its communicator's inputqueue, checking to see if any envelopes are available to process. When an envelope is available, the message is taken out and the type of the message is determined (i.e. registerrequest, getshellrequest). The Doer then calls the appropriate function to handle the type of message. In all cases, data in the model may be updated, or data in the model queried and that data sent back. If the data is to be sent back, the data is put into an appropriate message, which is put into a stamped envelope that is put in the communicator's outputqueue. In the case of the client, any update made to the model is usually reflected in the UI, as UI components are bound to the elements of the model.
+		\subsection{Statistics Management}
+			As explained in requirement 12, a fight manager must be able to register with and periodically update a webservice with statistics about the current game. The component(s) used in this process are described below.
+			\begin{center}
+				\includegraphics[width=.3\textwidth]{Diagrams/Structure Diagrams/StatsManager.jpg}
+			\end{center}
+			The attributes and methods of the StatsManager, which is the component that aggregates relevant statistics about the game and may be called to refresh those statistics.
+			
+			\begin{center}
+				\includegraphics[width=\textwidth]{Diagrams/Structure Diagrams/ComponentDiagram2.jpg}
+			\end{center}
+			Described above is the general interaction between the FightManagerModel and the StatsManager. It is with this interaction that the StatsManager aggregates and updates its statistics. The attributes playersListener and currentGameIDListener are registered when the StatsManager is initialized to listen to changes in the FightManagerModel. The needed statistics can be determined as the model is changed by the FightManagerDoer, allowing the StatsManager to be a (mostly) hidden entity. The FightManagerDoer must routinely call refreshStats on the StatsManager, but it does so at its own discretion.
 \end{document}

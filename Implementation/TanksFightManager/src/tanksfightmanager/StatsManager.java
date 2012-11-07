@@ -48,14 +48,18 @@ public class StatsManager
         @Override
         public void onChanged(MapChangeListener.Change change)
         {
+            StatsManager.setCurrentNumberOfPlayers(change.getMap().size());
+            /*
             if(change.wasAdded())
             {
+                System.out.println(change.getMap().size());
                 StatsManager.incrementNumberOFPlayers();
             }
             else if(change.wasRemoved())
             {
                 StatsManager.decrementNumberOfPlayers();
             }
+            */
         }
     };
     //listens to changes of the currentGameID in the TanksFightManagerModel
@@ -131,9 +135,9 @@ public class StatsManager
         StatsManager.addInfoLog("decrementNumberOfPlayers\n\tdecremented current number of players to: "+StatsManager.getCurrentNumberOfPlayers());
     }
     
-    public static void register()
+    public static String register()
     {
-        String registrationResult="";
+        String registrationResult="Failure";
         try
         {
             registrationResult = StatsManager.getWebService().register(StatsManager.getGuid(),
@@ -158,9 +162,10 @@ public class StatsManager
             ex.printStackTrace();
             StatsManager.getLogger().error("StatsManager register\n\texception when registering. Message: "+ex.getMessage());
         }
+        return registrationResult;
     }
     
-    public static void refreshStats()
+    public static String refreshStats()
     {
         GameStats stats = new GameStats();
         stats.setTimestamp(StatsManager.getCurrentServerAdjustedTime());
@@ -172,7 +177,7 @@ public class StatsManager
         stats.setAmountOfWaterThatHit(StatsManager.getAmountOfGunpowderThatHit());
         stats.setWinner(null);
         
-        String result = StatsManager.getWebService().logGameStats(StatsManager.guid, TanksFightManagerModel.getCurrentGameID(), stats);
+        return StatsManager.getWebService().logGameStats(StatsManager.guid, TanksFightManagerModel.getCurrentGameID(), stats);
     }
     public static XMLGregorianCalendar getCurrentServerAdjustedTime()
     {
@@ -193,9 +198,9 @@ public class StatsManager
         return null;
     }
     
-    private static void logNewGame(int newGameID)
+    private static String logNewGame(int newGameID)
     {
-        String result = StatsManager.getWebService().logNewGame(StatsManager.getGuid(), newGameID, StatsManager.getCurrentServerAdjustedTime());
+        return StatsManager.getWebService().logNewGame(StatsManager.getGuid(), newGameID, StatsManager.getCurrentServerAdjustedTime());
     }
     
     private static void addInfoLog(String toLog)
@@ -285,6 +290,13 @@ public class StatsManager
     public static void setCurrentNumberOfPlayers(int currentNumberOfPlayers)
     {
         StatsManager.currentNumberOfPlayers = currentNumberOfPlayers;
+        
+        StatsManager.addInfoLog("setCurrentNumberOfPlayers\n\tchanged current number of players to: "+StatsManager.getCurrentNumberOfPlayers());
+        if(StatsManager.getCurrentNumberOfPlayers()>StatsManager.getMaxNumberOfPlayers())
+        {
+            StatsManager.setMaxNumberOfPlayers(StatsManager.getCurrentNumberOfPlayers());
+            StatsManager.addInfoLog("setCurrentNumberOfPlayers\n\tset max number of players to: "+StatsManager.getMaxNumberOfPlayers());
+        }
     }
     
     public static void setMaxNumberOfPlayers(int maxNumberOfPlayers)
@@ -355,6 +367,4 @@ public class StatsManager
         StatsManager.amountOfGunpowderThatHit = amountOfGunpowderThatHit;
     }
     // </editor-fold>
-
-
 }

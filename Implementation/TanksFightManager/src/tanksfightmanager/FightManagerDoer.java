@@ -3,6 +3,7 @@ package tanksfightmanager;
 import GeneralPackage.Location;
 import GeneralPackage.Player;
 import GeneralPackage.Rate;
+import MessagePackage.AckNak;
 import MessagePackage.FireShellRequest;
 import MessagePackage.LocationListProtocol.LastLocationsRequest;
 import MessagePackage.LocationListProtocol.LocationListReply;
@@ -12,6 +13,7 @@ import MessagePackage.RegisterProtocol.RegisterReply;
 import MessagePackage.RegisterProtocol.RegisterRequest;
 import MessagePackage.Reply.Status;
 import MessagePackage.Request;
+import MessagePackage.UnregisterProtocol.UnregisterRequest;
 import TanksCommon.Communicator;
 import TanksCommon.Doer.Doer;
 import TanksCommon.Envelope;
@@ -78,11 +80,17 @@ public class FightManagerDoer extends Doer
             else if(m instanceof LocationListRequest)
             {
                 this.getLogger().info("FightManagerDoer process\n\tdetected LocationList request");
-                Envelope out = this.processLocationListRequest(envelope, (LocationListRequest)m);
-                if(out != null)
+                Envelope reply = this.processLocationListRequest(envelope, (LocationListRequest)m);
+                if(reply != null)
                 {
-                    this.getCommunicator().addToOutputQueue(envelope);
+                    this.getCommunicator().addToOutputQueue(reply);
                 }
+            }
+            else if(m instanceof UnregisterRequest)
+            {
+                this.getLogger().info("FightManagerDoer process\n\tdetected Unregister request");
+                Envelope reply = this.processUnregisterRequest(envelope, (UnregisterRequest)m);
+                this.getCommunicator().addToOutputQueue(reply);
             }
             else if(m instanceof FireShellRequest)
             {
@@ -132,6 +140,14 @@ public class FightManagerDoer extends Doer
         }
         return null;
     }
+    
+    private Envelope processUnregisterRequest(Envelope envelope, UnregisterRequest request)
+    {
+        TanksFightManagerModel.removePlayerByID(request.getPlayerID());
+        AckNak outMessage = new AckNak(Status.OKAY,"");
+        Envelope outEnvelope = Envelope.createOutgoingEnvelope(outMessage, envelope.getSenderEndPoint());
+        return outEnvelope;
+    }
 
     private void processFireShellRequest(Envelope envelope, FireShellRequest request)
     {
@@ -155,8 +171,6 @@ public class FightManagerDoer extends Doer
         }
     }
     //</editor-fold>
-    
-
     
     private static void addStatus(final String status)
     {
