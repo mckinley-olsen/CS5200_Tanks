@@ -79,13 +79,13 @@ public class Communicator extends BackgroundThread
             e = this.getMessage();
             if(e!=null)
             {
-                this.getLogger().info("Communicator run:\n\t adding envelope to inputQueue");
+                this.getLogger().debug("Communicator run:\n\t adding envelope to inputQueue");
                 this.getInputQueue().add(e);
             }
             e = (Envelope)this.getOutputQueue().poll();
             if(e!=null)
             {
-                this.getLogger().info("Communicator run:\n\t outputQueue not empty, trying to send the message");
+                this.getLogger().debug("Communicator run:\n\t outputQueue not empty, trying to send the message");
                 this.sendMessage(e);
             }
             e=null;
@@ -95,7 +95,7 @@ public class Communicator extends BackgroundThread
     
     private void sleepWorker()
     {
-        this.getLogger().debug("Communicator sleepWorker:\n\t sleeping worker");
+        this.getLogger().trace("Communicator sleepWorker:\n\t sleeping worker");
         try
         {
             //this.getWorker().wait(Communicator.WORKER_SLEEP_INTERVAL);
@@ -141,10 +141,10 @@ public class Communicator extends BackgroundThread
         
         try
         {
-            this.getLogger().info("Communicator sendMessage\n\t Starting to try to send message of length: " + messageBytes.length);
+            this.getLogger().debug("Communicator sendMessage\n\t Starting to try to send message of length: " + messageBytes.length);
             DatagramPacket p = new DatagramPacket(messageBytes, messageBytes.length, envelope.getReceieverEndPoint());
             socket.send(p);
-            this.getLogger().info("Communicator sendMessage\n\t Sent successfully length: " + messageBytes.length);
+            this.getLogger().debug("Communicator sendMessage\n\t Sent successfully length: " + messageBytes.length);
         }
         catch(SocketException e)
         {
@@ -266,7 +266,10 @@ public class Communicator extends BackgroundThread
     {
         return this.communicatorNumber;
     }
-            
+    public static Communicator getMainCommunicator()
+    {
+        return (Communicator)Communicator.getCommunicatorList().get(0);
+    }
 // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc=" Setters ">

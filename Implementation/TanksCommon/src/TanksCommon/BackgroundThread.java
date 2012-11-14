@@ -26,7 +26,7 @@ public abstract class BackgroundThread implements Runnable
     // <editor-fold defaultstate="collapsed" desc=" Start/Stop ">
     public void start()
     {
-        this.getLogger().info("BackgroundThread Start: \n\tThread Started");
+        this.getLogger().debug("BackgroundThread Start: \n\tThread Started");
         this.continueRunning = true;
         worker = new Thread(this);
         worker.setName(this.getThreadName());
@@ -37,7 +37,7 @@ public abstract class BackgroundThread implements Runnable
     {
         if (worker != null)
         {
-            this.getLogger().info("BackgroundThread Stop:\n\t Stopping Thread");
+            this.getLogger().debug("BackgroundThread Stop:\n\t Stopping Thread");
             this.continueRunning = false;
             
             int maxSleepTime = 10000;
@@ -60,7 +60,7 @@ public abstract class BackgroundThread implements Runnable
             }
             this.setWorker(null);
         }
-        this.getLogger().info("BackgroundThread Stop:\n\t Thread Stopped");
+        this.getLogger().debug("BackgroundThread Stop:\n\t Thread Stopped");
     }
 
 // </editor-fold>

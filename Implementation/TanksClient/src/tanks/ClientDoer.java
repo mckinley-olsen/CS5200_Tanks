@@ -34,19 +34,19 @@ public class ClientDoer extends Doer
         Task t = null;
         while(this.continueRunning)
         {
-            this.getLogger().debug(this.getClass().getName()+"run:\n\t at beginning of run");
+            this.getLogger().trace(this.getClass().getName()+"run:\n\t at beginning of run");
             e = this.getCommunicator().getFromInputQueue();
             if(e!=null)
             {
-                this.getLogger().info(this.getClass().getName()+"run:\n\t Got envelope from communicator inputqueue");
+                this.getLogger().debug(this.getClass().getName()+"run:\n\t Got envelope from communicator inputqueue");
                 this.process(e);
             }
             t = this.getTaskFromQueue();
             if(t!=null)
             {
-                this.getLogger().info(this.getClass().getName()+"run:\n\t Got Task from taskqueue");
+                this.getLogger().debug(this.getClass().getName()+"run:\n\t Got Task from taskqueue");
                 Strategy s = t.getStrategy();
-                s.strategize(this.getCommunicator().getInstanceNumber()-1);
+                s.strategize();
             }
             e=null;
             t=null;

@@ -35,11 +35,11 @@
 	<appender-ref ref="FILE" />
   </root>
   
-	<logger name="TanksCommon.Doer.ClientDoer" level="INFO" additivity="false">
+	<logger name="TanksCommon.Doer.ClientDoer" level="debug" additivity="false">
         <appender-ref ref="CLIENT_DOER"/>
 	</logger>
 	
-	<logger name="TanksCommon.Communicator1" level="INFO" additivity="false">
+	<logger name="TanksCommon.Communicator1" level="debug" additivity="false">
         <appender-ref ref="COMMUNICATOR1"/>
 	</logger>
 </configuration>

@@ -53,7 +53,7 @@ public class TanksUIController extends Controller implements Initializable
     private void handleRegisterButton(ActionEvent event) throws IOException
     {
         registerPane.setVisible(false);
-        Strategy s = new RegisterStrategy(TanksClientModel.getFightManagerAddress());
+        Strategy s = new RegisterStrategy(this.playerNameTextField.getText());
         Task task = new Task(s);
         TanksUIController.getDoer(MAIN_DOER_NUMBER).addTask(task);
     }
@@ -76,7 +76,7 @@ public class TanksUIController extends Controller implements Initializable
     
     @Override
     public void initialize(URL url, ResourceBundle rb) 
-    {
+    {   
         this.readServerAddresses();
         this.createBackgroundTasks();
         this.startBackgroundTasks();
@@ -159,7 +159,8 @@ public class TanksUIController extends Controller implements Initializable
         {
             this.getLogger().error("TanksUIController stopBackgroundTasks \n\terror stopping threads; Message: "+e.getMessage());
         }
-    }    
+    }
+    
     
 // <editor-fold defaultstate="collapsed" desc=" Getters ">
     public TextField getServerAddressTextField()

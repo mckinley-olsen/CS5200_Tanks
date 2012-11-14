@@ -11,14 +11,14 @@ public class GetShellStrategy extends Strategy
     
     public GetShellStrategy(InetSocketAddress address)
     {
-        super(address, null);
+        //super(address, null);
         this.getLogger().info("GetShellStrategy constructor\n\tGetShellStrategy created");
     }
 
     @Override
-    public void strategize(int communicatorNumber)
+    public void strategize()
     {
-        this.setCommunicator(Communicator.getCommunicatorInstance(communicatorNumber));
+        //this.setCommunicator(Communicator.getCommunicatorInstance(communicatorNumber));
         createPackAndSendRequest();
     }
     
@@ -27,7 +27,7 @@ public class GetShellStrategy extends Strategy
         this.getLogger().info("GetShellStrategy createPackAndSendRequest\n\tGetShellRequest created\n\tTo: "+TanksClientModel.getShellManagerAddress());
         GetShellRequest request = new GetShellRequest();
         Envelope e = Envelope.createOutgoingEnvelope(request, TanksClientModel.getShellManagerAddress());
-        this.getCommunicator().addToOutputQueue(e);
+        //this.getCommunicator().addToOutputQueue(e);
     }
 
     @Override

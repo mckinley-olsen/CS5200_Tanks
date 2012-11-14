@@ -34,7 +34,7 @@ public class GameMap extends Canvas
     
     private void drawGrid()
     {
-        System.out.println("DRAWING");
+        //System.out.println("DRAWING");
         
         double width = this.getWidth();
         double height = this.getHeight();
@@ -52,7 +52,7 @@ public class GameMap extends Canvas
         gc.setStroke(paint);
         while(count < 100)
         {
-            System.out.println("Painting at X: "+count+" Y: "+0+" X: "+count+" Y: "+height);
+            //System.out.println("Painting at X: "+count+" Y: "+0+" X: "+count+" Y: "+height);
             gc.strokeLine(count, 0, count, height);
             count=count+2;
         }

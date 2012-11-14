@@ -1,5 +1,6 @@
 package Strategy;
 
+import Conversation.ClientRegisterConversation;
 import MessagePackage.DeterminableEnum;
 import MessagePackage.RegisterProtocol.RegisterRequest;
 import TanksCommon.Communicator;
@@ -11,31 +12,42 @@ import java.net.InetSocketAddress;
 
 public class RegisterStrategy extends Strategy
 {
-    public RegisterStrategy(InetSocketAddress address)
+    private String playerName;
+    
+    public RegisterStrategy(String playerName)
     {
-        super(address, null);
+        this.setPlayerName(playerName);
         this.getLogger().info("RegisterStrategy constructor\n\tRegisterStrategy created");
     }
     
     @Override
-    public void strategize(int communicatorNumber)
+    public void strategize()
     {
-        this.setCommunicator(Communicator.getCommunicatorInstance(communicatorNumber));
-        
-        this.createPackAndSendRequest();
+        ClientRegisterConversation.initiate(playerName);
+        //this.createPackAndSendRequest();
     }
     
     private void createPackAndSendRequest()
     {
         this.getLogger().info("RegisterStrategy createPackAndSendRequest\n\tRegisterRequest created with name: " + TanksClientModel.getPlayerName()+"\n\tTo: "+TanksClientModel.getFightManagerAddress());
-        RegisterRequest request = new RegisterRequest(TanksClientModel.getPlayerName());
-        Envelope e = Envelope.createOutgoingEnvelope(request, TanksClientModel.getFightManagerAddress());
-        this.getCommunicator().addToOutputQueue(e);
     }
     
+    //<editor-fold defaultstate="collapsed" desc="getters">
     @Override
     protected String getLogName()
     {
         return this.getClass().getName();
     }
+    public String getPlayerName()
+    {
+        return this.playerName;
+    }
+    //</editor-fold>
+    
+    //<editor-fold defaultstate="collapsed" desc="setters">
+    public void setPlayerName(String playerName)
+    {
+        this.playerName = playerName;
+    }
+    //</editor-fold>
 }
