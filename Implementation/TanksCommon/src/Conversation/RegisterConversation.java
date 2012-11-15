@@ -1,4 +1,4 @@
-package Conversation.RegisterConversation;
+package Conversation;
 
 import Conversation.Conversation;
 import MessagePackage.Message;

@@ -1,5 +1,6 @@
-package Conversation.RegisterConversation;
+package Conversation;
 
+import Conversation.RegisterConversation;
 import MessagePackage.Message;
 import MessagePackage.RegisterProtocol.RegisterReply;
 import MessagePackage.RegisterProtocol.RegisterRequest;
@@ -9,7 +10,6 @@ public class FightManagerRegisterConversation extends RegisterConversation
 {
     private ConversationStatus status;
     
-    @Override
     public void add(Envelope e, Message m)
     {
         if(m instanceof RegisterRequest)

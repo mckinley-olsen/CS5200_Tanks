@@ -2,7 +2,7 @@ package ClientConversations;
 
 import Conversation.Conversation;
 import Conversation.Conversation;
-import Conversation.RegisterConversation.RegisterConversation;
+import Conversation.RegisterConversation;
 import MessagePackage.Message;
 import MessagePackage.MessageNumber;
 import MessagePackage.RegisterProtocol.RegisterReply;

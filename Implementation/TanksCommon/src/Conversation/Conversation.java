@@ -1,6 +1,5 @@
 package Conversation;
 
-import Conversation.RegisterConversation.RegisterConversation;
 import MessagePackage.Message;
 import MessagePackage.RegisterProtocol.RegisterReply;
 import MessagePackage.RegisterProtocol.RegisterRequest;
