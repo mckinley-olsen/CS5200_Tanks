@@ -123,6 +123,7 @@ public class FightManagerDoer extends Doer
         
         this.getLogger().info("FightManagerDoer processRegisterRequest\n\tSet player ID to: " + playerID);
         reply.setPlayerID(playerID);
+        reply.setConversationID(request.getConversationID());
         //FightManagerDoer.addStatus("Processed RegisterRequest; New playerID: "+playerID);
         
         TanksFightManagerModel.setRecentPlayerAddress(playerID, envelope.getSenderEndPoint());

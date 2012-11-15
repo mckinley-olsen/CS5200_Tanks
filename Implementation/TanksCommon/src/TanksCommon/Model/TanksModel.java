@@ -27,8 +27,10 @@ public class TanksModel
             TanksModel.getConversations().put(initiatingProcess, new HashMap<Integer, Conversation>());
         }
         HashMap conversationsWithInitiator = (HashMap)TanksModel.getConversations().get(initiatingProcess);
-        
+        System.out.println(initiatingProcess);
+        System.out.println(conversationID);
         Conversation c = (Conversation)conversationsWithInitiator.get(conversationID);
+        /*
         if(c == null)
         {
             if(TanksModel.isOldConversation())
@@ -38,6 +40,7 @@ public class TanksModel
             c = Conversation.Create(m);
             conversationsWithInitiator.put(conversationID, c);
         }
+        */
         c.add(e, m);
     }
     

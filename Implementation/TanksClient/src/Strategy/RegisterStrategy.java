@@ -1,6 +1,6 @@
 package Strategy;
 
-import Conversation.ClientRegisterConversation;
+import ClientConversations.ClientRegisterConversation;
 import MessagePackage.DeterminableEnum;
 import MessagePackage.RegisterProtocol.RegisterRequest;
 import TanksCommon.Communicator;

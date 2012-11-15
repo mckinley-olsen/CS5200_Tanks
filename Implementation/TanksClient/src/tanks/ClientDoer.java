@@ -60,7 +60,8 @@ public class ClientDoer extends Doer
         Message m = envelope.getMessage();
         if(m instanceof RegisterReply)
         {
-            this.processRegisterReply(envelope, (RegisterReply)m);
+            //this.processRegisterReply(envelope, (RegisterReply)m);
+            TanksClientModel.addCommunication(envelope);
         }
         else if(m instanceof GetShellReply)
         {
