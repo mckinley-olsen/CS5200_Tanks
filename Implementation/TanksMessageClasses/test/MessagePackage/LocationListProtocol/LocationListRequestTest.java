@@ -30,7 +30,7 @@ public class LocationListRequestTest
     {
         int playerID=10;
         int id=9;
-        LocationListRequest request1 = new LocationListRequest(playerID, id);
+        LocationListRequest request1 = new LocationListRequest(playerID);
         assertEquals(id, request1.getPlayerIDRequested());
         assertEquals(playerID, request1.getPlayerID());
     }
@@ -40,7 +40,7 @@ public class LocationListRequestTest
     {
         int playerID=10;
         int id=9;
-        LocationListRequest request1 = new LocationListRequest(playerID, id);
+        LocationListRequest request1 = new LocationListRequest(playerID);
         ByteList messageBytes = new ByteList();
         request1.encode(messageBytes);
         
@@ -75,7 +75,7 @@ public class LocationListRequestTest
     @Test
     public void testGetPlayerIDRequested()
     {
-        LocationListRequest req = new LocationListRequest(1, 1);
+        LocationListRequest req = new LocationListRequest(1);
         assertEquals(1,req.getPlayerIDRequested());
     }
 
@@ -85,7 +85,7 @@ public class LocationListRequestTest
     @Test
     public void testSetPlayerIDRequested()
     {
-        LocationListRequest req = new LocationListRequest(1, 1);
+        LocationListRequest req = new LocationListRequest(1);
         req.setPlayerIDRequested(3);
         assertEquals(3, req.getPlayerIDRequested());
     }

@@ -10,15 +10,13 @@ public class LocationListReply extends Reply
     public static final int CLASS_ID=312;
     
     private Location[] locations;
-    private int playerID;
     
     protected LocationListReply(){}
     
-    public LocationListReply(Status sentStatus, String sentNote, Location[] locations, int playerID)
+    public LocationListReply(Status sentStatus, String sentNote, Location[] locations)
     {
         super(Reply.ReplyType.LOCATION_LIST, sentStatus, sentNote);
         this.setLocations(locations);
-        this.setPlayerID(playerID);
     }
     
     public static LocationListReply Create(ByteList messageBytes) throws Exception
@@ -54,9 +52,7 @@ public class LocationListReply extends Reply
         {
             this.getLocations()[count].encode(messageBytes);
         }
-        
-        messageBytes.add(this.getPlayerID());
-        
+                
         short length = (short) (messageBytes.getCurrentWritePosition() - messageLengthPos - 2);
         messageBytes.writeShortTo(messageLengthPos, length);
     }
@@ -81,7 +77,6 @@ public class LocationListReply extends Reply
             temp[count] = Location.Create(messageBytes);
         }
         this.setLocations(temp);
-        this.setPlayerID(messageBytes.getInt());
         messageBytes.restorePreviousReadLimit();
     }
 // </editor-fold>
@@ -95,18 +90,10 @@ public class LocationListReply extends Reply
     {
         return this.locations;
     }
-    public int getPlayerID()
-    {
-        return this.playerID;
-    }
     //setters
     public void setLocations(Location[] locations)
     {
         this.locations = locations;
-    }
-    public void setPlayerID(int playerID)
-    {
-        this.playerID=playerID;
     }
 // </editor-fold>
 }

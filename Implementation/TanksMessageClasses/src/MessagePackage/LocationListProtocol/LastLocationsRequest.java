@@ -6,13 +6,10 @@ import MessagePackage.Request;
 public class LastLocationsRequest extends Request
 {
     public static final int CLASS_ID = 207;
-    
-    protected LastLocationsRequest()
-    {}
-    
-    public LastLocationsRequest(int playerID)
+        
+    public LastLocationsRequest()
     {
-        super(playerID, Request.RequestType.LAST_LOCATIONS);
+        super(Request.RequestType.LAST_LOCATIONS);
     }
     
     public static LastLocationsRequest Create(ByteList messageBytes) throws Exception

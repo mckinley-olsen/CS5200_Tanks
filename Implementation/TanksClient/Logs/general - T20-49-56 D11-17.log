@@ -1,0 +1,32 @@
+20:49:56.245 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+20:49:56.246 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+20:49:57.249 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+20:49:57.249 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+20:49:57.252 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+20:49:57.252 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+20:49:57.252 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+20:49:57.252 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+20:49:57.253 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+20:49:57.253 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized
+20:49:57.254 [main] DEBUG TanksCommon.Communicator7 - Communicator constructor:
+	 communicator created
+20:49:57.254 [main] INFO  TanksCommon.Communicator7 - Communicator initializeSocket:
+	 Socket initialized
+20:49:57.254 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+20:49:57.257 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+20:49:57.257 [main] DEBUG C.ClientLocationsRequesterConversation - ClientLocationsRequesterConversation sendLocationsRequest
+	sent locations request
+20:49:57.257 [main] DEBUG C.ClientLocationsRequesterConversation - ClientFillConversation start
+	started fill conversation

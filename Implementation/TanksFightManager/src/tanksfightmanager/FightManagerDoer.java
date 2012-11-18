@@ -136,8 +136,8 @@ public class FightManagerDoer extends Doer
         this.getLogger().info("FightManagerDoer processLocationListRequest\n\tProcessing LocationList request");
         if (!TanksFightManagerModel.addLocationsRequest(request.getPlayerID(), request.getPlayerIDRequested()))
         {
-            LastLocationsRequest outRequest = new LastLocationsRequest(1);
-            return Envelope.createOutgoingEnvelope(outRequest, TanksFightManagerModel.getRecentPlayerAddress(request.getPlayerIDRequested()));
+            //LastLocationsRequest outRequest = new LastLocationsRequest(1);
+            //return Envelope.createOutgoingEnvelope(outRequest, TanksFightManagerModel.getRecentPlayerAddress(request.getPlayerIDRequested()));
         }
         return null;
     }
@@ -160,6 +160,7 @@ public class FightManagerDoer extends Doer
     //<editor-fold defaultstate="collapsed" desc="process replys">
     private void processLocationListReply(Envelope envelope, LocationListReply reply)
     {
+        /*
         LinkedList requesters = TanksFightManagerModel.getLocationRequesters(reply.getPlayerID());
         if(requesters != null)
         {
@@ -170,6 +171,7 @@ public class FightManagerDoer extends Doer
                 this.getCommunicator().addToOutputQueue(Envelope.createOutgoingEnvelope(reply, TanksFightManagerModel.getRecentPlayerAddress(i)));
             }
         }
+        */
     }
     //</editor-fold>
     

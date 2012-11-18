@@ -1,0 +1,42 @@
+20:47:00.184 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+20:47:00.184 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+20:47:00.186 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+20:47:00.187 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+20:47:00.188 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+20:47:00.188 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+20:47:00.189 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+20:47:00.189 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+20:47:01.192 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+20:47:01.192 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized
+20:47:01.193 [main] DEBUG TanksCommon.Communicator7 - Communicator constructor:
+	 communicator created
+20:47:01.193 [main] INFO  TanksCommon.Communicator7 - Communicator initializeSocket:
+	 Socket initialized
+20:47:01.193 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+20:47:01.196 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+20:47:01.197 [main] DEBUG C.ClientLocationsRequesterConversation - ClientLocationsRequesterConversation sendLocationsRequest
+	sent locations request
+20:47:01.197 [main] DEBUG C.ClientLocationsRequesterConversation - ClientFillConversation start
+	started fill conversation
+20:47:06.198 [Timer-5] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+20:47:06.198 [Timer-5] DEBUG C.ClientLocationsRequesterConversation - ClientLocationsRequesterConversation sendLocationsRequest
+	sent locations request
+20:47:11.197 [Timer-5] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+20:47:11.197 [Timer-5] DEBUG C.ClientLocationsRequesterConversation - ClientLocationsRequesterConversation sendLocationsRequest
+	sent locations request
+20:47:11.197 [Timer-5] DEBUG C.ClientLocationsRequesterConversation - ClientLocationsRequesterConversation resendTask
+	hit retry limit, retrying last time

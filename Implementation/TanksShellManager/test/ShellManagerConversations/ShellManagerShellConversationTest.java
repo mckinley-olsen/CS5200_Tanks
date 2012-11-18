@@ -24,6 +24,7 @@ public class ShellManagerShellConversationTest extends Application
     @Before
     public void setUp()
     {
+        new Communicator();
     }
     
     @BeforeClass
@@ -110,6 +111,10 @@ public class ShellManagerShellConversationTest extends Application
     @Test
     public void testSetRequesterAddress()
     {
+        ShellManagerShellConversation c = new ShellManagerShellConversation();
+        InetSocketAddress a = new InetSocketAddress("", 1);
+        c.setRequesterAddress(a);
+        assertEquals(c.getRequesterAddress(), a);
     }
 
     /**
@@ -118,6 +123,10 @@ public class ShellManagerShellConversationTest extends Application
     @Test
     public void testGetRequesterAddress()
     {
+        ShellManagerShellConversation c = new ShellManagerShellConversation();
+        InetSocketAddress a = new InetSocketAddress("", 1);
+        c.setRequesterAddress(a);
+        assertEquals(c.getRequesterAddress(), a);
     }
 
     @Override

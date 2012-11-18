@@ -11,9 +11,9 @@ public class LocationListRequest extends Request
     private int playerIDRequested;
     
     protected LocationListRequest(){}
-    public LocationListRequest(int playerID,int playerIDRequested)
+    public LocationListRequest(int playerIDRequested)
     {
-        super(playerID, Request.RequestType.LOCATION_LIST);
+        super(Request.RequestType.LOCATION_LIST);
         this.setPlayerIDRequested(playerIDRequested);
     }
     

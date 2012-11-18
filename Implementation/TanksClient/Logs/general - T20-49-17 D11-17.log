@@ -1,0 +1,42 @@
+20:49:17.902 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+20:49:17.907 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+20:49:17.907 [main] DEBUG C.ClientLocationsRequesterConversation - ClientLocationsRequesterConversation sendLocationsRequest
+	sent locations request
+20:49:17.907 [main] DEBUG C.ClientLocationsRequesterConversation - ClientFillConversation start
+	started fill conversation
+20:49:22.908 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+20:49:22.908 [Timer-0] DEBUG C.ClientLocationsRequesterConversation - ClientLocationsRequesterConversation sendLocationsRequest
+	sent locations request
+20:49:27.907 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+20:49:27.907 [Timer-0] DEBUG C.ClientLocationsRequesterConversation - ClientLocationsRequesterConversation sendLocationsRequest
+	sent locations request
+20:49:27.907 [Timer-0] DEBUG C.ClientLocationsRequesterConversation - ClientLocationsRequesterConversation resendTask
+	hit retry limit, retrying last time
+20:49:32.911 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+20:49:32.911 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+20:49:32.911 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+20:49:32.911 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+20:49:32.912 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+20:49:32.912 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+20:49:33.914 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+20:49:33.914 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+20:49:33.915 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+20:49:33.915 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized
+20:49:33.916 [main] DEBUG TanksCommon.Communicator7 - Communicator constructor:
+	 communicator created
+20:49:33.916 [main] INFO  TanksCommon.Communicator7 - Communicator initializeSocket:
+	 Socket initialized

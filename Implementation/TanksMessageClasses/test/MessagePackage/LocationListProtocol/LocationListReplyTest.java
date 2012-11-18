@@ -32,21 +32,20 @@ public class LocationListReplyTest
     public void testConstructor() throws Exception
     {
         Location[] l = new Location[1];
-        LocationListReply reply1 = new LocationListReply(Status.OKAY, " ", l, 1);
+        LocationListReply reply1 = new LocationListReply(Status.OKAY, " ", l);
         assertEquals(" ", reply1.getNote());
         assertEquals(Status.OKAY, reply1.getStatus());
         assertEquals(l, reply1.getLocations());
-        assertEquals(1, reply1.getPlayerID());
         
         //test empty note
-        reply1 = new LocationListReply(Status.OKAY, "", l, 1);
+        reply1 = new LocationListReply(Status.OKAY, "", l);
         assertEquals("", reply1.getNote());
         
         //test null note
-        reply1 = new LocationListReply(Status.OKAY, null, l, 1);
+        reply1 = new LocationListReply(Status.OKAY, null, l);
         assertNull(reply1.getNote());
         
-        reply1 = new LocationListReply(Status.OKAY, "", null, 1);
+        reply1 = new LocationListReply(Status.OKAY, "", null);
         assertNull(reply1.getLocations());
     }
     
@@ -58,8 +57,7 @@ public class LocationListReplyTest
         Location[] l = new Location[2];
         l[0] = new Location(1,1);
         l[1] = new Location(2,2);
-        int playerid = 9;
-        LocationListReply reply1 = new LocationListReply(s,note,l,playerid);
+        LocationListReply reply1 = new LocationListReply(s,note,l);
         ByteList messageBytes = new ByteList();
         reply1.encode(messageBytes);
         
@@ -76,7 +74,6 @@ public class LocationListReplyTest
         assertEquals(reply1.getReplyType(), reply2.getReplyType());
         assertEquals(reply1.getStatus(), reply2.getStatus());
         assertEquals(reply1.getNote(), reply2.getNote());
-        assertEquals(reply1.getPlayerID(), reply2.getPlayerID());
         
         assertEquals(1, reply2.getLocations()[0].getX());
         assertEquals(1, reply2.getLocations()[0].getY());
@@ -105,38 +102,15 @@ public class LocationListReplyTest
         reply.setLocations(l);
         assertEquals(l, reply.getLocations());
     }
-
-    /**
-     * Test of getPlayerID method, of class LocationListReply.
-     */
-    @Test
-    public void testGetPlayerID()
-    {
-        LocationListReply reply = new LocationListReply();
-        reply.setPlayerID(4);
-        assertEquals(4, reply.getPlayerID());
-    }
-
     /**
      * Test of setLocations method, of class LocationListReply.
      */
     @Test
     public void testSetLocations()
     {
-        LocationListReply reply1 = new LocationListReply(Status.OKAY, " ", null, 1);
+        LocationListReply reply1 = new LocationListReply(Status.OKAY, " ", null);
         Location[] l = new Location[1];
         reply1.setLocations(l);
         assertEquals(l, reply1.getLocations());
-    }
-
-    /**
-     * Test of setPlayerID method, of class LocationListReply.
-     */
-    @Test
-    public void testSetPlayerID()
-    {
-        LocationListReply reply1 = new LocationListReply(Status.OKAY, " ", null, 1);
-        reply1.setPlayerID(22);
-        assertEquals(22, reply1.getPlayerID());
     }
 }

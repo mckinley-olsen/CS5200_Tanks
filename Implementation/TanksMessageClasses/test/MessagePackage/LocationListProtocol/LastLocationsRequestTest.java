@@ -29,7 +29,7 @@ public class LastLocationsRequestTest
     @Test
     public void testConstructor() throws Exception
     {
-        LastLocationsRequest request1 = new LastLocationsRequest(33);
+        LastLocationsRequest request1 = new LastLocationsRequest();
         assertEquals(33, request1.getPlayerID());
         assertEquals(Request.RequestType.LAST_LOCATIONS, request1.getRequestType());
         
@@ -39,7 +39,7 @@ public class LastLocationsRequestTest
     public void testCreateDecodeEncode() throws Exception
     {
         int playerID=44;
-        LastLocationsRequest request1 = new LastLocationsRequest(playerID);
+        LastLocationsRequest request1 = new LastLocationsRequest();
         ByteList messageBytes = new ByteList();
         request1.encode(messageBytes);
         
@@ -54,8 +54,6 @@ public class LastLocationsRequestTest
         assertEquals(request1.getMessageID().getSequenceNumber(), request2.getMessageID().getSequenceNumber());
         
         assertEquals(request1.getRequestType(), request2.getRequestType());
-        
-        assertEquals(request1.getPlayerID(), request2.getPlayerID());
     }
 
     /**

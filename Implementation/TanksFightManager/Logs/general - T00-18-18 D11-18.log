@@ -1,0 +1,52 @@
+00:18:18.295 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+00:18:18.296 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+00:18:18.297 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+00:18:18.297 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+00:18:18.298 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+00:18:18.298 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+00:18:18.299 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+00:18:18.299 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+00:18:18.300 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+00:18:18.300 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized
+00:18:18.304 [main] DEBUG TanksCommon.Communicator7 - Communicator constructor:
+	 communicator created
+00:18:18.304 [main] INFO  TanksCommon.Communicator7 - Communicator initializeSocket:
+	 Socket initialized
+00:18:18.312 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+00:18:23.313 [Timer-6] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+00:18:28.312 [Timer-6] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+00:18:28.312 [Timer-6] DEBUG F.FightManagerLocationListConversation - ClientLocationsRequesterConversation resendTask
+	hit retry limit, retrying last time
+00:18:33.313 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+00:18:33.313 [main] DEBUG F.FightManagerLocationListConversation - FightManagerLocationsListConversation sendReply
+	sent locations reply
+00:18:33.314 [main] DEBUG TanksCommon.Communicator8 - Communicator constructor:
+	 communicator created
+00:18:33.314 [main] INFO  TanksCommon.Communicator8 - Communicator initializeSocket:
+	 Socket initialized
+00:18:33.316 [main] DEBUG TanksCommon.Communicator9 - Communicator constructor:
+	 communicator created
+00:18:33.316 [main] INFO  TanksCommon.Communicator9 - Communicator initializeSocket:
+	 Socket initialized
+00:18:33.317 [main] DEBUG TanksCommon.Communicator10 - Communicator constructor:
+	 communicator created
+00:18:33.317 [main] INFO  TanksCommon.Communicator10 - Communicator initializeSocket:
+	 Socket initialized
+00:18:33.317 [main] DEBUG TanksCommon.Communicator11 - Communicator constructor:
+	 communicator created
+00:18:33.317 [main] INFO  TanksCommon.Communicator11 - Communicator initializeSocket:
+	 Socket initialized
