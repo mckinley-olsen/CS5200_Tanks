@@ -1,5 +1,7 @@
 package tanksgunpowdermanager;
 
+import Conversation.Conversation;
+import GunpowderManagerConversations.GunpowderManagerFillConversation;
 import MessagePackage.FillShellProtocol.FillShellReply;
 import MessagePackage.FillShellProtocol.FillShellRequest;
 import MessagePackage.Message;
@@ -7,6 +9,7 @@ import MessagePackage.Reply.Status;
 import TanksCommon.Communicator;
 import TanksCommon.Doer.Doer;
 import TanksCommon.Envelope;
+import TanksCommon.Model.TanksModel;
 import javafx.application.Platform;
 
 public class GunpowderManagerDoer extends Doer
@@ -23,18 +26,32 @@ public class GunpowderManagerDoer extends Doer
         if(m instanceof FillShellRequest)
         {
             this.getLogger().info("GunpowderManagerDoer process\n\tdetected fill shell request");
-            Envelope reply = this.processFillShellRequest(envelope, (FillShellRequest)m);
-            this.getCommunicator().addToOutputQueue(reply);
+            this.processFillShellRequest(envelope, (FillShellRequest)m);
+            //this.getCommunicator().addToOutputQueue(reply);
         }
     }
     
-    protected Envelope processFillShellRequest(Envelope envelope, FillShellRequest request)
+    protected void processFillShellRequest(Envelope envelope, FillShellRequest request)
     {
+        /*
         this.getLogger().info("GunpowderManagerDoer processFillShellRequest\n\tProcessing fill shell request request");
         FillShellReply reply = new FillShellReply(Status.OKAY, " ", request.getEmptyShell());
         this.getLogger().info("GunpowderManagerDoer processFillShellRequest\n\tFilled shell to: ");
         GunpowderManagerDoer.addStatus("Processed FillShellRequest; New playerID: ");
         return Envelope.createOutgoingEnvelope(reply, envelope.getSenderEndPoint());
+        */
+        
+        int initiator = request.getConversationID().getProcessID();
+        int conversationNumber = request.getConversationID().getSequenceNumber();
+        Conversation c = TanksModel.getConversation(initiator, conversationNumber);
+        if(c == null)
+        {
+            c = GunpowderManagerFillConversation.Create(initiator, conversationNumber);
+            TanksModel.add(c, initiator, conversationNumber);
+        }
+        c.add(envelope, request);
+        
+        c.continueProtocol();
     }
     
     private static void addStatus(final String status)

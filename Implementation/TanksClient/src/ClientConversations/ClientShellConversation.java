@@ -9,19 +9,18 @@ import MessagePackage.MessageNumber;
 import TanksCommon.Envelope;
 import TanksCommon.Model.TanksModel;
 import java.util.TimerTask;
+import javafx.application.Platform;
 import tanks.TanksClientModel;
 
 public class ClientShellConversation extends ShellConversation
 {
     
     private ConversationStatus status;
-    private int timesRetried=0;
+    private int timesRetried=1;
     private final int RETRY_LIMIT=3;
     private final int TIMEOUT=5000;
-
-    public ClientShellConversation()
-    {
-        task = new TimerTask()
+    private boolean hasProcessedReply=false;
+    private TimerTask resendTask = new TimerTask()
         {
             @Override
             public void run() 
@@ -34,10 +33,8 @@ public class ClientShellConversation extends ShellConversation
                     getLogger().debug("ClientRegisterConversation sendRegisterRequest\n\thit retry limit, retrying last time");
                 }
             }
-
         };
-    }
-
+    
     @Override
     public void add(Envelope e, Message m) 
     {
@@ -67,29 +64,33 @@ public class ClientShellConversation extends ShellConversation
         }
     }
     
-    public static void initiate()
+    public static ClientShellConversation initiate()
     {
         ClientShellConversation c = new ClientShellConversation();
         c.setConversationNumber(TanksModel.getNextConversationNumber());
-        TanksModel.add(c);
+        c.setConversationInitiator(TanksModel.getProcessID());
+        TanksModel.add(c, c.getConversationInitiator(), c.getConversationNumber());
         c.start();
+        return c;
     }
     
-    public void start()
+    private void start()
     {
         MessageNumber conversationID = MessageNumber.Create(TanksModel.getProcessID(), this.getConversationNumber());
         MessageNumber messageID = MessageNumber.Create(TanksModel.getProcessID(), 1);
         this.setRequest(ClientShellConversation.createShellRequest(conversationID, messageID));
         this.sendShellRequest();
+        this.timer.scheduleAtFixedRate(this.resendTask, TIMEOUT, TIMEOUT);
+        this.getLogger().debug("ClientShellConversation start\n\tstarted shell conversation");
     }
-    public void sendShellRequest()
+    private void sendShellRequest()
     {
         Conversation.sendMessageTo(this.getRequest(), TanksClientModel.getShellManagerAddress());
         this.status = ConversationStatus.sentRequest;
         this.getLogger().debug("ClientShellConversation sendShellRequest\n\tsent shell request");
-        this.timer.scheduleAtFixedRate(this.task, TIMEOUT, TIMEOUT);
+        System.out.println("Sending shell request");
     }
-    public static GetShellRequest createShellRequest(MessageNumber conversationID, MessageNumber messageID)
+    private static GetShellRequest createShellRequest(MessageNumber conversationID, MessageNumber messageID)
     {
         GetShellRequest request = new GetShellRequest();
         request.setConversationID(conversationID);
@@ -99,11 +100,34 @@ public class ClientShellConversation extends ShellConversation
     
     private void processReply()
     {
-        
+        if(this.hasProcessedReply==false)
+        {
+           
+            System.out.println("processing reply");
+            Platform.runLater(new Runnable()
+            {
+                @Override
+                public void run()
+                {
+                    TanksClientModel.incrementNumberOfShells();
+                }
+            });
+            this.cleanupTask.run();
+            this.hasProcessedReply = true;
+        }
     }
     
     private enum ConversationStatus
     {
         sentRequest, receivedReply;
+    }
+    
+    public int getRetryLimit()
+    {
+        return this.RETRY_LIMIT;
+    }
+    public int getTimeout()
+    {
+        return this.TIMEOUT;
     }
 }

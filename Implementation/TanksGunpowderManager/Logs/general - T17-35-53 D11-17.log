@@ -1,0 +1,32 @@
+17:35:53.414 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+17:35:53.414 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+17:35:53.419 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+17:35:53.419 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+17:35:53.420 [main] INFO  G.GunpowderManagerFillConversation - GunpowderManagerDoer processFillShellRequest
+	Processing fill shell request request
+17:35:53.420 [main] DEBUG G.GunpowderManagerFillConversation - GunpowderManagerFillConversation buildReply
+	created shell with capacity: 1 and fill: 2
+17:35:53.421 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+17:35:53.421 [main] DEBUG G.GunpowderManagerFillConversation - GunpowderManagerreplyFillConversation sendReply
+	sent fill reply
+17:35:53.421 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+17:35:53.421 [main] DEBUG G.GunpowderManagerFillConversation - GunpowderManagerreplyFillConversation sendReply
+	sent fill reply
+17:35:53.421 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+17:35:53.421 [main] DEBUG G.GunpowderManagerFillConversation - GunpowderManagerreplyFillConversation sendReply
+	sent fill reply
+17:35:53.422 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+17:35:53.422 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+17:35:53.423 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+17:35:53.423 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized

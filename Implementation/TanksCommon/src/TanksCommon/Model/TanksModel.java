@@ -27,8 +27,6 @@ public class TanksModel
             TanksModel.getConversations().put(initiatingProcess, new HashMap<Integer, Conversation>());
         }
         HashMap conversationsWithInitiator = (HashMap)TanksModel.getConversations().get(initiatingProcess);
-        System.out.println(initiatingProcess);
-        System.out.println(conversationID);
         Conversation c = (Conversation)conversationsWithInitiator.get(conversationID);
         /*
         if(c == null)
@@ -44,19 +42,46 @@ public class TanksModel
         c.add(e, m);
     }
     
+    public static void removeConversation(final int initiator, final int conversationNumber)
+    {
+        if(TanksModel.getConversations().containsKey(initiator))
+        {
+            HashMap conversations = (HashMap)TanksModel.getConversations().get(initiator);
+            if(conversations.containsKey(conversationNumber))
+            {
+                System.out.println("TanksModel removing convesation");
+                conversations.remove(conversationNumber);
+            }
+        }
+    }
+    
     private static boolean isOldConversation()
     {
         return false;
     }
-    //public abstract static void createConversation();
-    public static void add(Conversation c)
+    
+    public static Conversation getConversation(final int initiator, final int conversationNumber)
     {
-        if(!TanksModel.getConversations().containsKey(TanksModel.getProcessID()))
+        Conversation c = null;
+        if(TanksModel.getConversations().containsKey(initiator))
         {
-            TanksModel.getConversations().put(TanksModel.getProcessID(), new HashMap<Integer, Conversation>());
+            HashMap conversations = (HashMap)TanksModel.getConversations().get(initiator);
+            if(conversations.containsKey(conversationNumber))
+            {
+                c = (Conversation)conversations.get(conversationNumber);
+            }
         }
-        HashMap ourConversations = (HashMap)TanksModel.getConversations().get(TanksModel.getProcessID());
-        ourConversations.put(c.getConversationNumber(), c);
+        return c;
+    }
+    //public abstract static void createConversation();
+    public static void add(Conversation c, int initiator, int conversationNumber)
+    {
+        if(!TanksModel.getConversations().containsKey(initiator))
+        {
+            TanksModel.getConversations().put(initiator, new HashMap<Integer, Conversation>());
+        }
+        HashMap conversationsWithInitiator = (HashMap)TanksModel.getConversations().get(initiator);
+        conversationsWithInitiator.put(conversationNumber, c);
         TanksModel.getLogger().debug("TanksModel add\n\tAdded conversation to conversations");
     }
     

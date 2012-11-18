@@ -1,0 +1,28 @@
+11:35:40.607 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+11:35:40.615 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+11:35:40.616 [main] DEBUG C.ClientRegisterConversation - ClientRegisterConversation sendRegisterRequest
+	sent register request
+11:35:40.617 [main] DEBUG C.ClientRegisterConversation - ClientRegisterConversation add
+	added RegisterReply to conversation
+11:35:40.623 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+11:35:40.623 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+11:35:40.624 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+11:35:40.624 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+11:35:40.624 [main] DEBUG C.ClientRegisterConversation - ClientRegisterConversation sendRegisterRequest
+	sent register request
+11:35:50.624 [Timer-3] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+11:35:50.624 [Timer-3] DEBUG C.ClientRegisterConversation - ClientRegisterConversation sendRegisterRequest
+	sent register request
+11:36:00.625 [Timer-3] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+11:36:00.625 [Timer-3] DEBUG C.ClientRegisterConversation - ClientRegisterConversation sendRegisterRequest
+	sent register request
+11:36:00.625 [Timer-3] DEBUG C.ClientRegisterConversation - ClientRegisterConversation sendRegisterRequest
+	hit retry limit, retrying last time

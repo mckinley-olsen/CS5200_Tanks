@@ -1,13 +1,6 @@
 package Strategy;
 
 import ClientConversations.ClientRegisterConversation;
-import MessagePackage.DeterminableEnum;
-import MessagePackage.RegisterProtocol.RegisterRequest;
-import TanksCommon.Communicator;
-import TanksCommon.Envelope;
-import tanks.TanksClientModel;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
 
 
 public class RegisterStrategy extends Strategy
@@ -24,12 +17,6 @@ public class RegisterStrategy extends Strategy
     public void strategize()
     {
         ClientRegisterConversation.initiate(playerName);
-        //this.createPackAndSendRequest();
-    }
-    
-    private void createPackAndSendRequest()
-    {
-        this.getLogger().info("RegisterStrategy createPackAndSendRequest\n\tRegisterRequest created with name: " + TanksClientModel.getPlayerName()+"\n\tTo: "+TanksClientModel.getFightManagerAddress());
     }
     
     //<editor-fold defaultstate="collapsed" desc="getters">

@@ -1,11 +1,15 @@
 package Conversation;
 
 import MessagePackage.Message;
-import MessagePackage.RegisterProtocol.RegisterReply;
 import MessagePackage.RegisterProtocol.RegisterRequest;
 import TanksCommon.Communicator;
 import TanksCommon.Envelope;
+import TanksCommon.Model.TanksModel;
+import TanksCommon.Model.TanksResourceManagerModel;
 import java.net.InetSocketAddress;
+import java.util.Timer;
+import java.util.TimerTask;
+import javafx.application.Platform;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +18,20 @@ public abstract class Conversation
     private Logger logger = LoggerFactory.getLogger(this.getLogName());
     private static Logger conversationLogger = LoggerFactory.getLogger(Conversation.getConversationLogName());
     private int conversationNumber;
+    private int conversationInitiator;
+    
+    protected Timer timer = new Timer();
+    protected TimerTask cleanupTask = new TimerTask()
+    {
+        @Override
+        public void run()
+        {
+            TanksModel.removeConversation(conversationInitiator, conversationNumber);
+            System.out.println("removing conversation");
+        }
+    };
+    
+    protected final long CONVERSATION_CLEANUP_DURATION = 60000;
     
     public static Conversation Create(Message m)
     {
@@ -40,10 +58,27 @@ public abstract class Conversation
         Conversation.getConversationLogger().debug("Conversation sendMessageTo\n\t message added to communicator output queue");
     }
     
+    protected static void addStatus(final String status)
+    {
+        Platform.runLater(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                TanksResourceManagerModel.getStatusList().add(status);
+            }
+        });
+    }
+
+    
     //<editor-fold defaultstate="collapsed" desc="setters">
     public void setConversationNumber(int conversationNumber)
     {
         this.conversationNumber = conversationNumber;
+    }
+    public void setConversationInitiator(int conversationInitiator)
+    {
+        this.conversationInitiator = conversationInitiator;
     }
     //</editor-fold>
     
@@ -67,6 +102,10 @@ public abstract class Conversation
     public static Logger getConversationLogger()
     {
         return Conversation.conversationLogger;
+    }
+    public int getConversationInitiator()
+    {
+        return this.conversationInitiator;
     }
     //</editor-fold>
 }

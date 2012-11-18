@@ -22,6 +22,8 @@ public class FillShellRequest extends Request
     public FillShellRequest(Shell emptyShell, short desiredFillPercentage)
     {
         super(Request.RequestType.FILL_SHELL);
+        this.setEmptyShell(emptyShell);
+        this.setDesiredFillPercentage(desiredFillPercentage);
     }
     
     public static FillShellRequest Create(ByteList messageBytes) throws Exception
@@ -31,7 +33,7 @@ public class FillShellRequest extends Request
         {
             throw new Exception("Invalid message byte array");
         }
-        if (messageBytes.peekShort() != FillShellRequest.getClassID() )
+        if (messageBytes.peekInt() != FillShellRequest.getClassID() )
         {
             throw new Exception("Invalid message type");
         }
@@ -61,7 +63,7 @@ public class FillShellRequest extends Request
     
     @Override
     public void decode(ByteList messageBytes) throws Exception {
-        short objectType = messageBytes.getShort();
+        int objectType = messageBytes.getInt();
         if (objectType != FillShellRequest.getClassID()) {
             throw new Exception("Invalid byte array for Request message");
         }
@@ -72,7 +74,8 @@ public class FillShellRequest extends Request
         
         super.decode(messageBytes);
 
-        this.getEmptyShell().decode(messageBytes);
+        //this.getEmptyShell().decode(messageBytes);
+        this.setEmptyShell(Shell.Create(messageBytes));
         this.setDesiredFillPercentage(messageBytes.getShort());
         
         messageBytes.restorePreviousReadLimit();
@@ -91,7 +94,7 @@ public class FillShellRequest extends Request
     }
     public Shell getEmptyShell()
     {
-        return emptyShell;
+        return this.emptyShell;
     }
     //setters
     public void setDesiredFillPercentage(short desiredFillPercentage)
@@ -103,10 +106,7 @@ public class FillShellRequest extends Request
     }
     public void setEmptyShell(Shell emptyShell)
     {
-        if(emptyShell.getFill()==0)
-        {
-            this.emptyShell = emptyShell;
-        }
+        this.emptyShell = emptyShell;
     }
     // </editor-fold>
 }

@@ -1,5 +1,6 @@
 package Strategy;
 
+import ClientConversations.ClientShellConversation;
 import MessagePackage.GetShellProtocol.GetShellRequest;
 import TanksCommon.Communicator;
 import TanksCommon.Envelope;
@@ -19,7 +20,8 @@ public class GetShellStrategy extends Strategy
     public void strategize()
     {
         //this.setCommunicator(Communicator.getCommunicatorInstance(communicatorNumber));
-        createPackAndSendRequest();
+        //createPackAndSendRequest();
+        ClientShellConversation.initiate();
     }
     
     public void createPackAndSendRequest()

@@ -12,9 +12,6 @@ public abstract class ShellConversation extends Conversation
     private GetShellRequest request = null;
     private GetShellReply reply = null;
     
-    protected Timer timer = new Timer();
-    protected TimerTask task;
-    
     //<editor-fold defaultstate="collapsed" desc="setters">
     public void setRequest(GetShellRequest request)
     {

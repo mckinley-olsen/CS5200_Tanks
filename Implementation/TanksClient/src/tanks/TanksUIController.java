@@ -1,5 +1,7 @@
 package tanks;
 
+import GeneralPackage.Shell;
+import Strategy.FillShellStrategy;
 import TanksCommon.Model.GameRulesModel;
 import Strategy.GetShellStrategy;
 import Strategy.RegisterStrategy;
@@ -69,7 +71,9 @@ public class TanksUIController extends Controller implements Initializable
     @FXML
     private void handleFillShellButton(ActionEvent event) throws IOException
     {
-        
+        Strategy s = new FillShellStrategy(new Shell(2,2), (short)100);
+        Task task = new Task(s);
+        TanksUIController.getDoer(MAIN_DOER_NUMBER).addTask(task);
     }
 
     // </editor-fold>

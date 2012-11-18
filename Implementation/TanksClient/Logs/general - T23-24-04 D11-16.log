@@ -1,0 +1,18 @@
+23:24:04.514 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+23:24:04.515 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+23:24:04.516 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+23:24:04.516 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+23:24:04.520 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+23:24:04.535 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+23:24:04.535 [main] DEBUG C.ClientRegisterConversation - ClientRegisterConversation sendRegisterRequest
+	sent register request
+23:24:04.537 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+23:24:04.537 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized

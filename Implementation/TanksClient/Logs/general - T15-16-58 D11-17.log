@@ -1,0 +1,38 @@
+15:16:58.906 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+15:16:58.906 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+15:16:58.907 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+15:16:58.907 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+15:16:58.910 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+15:16:58.914 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+15:16:58.915 [main] DEBUG C.ClientShellConversation - ClientShellConversation sendShellRequest
+	sent shell request
+15:16:58.915 [main] DEBUG C.ClientShellConversation - ClientShellConversation start
+	started shell conversation
+15:17:03.915 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+15:17:03.915 [Timer-0] DEBUG C.ClientShellConversation - ClientShellConversation sendShellRequest
+	sent shell request
+15:17:08.916 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+15:17:08.916 [Timer-0] DEBUG C.ClientShellConversation - ClientShellConversation sendShellRequest
+	sent shell request
+15:17:08.916 [Timer-0] DEBUG C.ClientShellConversation - ClientRegisterConversation sendRegisterRequest
+	hit retry limit, retrying last time
+15:17:13.920 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+15:17:13.920 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+15:17:13.921 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+15:17:13.921 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+15:17:13.922 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+15:17:13.922 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized

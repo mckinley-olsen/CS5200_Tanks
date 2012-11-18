@@ -381,7 +381,6 @@ public class ByteList
     public void add(byte[] value)
     {
         grow(_addCurrentOffset + value.length);
-        //System.out.println(value.length);
         int cnt = 0;
         while(cnt < value.length)
         {
@@ -478,7 +477,6 @@ public class ByteList
         {
             if(value.ordinal() == ordinal)
             {
-                System.out.println("Setting to: "+value);
                 return value;
             }
         }

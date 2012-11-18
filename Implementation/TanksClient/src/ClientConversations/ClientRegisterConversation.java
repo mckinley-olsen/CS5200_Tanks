@@ -1,7 +1,6 @@
 package ClientConversations;
 
 import Conversation.Conversation;
-import Conversation.Conversation;
 import Conversation.RegisterConversation;
 import MessagePackage.Message;
 import MessagePackage.MessageNumber;
@@ -10,16 +9,14 @@ import MessagePackage.RegisterProtocol.RegisterRequest;
 import TanksCommon.Envelope;
 import TanksCommon.Model.GameRulesModel;
 import TanksCommon.Model.TanksModel;
-import com.sun.media.jfxmedia.logging.Logger;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.Executors;
 import javafx.application.Platform;
 import tanks.TanksClientModel;
 
 public class ClientRegisterConversation extends RegisterConversation
 {
-    ConversationStatus status;
+    private ConversationStatus status;
     private final int RETRY_LIMIT = 3;
     private int timesRetried=1;
     private final long TIMEOUT = 10000;
@@ -54,7 +51,7 @@ public class ClientRegisterConversation extends RegisterConversation
             this.setReply((RegisterReply)m);
             this.status = ConversationStatus.receivedReply;
             getLogger().debug("ClientRegisterConversation add\n\tadded RegisterReply to conversation");
-            System.out.println("got reply   ");
+            System.out.println("got reply");
         }
     }
 
@@ -71,15 +68,17 @@ public class ClientRegisterConversation extends RegisterConversation
                 break;
         }
     }
-    public static void initiate(final String playerName)
+    public static ClientRegisterConversation initiate(final String playerName)
     {
         ClientRegisterConversation c = new ClientRegisterConversation();
         c.setConversationNumber(TanksModel.getNextConversationNumber());
-        TanksModel.add(c);
+        c.setConversationInitiator(TanksModel.getProcessID());
+        TanksModel.add(c, c.getConversationInitiator(), c.getConversationNumber());
         c.start(playerName);
+        return c;
     }
     
-    public void start(final String playerName)
+    private void start(final String playerName)
     {
         MessageNumber conversationID = MessageNumber.Create(TanksModel.getProcessID(), this.getConversationNumber());
         MessageNumber messageID = MessageNumber.Create(TanksModel.getProcessID(), 1);
@@ -104,6 +103,8 @@ public class ClientRegisterConversation extends RegisterConversation
             {
                 TanksClientModel.setPlayerID(reply.getPlayerID());
                 TanksClientModel.setMaxTravelRate(reply.getMaxTravelRate());
+                TanksClientModel.setCurrentLocationX(reply.getStartingLocation().getX());
+                TanksClientModel.setCurrentLocationY(reply.getStartingLocation().getY());
                 GameRulesModel.setMapMaxX(reply.getGameMapMaxX());
                 GameRulesModel.setMapMaxY(reply.getGameMapMaxY());
             }
@@ -121,4 +122,15 @@ public class ClientRegisterConversation extends RegisterConversation
     {
         sentRequest, receivedReply;
     }
+    
+    //<editor-fold defaultstate="collapsed" desc="getters">
+    public long getTimeout()
+    {
+        return this.TIMEOUT;
+    }
+    public int getRetryLimit()
+    {
+        return this.RETRY_LIMIT;
+    }
+    //</editor-fold>
 }

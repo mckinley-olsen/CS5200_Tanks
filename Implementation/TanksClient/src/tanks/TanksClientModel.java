@@ -22,7 +22,8 @@ public class TanksClientModel extends TanksModel
     private static SimpleStringProperty portNumber = new SimpleStringProperty();
     
     private static SimpleStringProperty playerName = new SimpleStringProperty();
-    private static SimpleStringProperty numberOfShells = new SimpleStringProperty();
+    private static SimpleStringProperty numberOfShells = new SimpleStringProperty("0");
+    private static SimpleStringProperty numberOfFilledShells = new SimpleStringProperty("0");
     
     private static SimpleStringProperty playerID = new SimpleStringProperty();
     private static Rate maxTravelRate=null;
@@ -48,6 +49,12 @@ public class TanksClientModel extends TanksModel
         Integer value = Integer.parseInt(TanksClientModel.numberOfShells.get());
         value++;
         TanksClientModel.numberOfShells.set(value.toString());
+    }
+    public static void incrementNumberOfFilledShells()
+    {
+        Integer value = Integer.parseInt(TanksClientModel.numberOfFilledShells.get());
+        value++;
+        TanksClientModel.numberOfFilledShells.set(value.toString());
     }
     public static void decrementNumberOfShells()
     {
@@ -114,7 +121,10 @@ public class TanksClientModel extends TanksModel
     {
         return TanksClientModel.numberOfShells;
     }
-    
+    public static int getNumberOfFilledShells()
+    {
+        return Integer.parseInt(TanksClientModel.numberOfFilledShells.get());
+    }
     // </editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="setters">
@@ -140,6 +150,14 @@ public class TanksClientModel extends TanksModel
     public static void setGunpowderManagerAddress(InetSocketAddress gunpowderManagerAddress)
     {
         TanksClientModel.gunpowderManagerAddress = gunpowderManagerAddress;
+    }
+    public static void setCurrentLocationX(int x)
+    {
+        TanksClientModel.currentLocationX.set(x);
+    }
+    public static void setCurrentLocationY(int y)
+    {
+        TanksClientModel.currentLocationY.set(y);
     }
     //</editor-fold>
 }

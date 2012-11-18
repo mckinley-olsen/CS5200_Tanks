@@ -164,7 +164,7 @@ public class Communicator extends BackgroundThread
         {
             this.getLogger().error("Communicator encodeMessage ERROR ENCODING MESSAGE:\n\t Message is null");
         }
-        ByteList bytes= new ByteList();
+        ByteList bytes = new ByteList();
         envelope.getMessage().encode(bytes);
         return bytes.toBytes();
     }
