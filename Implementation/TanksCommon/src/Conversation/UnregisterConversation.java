@@ -1,40 +1,41 @@
-package FightManagerConversations;
+package Conversation;
 
-import Conversation.Conversation;
-import Conversation.JoinFightConversation;
 import MessagePackage.AckNak;
-import MessagePackage.JoinFightProtocol.JoinFightRequest;
-import MessagePackage.Message;
-import MessagePackage.Reply;
-import MessagePackage.Reply.Status;
-import TanksCommon.Envelope;
-import java.net.InetSocketAddress;
+import MessagePackage.UnregisterProtocol.UnregisterRequest;
 
-public class FightManagerJoinFightConversation extends JoinFightConversation
+public class UnregisterConversation 
 {
+    private UnregisterRequest request;
+    private AckNak reply;
+    
     private ConversationStatus status;
     private InetSocketAddress requesterAddress;
     
-    public static FightManagerJoinFightConversation Create(int conversationInitiator, int conversationNumber)
+    public static ShellManagerShellConversation Create(int conversationInitiator, int conversationNumber)
     {
-        FightManagerJoinFightConversation c = new FightManagerJoinFightConversation();
+        ShellManagerShellConversation c = new ShellManagerShellConversation();
         c.setConversationInitiator(conversationInitiator);
         c.setConversationNumber(conversationNumber);
         return c;
     }
+    
+    public ShellManagerShellConversation()
+    {
         
+    }
+    
     @Override
     public void add(Envelope e, Message m)
     {
-        if(m instanceof JoinFightRequest)
+        if(m instanceof GetShellRequest)
         {
             this.setRequesterAddress(e.getSenderEndPoint());
-            this.setRequest((JoinFightRequest)m);
+            this.setRequest((GetShellRequest)m);
             this.status = ConversationStatus.receivedRequest;
         }
-        else if(m instanceof AckNak)
+        else if(m instanceof GetShellReply)
         {
-            this.setReply((AckNak)m);
+            this.setReply((GetShellReply)m);
             this.status = ConversationStatus.sentReply;
         }
     }
@@ -60,11 +61,15 @@ public class FightManagerJoinFightConversation extends JoinFightConversation
     {
         if(this.getReply()==null)
         {
-            AckNak reply = new AckNak(Status.OKAY,"");
+            Random rand = new Random();
+            int shellCapacity = rand.nextInt(GameRulesModel.getPlayerStartingHealth());
+            int shellFill=0;
+            Shell shell = new Shell(shellCapacity, shellFill);
+            GetShellReply reply = new GetShellReply(Reply.Status.OKAY,"", shell);
             reply.setConversationID(this.getRequest().getConversationID());
             this.setReply(reply);
-            this.getLogger().trace("FightManagerJoinFightConversation buildReply\n\tcreated AckNak reply");
-            this.addStatus("Processed JoinFightRequest");
+            this.getLogger().trace("ShellManagerShellConversation processRequest\n\tcreated shell with capacity: "+shellCapacity+" and fill: "+shellFill);
+            this.addStatus("Processed GetShellRequest; Sent shell with capacity: "+shellCapacity+" and fill: "+shellFill+"\n\tSent to: "+this.getRequesterAddress());
         }
     }
     private void sendReply()

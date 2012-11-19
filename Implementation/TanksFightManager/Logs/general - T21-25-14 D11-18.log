@@ -1,0 +1,30 @@
+21:25:14.513 [main] TRACE F.FightManagerJoinFightConversation - FightManagerJoinFightConversation buildReply
+	created AckNak reply
+21:25:14.516 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+21:25:14.516 [main] DEBUG F.FightManagerJoinFightConversation - ShellManagerShellConversation sendReply
+	sent shell reply
+21:25:14.516 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+21:25:14.517 [main] DEBUG F.FightManagerJoinFightConversation - ShellManagerShellConversation sendReply
+	sent shell reply
+21:25:14.517 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+21:25:14.517 [main] DEBUG F.FightManagerJoinFightConversation - ShellManagerShellConversation sendReply
+	sent shell reply
+21:25:14.526 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+21:25:14.526 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+21:25:14.530 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+21:25:14.530 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+21:25:14.533 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+21:25:14.533 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+21:25:14.535 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+21:25:14.536 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
