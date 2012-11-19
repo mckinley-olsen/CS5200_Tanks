@@ -1,0 +1,30 @@
+14:16:24.831 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+14:16:24.831 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+14:16:24.832 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+14:16:24.832 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+14:16:24.834 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+14:16:24.834 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+14:16:24.837 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+14:16:24.839 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+14:16:24.839 [main] DEBUG F.FightManagerUnregisterInitiatorConversation - FightManagerUnregisterInitiatorConversation sendRequest
+	sent unregister request
+14:16:24.840 [main] DEBUG F.FightManagerUnregisterInitiatorConversation - ClientShellConversation start
+	started shell conversation
+14:16:29.841 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+14:16:29.841 [Timer-0] DEBUG F.FightManagerUnregisterInitiatorConversation - FightManagerUnregisterInitiatorConversation sendRequest
+	sent unregister request
+14:16:34.840 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+14:16:34.840 [Timer-0] DEBUG F.FightManagerUnregisterInitiatorConversation - FightManagerUnregisterInitiatorConversation sendRequest
+	sent unregister request
+14:16:34.840 [Timer-0] DEBUG F.FightManagerUnregisterInitiatorConversation - UnregisterInitiatorConversation run
+	hit retry limit, retrying last time

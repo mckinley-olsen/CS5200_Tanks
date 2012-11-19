@@ -1,0 +1,16 @@
+14:00:04.183 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+14:00:04.183 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+14:00:04.184 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+14:00:04.184 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+14:00:04.187 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+14:00:04.197 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+14:00:04.197 [main] DEBUG C.ClientUnregisterInitiatorConversation - ClientUnregisterInitiatorConversation sendRequest
+	sent unregister request
+14:00:04.197 [main] DEBUG C.ClientUnregisterInitiatorConversation - ClientShellConversation start
+	started shell conversation

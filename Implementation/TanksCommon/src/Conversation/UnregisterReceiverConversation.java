@@ -1,41 +1,33 @@
 package Conversation;
 
 import MessagePackage.AckNak;
+import MessagePackage.Message;
+import MessagePackage.Reply;
+import MessagePackage.Reply.Status;
 import MessagePackage.UnregisterProtocol.UnregisterRequest;
+import TanksCommon.Envelope;
+import java.net.InetSocketAddress;
 
-public class UnregisterConversation 
+public abstract class UnregisterReceiverConversation extends UnregisterConversation
 {
-    private UnregisterRequest request;
-    private AckNak reply;
+    
     
     private ConversationStatus status;
     private InetSocketAddress requesterAddress;
-    
-    public static ShellManagerShellConversation Create(int conversationInitiator, int conversationNumber)
-    {
-        ShellManagerShellConversation c = new ShellManagerShellConversation();
-        c.setConversationInitiator(conversationInitiator);
-        c.setConversationNumber(conversationNumber);
-        return c;
-    }
-    
-    public ShellManagerShellConversation()
-    {
-        
-    }
+    private boolean requestProcessed=false;
     
     @Override
     public void add(Envelope e, Message m)
     {
-        if(m instanceof GetShellRequest)
+        if(m instanceof UnregisterRequest)
         {
             this.setRequesterAddress(e.getSenderEndPoint());
-            this.setRequest((GetShellRequest)m);
+            this.setRequest((UnregisterRequest)m);
             this.status = ConversationStatus.receivedRequest;
         }
-        else if(m instanceof GetShellReply)
+        else if(m instanceof AckNak)
         {
-            this.setReply((GetShellReply)m);
+            this.setReply((AckNak)m);
             this.status = ConversationStatus.sentReply;
         }
     }
@@ -46,39 +38,35 @@ public class UnregisterConversation
         switch(this.status)
         {
             case receivedRequest:
-                this.setConversationInitiator(this.getRequest().getConversationID().getProcessID());
-                this.setConversationNumber(this.getRequest().getConversationID().getSequenceNumber());
-                this.buildReply();
+                if(!this.requestProcessed)
+                {
+                    this.processRequest();
+                    this.setReply(this.buildReply());
+                    this.requestProcessed=true;
+                }
                 this.sendReply();
                 break;
             case sentReply:
-                
+                this.cleanupConversation();
                 break;
         }
     }
+    protected abstract void processRequest();
+    protected abstract AckNak buildReply();
+    protected abstract void cleanupConversation();
     
-    private void buildReply()
-    {
-        if(this.getReply()==null)
-        {
-            Random rand = new Random();
-            int shellCapacity = rand.nextInt(GameRulesModel.getPlayerStartingHealth());
-            int shellFill=0;
-            Shell shell = new Shell(shellCapacity, shellFill);
-            GetShellReply reply = new GetShellReply(Reply.Status.OKAY,"", shell);
-            reply.setConversationID(this.getRequest().getConversationID());
-            this.setReply(reply);
-            this.getLogger().trace("ShellManagerShellConversation processRequest\n\tcreated shell with capacity: "+shellCapacity+" and fill: "+shellFill);
-            this.addStatus("Processed GetShellRequest; Sent shell with capacity: "+shellCapacity+" and fill: "+shellFill+"\n\tSent to: "+this.getRequesterAddress());
-        }
-    }
     private void sendReply()
     {
         Conversation.sendMessageTo(this.getReply(), this.getRequesterAddress());
         this.status = ConversationStatus.sentReply;
 
-        this.getLogger().debug("ShellManagerShellConversation sendReply\n\tsent shell reply");
-        System.out.println("sending shell reply");
+        this.getLogger().debug("UnregisterConversation sendReply\n\tsent unregister reply");
+        System.out.println("sending unregister reply");
+        if(this.requestProcessed)
+        {
+            this.timer.cancel();
+        }
+        this.timer.schedule(cleanupTask, CONVERSATION_CLEANUP_DURATION);
     }
     
     private enum ConversationStatus
@@ -86,12 +74,17 @@ public class UnregisterConversation
         receivedRequest, sentReply;
     }
     
+    //<editor-fold defaultstate="collapsed" desc="setters">
     public void setRequesterAddress(InetSocketAddress address)
     {
         this.requesterAddress = address;
     }
+    //</editor-fold>
+    //<editor-fold defaultstate="collapsed" desc="getters">
     public InetSocketAddress getRequesterAddress()
     {
         return this.requesterAddress;
     }
+    
+    //</editor-fold>
 }

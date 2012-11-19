@@ -5,7 +5,7 @@ import MessagePackage.Request;
 
 public class UnregisterRequest extends Request
 {
-    enum UnregisterReason implements DeterminableEnum
+    public enum UnregisterReason implements DeterminableEnum
     {
         PLAYER, APP_ERROR, LOSS, TIME_CONSTRAINT, UNSPECIFIED;
         @Override
@@ -22,9 +22,9 @@ public class UnregisterRequest extends Request
     
     protected UnregisterRequest(){}
     
-    public UnregisterRequest(int playerID, UnregisterReason reason, String note)
+    public UnregisterRequest(UnregisterReason reason, String note)
     {
-        super(playerID, Request.RequestType.UNREGISER);
+        super(Request.RequestType.UNREGISER);
         this.setUnregisterReason(reason);
         this.setNote(note);
     }

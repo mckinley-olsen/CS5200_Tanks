@@ -27,20 +27,18 @@ public class UnregisterRequestTest
     @Test
     public void testConstructor() throws Exception
     {
-        int playerID=1;
         UnregisterReason reason = UnregisterReason.LOSS;
         String note = "AAA";
-        UnregisterRequest request1 = new UnregisterRequest(playerID,reason,note);
-        assertEquals(playerID, request1.getPlayerID());
+        UnregisterRequest request1 = new UnregisterRequest(reason,note);
         assertEquals(note, request1.getNote());
         assertEquals(reason, request1.getUnregisterReason());
         
         //test empty note
-        request1 = new UnregisterRequest(1,reason,"");
+        request1 = new UnregisterRequest(reason,"");
         assertEquals("", request1.getNote());
         
         //test null note
-        request1 = new UnregisterRequest(1,reason, null);
+        request1 = new UnregisterRequest(reason, null);
         assertNull(request1.getNote());
         
     }
@@ -50,7 +48,7 @@ public class UnregisterRequestTest
     {
         UnregisterReason reason = UnregisterReason.LOSS;
         String note = "AAA";
-        UnregisterRequest request1 = new UnregisterRequest(1,reason,note);
+        UnregisterRequest request1 = new UnregisterRequest(reason,note);
         ByteList messageBytes = new ByteList();
         request1.encode(messageBytes);
         
@@ -121,7 +119,7 @@ public class UnregisterRequestTest
     public void testSetNote()
     {
         String note="PPP";
-        UnregisterRequest request1 = new UnregisterRequest(1,UnregisterReason.APP_ERROR,"");
+        UnregisterRequest request1 = new UnregisterRequest(UnregisterReason.APP_ERROR,"");
         request1.setNote(note);
         assertEquals(note, request1.getNote());
     }

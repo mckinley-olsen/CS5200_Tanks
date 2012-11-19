@@ -1,0 +1,26 @@
+14:03:02.537 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+14:03:02.538 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+14:03:02.541 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+14:03:02.550 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+14:03:02.550 [main] DEBUG C.ClientUnregisterInitiatorConversation - ClientUnregisterInitiatorConversation sendRequest
+	sent unregister request
+14:03:02.551 [main] DEBUG C.ClientUnregisterInitiatorConversation - ClientShellConversation start
+	started shell conversation
+14:03:07.551 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+14:03:07.551 [Timer-0] DEBUG C.ClientUnregisterInitiatorConversation - ClientUnregisterInitiatorConversation sendRequest
+	sent unregister request
+14:03:12.551 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+14:03:12.551 [Timer-0] DEBUG C.ClientUnregisterInitiatorConversation - ClientUnregisterInitiatorConversation sendRequest
+	sent unregister request
+14:03:12.551 [Timer-0] DEBUG C.ClientUnregisterInitiatorConversation - UnregisterInitiatorConversation run
+	hit retry limit, retrying last time
+14:03:17.551 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+14:03:17.551 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
