@@ -9,7 +9,7 @@ import MessagePackage.Reply.Status;
 import TanksCommon.Envelope;
 import java.net.InetSocketAddress;
 
-public class ClientLocationListRequesteeConversation extends Conversation
+public class ClientLocationsRequesteeConversation extends Conversation
 {
     private ConversationStatus status;
     private InetSocketAddress requesterAddress;
@@ -18,15 +18,15 @@ public class ClientLocationListRequesteeConversation extends Conversation
     private LocationListReply reply;
     
 
-    public static ClientLocationListRequesteeConversation Create(int conversationInitiator, int conversationNumber)
+    public static ClientLocationsRequesteeConversation Create(int conversationInitiator, int conversationNumber)
     {
-        ClientLocationListRequesteeConversation c = new ClientLocationListRequesteeConversation();
+        ClientLocationsRequesteeConversation c = new ClientLocationsRequesteeConversation();
         c.setConversationInitiator(conversationInitiator);
         c.setConversationNumber(conversationNumber);
         return c;
     }
 
-    public ClientLocationListRequesteeConversation()
+    public ClientLocationsRequesteeConversation()
     {
     }
 
@@ -80,7 +80,7 @@ public class ClientLocationListRequesteeConversation extends Conversation
         this.status = ConversationStatus.sentReply;
 
         this.getLogger().debug("ShellManagerShellConversation sendReply\n\tsent shell reply");
-        System.out.println("sending shell reply");
+        System.out.println("sending list reply");
     }
 
     private enum ConversationStatus
