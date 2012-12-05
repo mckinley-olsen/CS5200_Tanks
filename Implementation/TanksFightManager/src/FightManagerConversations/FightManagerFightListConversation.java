@@ -44,7 +44,9 @@ public class FightManagerFightListConversation extends FightListConversation
         switch(this.status)
         {
             case receivedRequest:
-                this.sendReply(this.buildReply());
+                FightListReply r = this.buildReply();
+                this.sendReply(r);
+                this.add(null, r);
                 break;
             case sentReply:
                 
@@ -52,7 +54,7 @@ public class FightManagerFightListConversation extends FightListConversation
         }
     }
     
-    private FightListReply buildReply()
+    public FightListReply buildReply()
     {
         FightListReply reply = this.getReply();
         if(reply == null)
@@ -64,13 +66,15 @@ public class FightManagerFightListConversation extends FightListConversation
         }
         return reply;
     }
-    private void sendReply(FightListReply reply)
+    public void sendReply(FightListReply reply)
     {
         Conversation.sendMessageTo(this.getReply(), this.getRequesterAddress());
         this.status = ConversationStatus.sentReply;
-        this.add(null, reply);
         this.getLogger().debug("FightManagerFightListConversation sendReply\n\tsent FightList reply");
         System.out.println("sending FightList reply");
+        this.cleanupTask.cancel();
+        this.timer.
+        this.timer.schedule(this.cleanupTask, this.CONVERSATION_CLEANUP_DURATION);
     }
     
     private enum ConversationStatus

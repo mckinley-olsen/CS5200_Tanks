@@ -1,0 +1,30 @@
+15:45:16.473 [main] TRACE F.FightManagerFightListConversation - FightManagerFightListConversation buildReply
+	created FightList reply
+15:45:16.475 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+15:45:16.476 [main] DEBUG F.FightManagerFightListConversation - FightManagerFightListConversation sendReply
+	sent FightList reply
+15:45:16.482 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+15:45:16.483 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+15:45:16.486 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+15:45:16.487 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+15:45:16.490 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+15:45:16.491 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+15:45:16.494 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+15:45:16.494 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+15:45:16.496 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+15:45:16.496 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized
+15:45:16.499 [main] DEBUG TanksCommon.Communicator7 - Communicator constructor:
+	 communicator created
+15:45:16.499 [main] INFO  TanksCommon.Communicator7 - Communicator initializeSocket:
+	 Socket initialized
