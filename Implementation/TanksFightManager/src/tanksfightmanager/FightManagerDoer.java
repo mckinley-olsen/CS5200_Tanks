@@ -134,7 +134,7 @@ public class FightManagerDoer extends Doer
     private Envelope processLocationListRequest(Envelope envelope, LocationListRequest request)
     {
         this.getLogger().info("FightManagerDoer processLocationListRequest\n\tProcessing LocationList request");
-        if (!TanksFightManagerModel.addLocationsRequest(request.getPlayerID(), request.getPlayerIDRequested()))
+        //if (!TanksFightManagerModel.addLocationsRequest(request.getPlayerID(), request.getPlayerIDRequested()))
         {
             //LastLocationsRequest outRequest = new LastLocationsRequest(1);
             //return Envelope.createOutgoingEnvelope(outRequest, TanksFightManagerModel.getRecentPlayerAddress(request.getPlayerIDRequested()));

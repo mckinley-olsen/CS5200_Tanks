@@ -1,0 +1,22 @@
+21:42:58.836 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+21:42:58.841 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+21:42:58.841 [main] DEBUG C.ClientFightListConversation - ClientFillConversation sendShellRequest
+	sent fill request
+21:42:58.841 [main] DEBUG C.ClientFightListConversation - ClientFillConversation start
+	started fill conversation
+21:43:03.842 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+21:43:03.842 [Timer-0] DEBUG C.ClientFightListConversation - ClientFillConversation sendShellRequest
+	sent fill request
+21:43:08.841 [Timer-0] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+21:43:08.841 [Timer-0] DEBUG C.ClientFightListConversation - ClientFillConversation sendShellRequest
+	sent fill request
+21:43:08.841 [Timer-0] DEBUG C.ClientFightListConversation - ClientGunpowderConversation resendTask
+	hit retry limit, retrying last time
+21:43:13.844 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+21:43:13.844 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized

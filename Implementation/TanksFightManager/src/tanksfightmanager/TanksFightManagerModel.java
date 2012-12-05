@@ -6,6 +6,7 @@ import MessagePackage.LocationListProtocol.LocationListRequest;
 import TanksCommon.Model.TanksResourceManagerModel;
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -24,7 +25,6 @@ public class TanksFightManagerModel extends TanksResourceManagerModel
     private static HashMap <Integer, Player> players = new HashMap<>();
     private static ObservableMap <Integer, Player> observablePlayers = FXCollections.observableMap(TanksFightManagerModel.getPlayers());
     
-    private static ArrayList<PendingLocationsRequest> locationsRequests = new ArrayList<PendingLocationsRequest>();
     private static HashMap <Integer, InetSocketAddress> recentPlayerAddresses = new HashMap();
     
     public static int getNextPlayerID()
@@ -44,42 +44,7 @@ public class TanksFightManagerModel extends TanksResourceManagerModel
     {
         TanksFightManagerModel.setCurrentGameID(TanksFightManagerModel.getCurrentGameID()+1);
     }
-    
-    // <editor-fold defaultstate="collapsed" desc="Location Request Implementation">
-    public static boolean addLocationsRequest(int requesterID, int queriedPlayer)
-    {
-        PendingLocationsRequest p;
-        for (int count = 0; count < TanksFightManagerModel.getLocationsRequests().size(); ++count)
-        {
-            p = (PendingLocationsRequest) TanksFightManagerModel.getLocationsRequests().get(count);
-            
-            if (p.getQueriedPlayer() == queriedPlayer)
-            {
-                p.addRequester(requesterID);
-                return true;
-            }
-        }
-        TanksFightManagerModel.getLocationsRequests().add(new PendingLocationsRequest(requesterID, queriedPlayer));
-        return false;
-    }
-
-    public static LinkedList getLocationRequesters(int queriedPlayer)
-    {
-        PendingLocationsRequest p;
-        for (int count = 0; count < TanksFightManagerModel.getLocationsRequests().size(); ++count)
-        {
-            p = (PendingLocationsRequest) TanksFightManagerModel.getLocationsRequests().get(count);
-            
-            if (p.getQueriedPlayer() == queriedPlayer)
-            {
-                return p.getRequesters();
-            }
-        }
-        return null;
-    }
-
-// </editor-fold>
-    
+        
     // <editor-fold defaultstate="collapsed" desc="add/remove players">
     public static void addPlayer(Player p)
     {
@@ -123,7 +88,10 @@ public class TanksFightManagerModel extends TanksResourceManagerModel
     {
         return TanksFightManagerModel.players;
     }
-
+    public static Player[] getPlayerList()
+    {
+        return (Player[])TanksFightManagerModel.players.values().toArray();
+    }
     public static ObservableMap<Integer, Player> getObservablePlayers()
     {
         return observablePlayers;
@@ -131,10 +99,6 @@ public class TanksFightManagerModel extends TanksResourceManagerModel
     public static HashMap getRecentPlayerAddresses()
     {
         return TanksFightManagerModel.recentPlayerAddresses;
-    }
-    public static ArrayList getLocationsRequests()
-    {
-        return TanksFightManagerModel.locationsRequests;
     }
     public static int getCurrentGameID()
     {

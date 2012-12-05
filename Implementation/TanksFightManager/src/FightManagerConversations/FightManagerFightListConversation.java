@@ -14,9 +14,9 @@ public class FightManagerFightListConversation extends FightListConversation
     private ConversationStatus status;
     private InetSocketAddress requesterAddress;
     
-    public static FightManagerJoinFightConversation Create(int conversationInitiator, int conversationNumber)
+    public static FightManagerFightListConversation Create(int conversationInitiator, int conversationNumber)
     {
-        FightManagerJoinFightConversation c = new FightManagerJoinFightConversation();
+        FightManagerFightListConversation c = new FightManagerFightListConversation();
         c.setConversationInitiator(conversationInitiator);
         c.setConversationNumber(conversationNumber);
         return c;
@@ -44,7 +44,7 @@ public class FightManagerFightListConversation extends FightListConversation
         switch(this.status)
         {
             case receivedRequest:
-                this.sendReply(this.buildReply(););
+                this.sendReply(this.buildReply());
                 break;
             case sentReply:
                 
@@ -57,7 +57,7 @@ public class FightManagerFightListConversation extends FightListConversation
         FightListReply reply = this.getReply();
         if(reply == null)
         {
-            FightListReply reply = new FightListReply(Status.OKAY, "");
+            reply = new FightListReply(Status.OKAY, "", null);
             reply.setConversationID(this.getRequest().getConversationID());
             this.getLogger().trace("FightManagerFightListConversation buildReply\n\tcreated FightList reply");
             this.addStatus("Created FightList reply");
