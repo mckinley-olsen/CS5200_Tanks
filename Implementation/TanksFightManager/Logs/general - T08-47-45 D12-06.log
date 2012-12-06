@@ -1,0 +1,52 @@
+08:47:45.910 [JavaFX Application Thread] DEBUG t.FightManagerController - setupPropertiesReader
+	properties reader setup correctly
+08:47:46.115 [JavaFX Application Thread] INFO  tanksfightmanager.StatsManager - StatsManager initialize
+	initailized StatsManager. Set: 
+		guid: 4eefb07a-4709-4f63-a0a3-5b0eaed890ea
+		managerName: MrManager
+		operatorName: McKinley Olsen
+		operatorAddress: m.olsen@aggiemail.usu.edu
+08:47:46.234 [JavaFX Application Thread] DEBUG t.FightManagerController - readProperties
+	properties read correctly
+08:47:46.317 [JavaFX Application Thread] INFO  tanksfightmanager.StatsManager - StatsManager register
+	registered with service without exception. Received result: SUCCESS
+08:48:22.367 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	read classID from bytes, got: 202
+	Write: 1024
+	Read: 4
+08:48:22.367 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	got object length; got: 54
+	Write: 1024
+	Read: 6
+08:48:22.367 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	decoding super
+	Write: 1024
+	Read: 6
+08:48:22.367 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	got classID: 201
+	Write: 1024
+	Read: 10
+08:48:22.367 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	got length: 42
+	Write: 1024
+	Read: 12
+08:48:22.367 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	decoding super42
+	Write: 1024
+	Read: 12
+08:48:22.367 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	setting requestType
+	Write: 1024
+	Read: 46
+08:48:22.367 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	setting playerID
+	Write: 1024
+	Read: 50
+08:48:22.367 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	setting player name to: a
+	Write: 1024
+	Read: 60
+08:48:22.412 [FightManagerDoer] INFO  tanksfightmanager.StatsManager - StatsManager setCurrentNumberOfPlayers
+	changed current number of players to: 1
+08:48:22.412 [FightManagerDoer] INFO  tanksfightmanager.StatsManager - StatsManager setCurrentNumberOfPlayers
+	set max number of players to: 1

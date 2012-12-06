@@ -1,0 +1,36 @@
+17:08:04.295 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+17:08:04.295 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+17:08:04.296 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+17:08:04.296 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+17:08:04.296 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+17:08:04.297 [main] TRACE F.FightManagerFightListConversation - FightManagerFightListConversation buildReply
+	created FightList reply
+17:08:04.297 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+17:08:04.297 [main] DEBUG F.FightManagerFightListConversation - FightManagerFightListConversation sendReply
+	sent FightList reply
+17:08:04.298 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+17:08:04.298 [main] DEBUG F.FightManagerFightListConversation - FightManagerFightListConversation sendReply
+	sent FightList reply
+17:09:04.302 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+17:09:04.302 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+17:09:04.304 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+17:09:04.304 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+17:09:04.305 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+17:09:04.305 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized
+17:09:04.306 [main] DEBUG TanksCommon.Communicator7 - Communicator constructor:
+	 communicator created
+17:09:04.306 [main] INFO  TanksCommon.Communicator7 - Communicator initializeSocket:
+	 Socket initialized

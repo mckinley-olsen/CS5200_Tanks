@@ -51,7 +51,6 @@ public class ClientRegisterConversation extends RegisterConversation
             this.setReply((RegisterReply)m);
             this.status = ConversationStatus.receivedReply;
             getLogger().debug("ClientRegisterConversation add\n\tadded RegisterReply to conversation");
-            System.out.println("got reply");
         }
     }
 
@@ -90,7 +89,6 @@ public class ClientRegisterConversation extends RegisterConversation
     {
         Conversation.sendMessageTo(this.getRequest(), TanksClientModel.getFightManagerAddress());
         this.status = ConversationStatus.sentRequest;
-
         this.getLogger().debug("ClientRegisterConversation sendRegisterRequest\n\tsent register request");
         System.out.println("sending register request");
     }
@@ -102,6 +100,7 @@ public class ClientRegisterConversation extends RegisterConversation
             public void run()
             {
                 TanksClientModel.setPlayerID(reply.getPlayerID());
+                TanksModel.setProcessID(reply.getPlayerID());
                 TanksClientModel.setMaxTravelRate(reply.getMaxTravelRate());
                 TanksClientModel.setCurrentLocationX(reply.getStartingLocation().getX());
                 TanksClientModel.setCurrentLocationY(reply.getStartingLocation().getY());
@@ -109,6 +108,7 @@ public class ClientRegisterConversation extends RegisterConversation
                 GameRulesModel.setMapMaxY(reply.getGameMapMaxY());
             }
         });
+        TanksModel.addStatus("Received register reply");
     }
     
     private static RegisterRequest createRegisterRequest(String playerName, MessageNumber conversationID, MessageNumber messageID)

@@ -1,0 +1,38 @@
+17:24:17.592 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+17:24:17.592 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+17:24:17.596 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+17:24:17.596 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+17:24:17.596 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+17:24:17.597 [main] DEBUG F.FightManagerFightListConversation - FightManagerFightListConversation sendReply
+	sent FightList reply
+17:24:17.600 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+17:24:17.600 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+17:24:17.601 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+17:24:17.601 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+17:24:17.602 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+17:24:17.602 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized
+17:24:17.602 [main] TRACE F.FightManagerFightListConversation - FightManagerFightListConversation buildReply
+	created FightList reply
+17:24:17.603 [main] DEBUG TanksCommon.Communicator7 - Communicator constructor:
+	 communicator created
+17:24:17.603 [main] INFO  TanksCommon.Communicator7 - Communicator initializeSocket:
+	 Socket initialized
+17:24:17.603 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+17:24:17.604 [main] TRACE F.FightManagerFightListConversation - FightManagerFightListConversation buildReply
+	created FightList reply
+17:24:17.604 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+17:24:17.604 [main] DEBUG F.FightManagerFightListConversation - FightManagerFightListConversation sendReply
+	sent FightList reply

@@ -28,13 +28,12 @@ public class FillShellReply extends Reply
     
     public static FillShellReply Create(ByteList messageBytes) throws Exception
     {
-        /*
         FillShellReply result;
         if (messageBytes==null || messageBytes.getLength()<6)
         {
             throw new Exception("Invalid message byte array");
         }
-        if (messageBytes.peekShort() != FillShellReply.getClassID() )
+        if (messageBytes.peekInt() != FillShellReply.getClassID() )
         {
             throw new Exception("Invalid message type");
         }
@@ -44,11 +43,9 @@ public class FillShellReply extends Reply
             result.decode(messageBytes);
         }
         return result;
-        */
-        return (FillShellReply)Deserializer.Deserialize(messageBytes, new FillShellReply());
+        //return (FillShellReply)Deserializer.Deserialize(messageBytes, new FillShellReply());
     }
     // <editor-fold defaultstate="collapsed" desc=" encode/decode ">
-    /*
     @Override
     public void encode(ByteList messageBytes) 
     {
@@ -64,13 +61,11 @@ public class FillShellReply extends Reply
         
         short length = (short) (messageBytes.getCurrentWritePosition() - messageLengthPos - 2);
         messageBytes.writeShortTo(messageLengthPos, length);
-        
-        
     }
-    */
+    
     @Override
     public void decode(ByteList messageBytes) throws Exception {
-        short objectType = messageBytes.getShort();
+        int objectType = messageBytes.getInt();
         if (objectType != this.getClassID()) {
             throw new Exception("Invalid byte array for Request message");
         }

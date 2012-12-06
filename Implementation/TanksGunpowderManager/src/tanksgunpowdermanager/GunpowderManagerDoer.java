@@ -27,20 +27,11 @@ public class GunpowderManagerDoer extends Doer
         {
             this.getLogger().info("GunpowderManagerDoer process\n\tdetected fill shell request");
             this.processFillShellRequest(envelope, (FillShellRequest)m);
-            //this.getCommunicator().addToOutputQueue(reply);
         }
     }
     
     protected void processFillShellRequest(Envelope envelope, FillShellRequest request)
-    {
-        /*
-        this.getLogger().info("GunpowderManagerDoer processFillShellRequest\n\tProcessing fill shell request request");
-        FillShellReply reply = new FillShellReply(Status.OKAY, " ", request.getEmptyShell());
-        this.getLogger().info("GunpowderManagerDoer processFillShellRequest\n\tFilled shell to: ");
-        GunpowderManagerDoer.addStatus("Processed FillShellRequest; New playerID: ");
-        return Envelope.createOutgoingEnvelope(reply, envelope.getSenderEndPoint());
-        */
-        
+    {        
         int initiator = request.getConversationID().getProcessID();
         int conversationNumber = request.getConversationID().getSequenceNumber();
         Conversation c = TanksModel.getConversation(initiator, conversationNumber);
@@ -54,18 +45,6 @@ public class GunpowderManagerDoer extends Doer
         c.continueProtocol();
     }
     
-    private static void addStatus(final String status)
-    {
-        Platform.runLater(new Runnable()
-        {
-            @Override
-            public void run()
-            {
-                TanksGunpowderManagerModel.getStatusList().add(0, status);
-            }
-        });
-    }
-
     @Override
     public String getThreadName()
     {

@@ -5,10 +5,18 @@ import TanksCommon.UI.Controller;
 import java.net.URL;
 import java.util.Properties;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ListView;
 
 public class GunpowderManagerController extends Controller implements Initializable
 {
+    // <editor-fold defaultstate="collapsed" desc=" GUI component fill ">
+    @FXML
+    private ListView statusListView;
+
+    // </editor-fold>
+    
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
@@ -22,7 +30,7 @@ public class GunpowderManagerController extends Controller implements Initializa
     
     public void createBindings()
     {
-        
+        TanksGunpowderManagerModel.getStatusList().bindBidirectional(this.statusListView.itemsProperty());
     }
     
     // <editor-fold defaultstate="collapsed" desc=" Properties reading ">

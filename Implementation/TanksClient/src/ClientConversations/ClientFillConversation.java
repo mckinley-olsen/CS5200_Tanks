@@ -115,6 +115,7 @@ public class ClientFillConversation extends FillConversation
             });
             this.cleanupTask.run();
             this.hasProcessedReply = true;
+            TanksModel.addStatus("Received fill shell reply");
         }
     }
     

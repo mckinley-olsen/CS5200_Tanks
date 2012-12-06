@@ -3,6 +3,7 @@ package FightManagerConversations;
 import Conversation.Conversation;
 import Conversation.PlayerListConversation;
 import MessagePackage.Message;
+import MessagePackage.MessageNumber;
 import MessagePackage.PlayerList.PlayerListReply;
 import MessagePackage.PlayerList.PlayerListRequest;
 import MessagePackage.Reply.Status;
@@ -45,7 +46,8 @@ public class FightManagerPlayerListConversation extends PlayerListConversation
         switch(this.status)
         {
             case receivedRequest:
-                this.sendReply(this.buildReply());
+                PlayerListReply r = this.buildReply();
+                this.sendReply(r);
                 break;
             case sentReply:
                 
@@ -53,25 +55,26 @@ public class FightManagerPlayerListConversation extends PlayerListConversation
         }
     }
     
-    private PlayerListReply buildReply()
+    public PlayerListReply buildReply()
     {
         PlayerListReply reply = this.getReply();
         if(reply == null)
         {
-            reply = new PlayerListReply(Status.OKAY, "", TanksFightManagerModel.getPlayerList());
-            reply.setConversationID(this.getRequest().getConversationID());
+            reply = new PlayerListReply(Status.OKAY, "", null);
+            reply.setConversationID(MessageNumber.Create(this.getConversationInitiator(), this.getConversationNumber()));
             this.getLogger().trace("FightManagerPlayerListConversation buildReply\n\tcreated PlayerList reply");
             this.addStatus("Created PlayerList reply");
         }
         return reply;
     }
-    private void sendReply(PlayerListReply reply)
+    public void sendReply(PlayerListReply reply)
     {
         Conversation.sendMessageTo(this.getReply(), this.getRequesterAddress());
         this.status = ConversationStatus.sentReply;
         this.add(null, reply);
         this.getLogger().debug("FightManagerPlayerListConversation sendReply\n\tsent PlayerList reply");
         System.out.println("sending PlayerList reply");
+        this.scheduleCleanupTask();
     }
     
     private enum ConversationStatus

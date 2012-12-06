@@ -1,0 +1,82 @@
+08:59:40.851 [JavaFX Application Thread] DEBUG t.GunpowderManagerController - setupPropertiesReader
+	properties reader setup correctly
+08:59:40.857 [JavaFX Application Thread] DEBUG t.GunpowderManagerController - readProperties
+	properties read correctly
+09:00:08.589 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	got classID: 201
+	Write: 1024
+	Read: 10
+09:00:08.589 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	got length: 42
+	Write: 1024
+	Read: 12
+09:00:08.589 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	decoding super42
+	Write: 1024
+	Read: 12
+09:00:08.589 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	setting requestType
+	Write: 1024
+	Read: 46
+09:00:08.589 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	setting playerID
+	Write: 1024
+	Read: 50
+09:00:08.631 [GunpowderManagerDoer] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+09:00:08.632 [GunpowderManagerDoer] INFO  G.GunpowderManagerFillConversation - GunpowderManagerDoer processFillShellRequest
+	Processing fill shell request request
+09:00:08.633 [GunpowderManagerDoer] DEBUG G.GunpowderManagerFillConversation - GunpowderManagerFillConversation buildReply
+	created shell with capacity: 2 and fill: 100
+09:00:08.633 [GunpowderManagerDoer] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+09:00:08.633 [GunpowderManagerDoer] DEBUG G.GunpowderManagerFillConversation - GunpowderManagerreplyFillConversation sendReply
+	sent fill reply
+09:00:13.543 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	got classID: 201
+	Write: 1024
+	Read: 10
+09:00:13.543 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	got length: 42
+	Write: 1024
+	Read: 12
+09:00:13.543 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	decoding super42
+	Write: 1024
+	Read: 12
+09:00:13.543 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	setting requestType
+	Write: 1024
+	Read: 46
+09:00:13.543 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	setting playerID
+	Write: 1024
+	Read: 50
+09:00:13.586 [GunpowderManagerDoer] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+09:00:13.586 [GunpowderManagerDoer] DEBUG G.GunpowderManagerFillConversation - GunpowderManagerreplyFillConversation sendReply
+	sent fill reply
+09:00:18.596 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	got classID: 201
+	Write: 1024
+	Read: 10
+09:00:18.596 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	got length: 42
+	Write: 1024
+	Read: 12
+09:00:18.596 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	decoding super42
+	Write: 1024
+	Read: 12
+09:00:18.596 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	setting requestType
+	Write: 1024
+	Read: 46
+09:00:18.596 [Communicator] TRACE M.FillShellProtocol.FillShellRequest - RegisterRequest decode
+	setting playerID
+	Write: 1024
+	Read: 50
+09:00:18.639 [GunpowderManagerDoer] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+09:00:18.639 [GunpowderManagerDoer] DEBUG G.GunpowderManagerFillConversation - GunpowderManagerreplyFillConversation sendReply
+	sent fill reply

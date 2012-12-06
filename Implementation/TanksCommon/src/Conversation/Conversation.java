@@ -31,7 +31,27 @@ public abstract class Conversation
         }
     };
     
-    protected final long CONVERSATION_CLEANUP_DURATION = 60000;
+    protected TimerTask getNewCleanupTask()
+    {
+        return new TimerTask()
+        {
+            @Override
+            public void run()
+            {
+                TanksModel.removeConversation(conversationInitiator, conversationNumber);
+                System.out.println("removing conversation");
+            }
+        };
+    }
+    
+    protected void scheduleCleanupTask()
+    {
+        this.cleanupTask.cancel();
+        this.cleanupTask = this.getNewCleanupTask();
+        this.timer.schedule(this.cleanupTask, Conversation.CONVERSATION_CLEANUP_DURATION);
+    }
+    
+    protected static final long CONVERSATION_CLEANUP_DURATION = 60000;
     
     public static Conversation Create(Message m)
     {
@@ -60,14 +80,7 @@ public abstract class Conversation
     
     protected static void addStatus(final String status)
     {
-        Platform.runLater(new Runnable()
-        {
-            @Override
-            public void run()
-            {
-                TanksResourceManagerModel.getStatusList().add(status);
-            }
-        });
+        TanksModel.addStatus(status);
     }
 
     
@@ -106,6 +119,10 @@ public abstract class Conversation
     public int getConversationInitiator()
     {
         return this.conversationInitiator;
+    }
+    public static long getConversationCleanupDuration()
+    {
+        return Conversation.CONVERSATION_CLEANUP_DURATION;
     }
     //</editor-fold>
 }

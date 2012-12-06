@@ -5,6 +5,7 @@ import Conversation.FightListConversation;
 import MessagePackage.FightListProtocol.FightListReply;
 import MessagePackage.FightListProtocol.FightListRequest;
 import MessagePackage.Message;
+import MessagePackage.MessageNumber;
 import MessagePackage.Reply.Status;
 import TanksCommon.Envelope;
 import java.net.InetSocketAddress;
@@ -60,7 +61,7 @@ public class FightManagerFightListConversation extends FightListConversation
         if(reply == null)
         {
             reply = new FightListReply(Status.OKAY, "", null);
-            reply.setConversationID(this.getRequest().getConversationID());
+            reply.setConversationID(MessageNumber.Create(this.getConversationInitiator(), this.getConversationNumber()));
             this.getLogger().trace("FightManagerFightListConversation buildReply\n\tcreated FightList reply");
             this.addStatus("Created FightList reply");
         }
@@ -71,10 +72,7 @@ public class FightManagerFightListConversation extends FightListConversation
         Conversation.sendMessageTo(this.getReply(), this.getRequesterAddress());
         this.status = ConversationStatus.sentReply;
         this.getLogger().debug("FightManagerFightListConversation sendReply\n\tsent FightList reply");
-        System.out.println("sending FightList reply");
-        this.cleanupTask.cancel();
-        this.timer.
-        this.timer.schedule(this.cleanupTask, this.CONVERSATION_CLEANUP_DURATION);
+        this.scheduleCleanupTask();
     }
     
     private enum ConversationStatus

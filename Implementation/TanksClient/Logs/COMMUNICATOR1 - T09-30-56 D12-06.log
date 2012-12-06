@@ -1,0 +1,2272 @@
+09:30:57.193 [JavaFX Application Thread] DEBUG TanksCommon.Communicator1 - Communicator constructor:
+	 communicator created
+09:30:57.194 [JavaFX Application Thread] INFO  TanksCommon.Communicator1 - Communicator initializeSocket:
+	 Socket initialized
+09:30:57.196 [JavaFX Application Thread] DEBUG TanksCommon.Communicator1 - BackgroundThread Start: 
+	Thread Started
+09:30:57.196 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:57.196 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:57.246 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:57.296 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:57.296 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:57.346 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:57.396 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:57.396 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:57.446 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:57.496 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:57.496 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:57.546 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:57.596 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:57.596 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:57.646 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:57.696 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:57.696 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:57.746 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:57.796 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:57.796 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:57.847 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:57.897 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:57.897 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:57.947 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:57.997 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:57.997 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.047 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.097 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.097 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.147 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.197 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.197 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.247 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.297 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.297 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.347 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.397 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.397 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.447 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.497 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.497 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.547 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.597 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.597 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.647 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.697 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.697 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.747 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.797 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.797 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.847 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.897 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.897 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:58.947 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:58.997 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:58.997 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.047 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:59.097 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:59.097 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.147 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:59.197 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:59.197 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.247 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:59.297 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:59.297 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.348 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:59.398 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:59.398 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.448 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:59.498 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:59.498 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.548 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:59.621 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:59.621 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.671 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:59.721 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:59.721 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.771 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:59.821 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:59.821 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.871 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:30:59.921 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:30:59.921 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:30:59.971 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.021 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.021 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.071 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.071 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:00.072 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 58
+09:31:00.072 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 58
+09:31:00.122 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.122 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.172 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.222 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.222 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.272 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.322 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.322 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.372 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.422 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.422 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.472 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.522 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.522 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.572 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.622 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.622 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.672 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.722 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.722 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.772 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.822 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.822 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.873 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:00.923 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:00.923 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:00.973 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.023 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.023 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:01.073 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.123 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.123 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:01.173 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.223 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.223 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:01.273 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.323 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.323 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:01.373 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.423 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.423 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:01.473 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.523 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.523 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:01.573 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.623 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.623 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:01.673 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.723 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.723 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:01.773 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.823 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.823 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:01.873 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:01.923 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:01.923 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:03.145 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:03.195 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:03.195 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:03.245 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:03.295 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:03.295 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:03.345 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:03.395 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:03.395 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:03.445 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:03.495 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:03.495 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:03.545 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:03.595 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:03.595 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:03.645 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:03.695 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:03.695 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:03.745 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:03.795 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:03.795 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:03.845 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:03.895 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:03.895 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:03.946 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:03.996 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:03.996 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.046 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.096 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.096 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.146 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.196 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.196 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.246 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.296 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.296 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.346 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.396 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.396 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.446 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.496 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.496 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.546 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.596 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.596 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.646 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.696 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.696 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.746 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.796 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.796 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.846 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.896 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.896 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:04.946 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:04.996 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:04.996 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.046 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.096 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.096 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.146 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.196 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.196 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.246 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.296 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.296 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.346 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.396 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.396 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.447 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.497 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.497 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.547 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.597 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.597 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.647 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.697 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.697 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.747 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.797 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.797 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.847 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.897 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.897 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:05.947 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:05.997 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:05.997 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.047 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.097 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.097 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.147 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.197 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.197 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.247 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.297 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.297 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.347 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.397 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.397 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.447 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.497 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.497 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.547 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.597 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.597 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.647 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.697 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.697 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.747 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.797 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.797 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.847 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.897 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.897 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:06.948 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:06.998 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:06.998 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.048 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.098 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.098 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.148 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.198 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.198 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.248 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.298 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.298 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.348 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.398 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.398 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.448 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.498 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.498 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.548 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.598 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.598 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.648 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.698 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.698 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.748 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.798 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.798 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.848 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.898 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.898 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:07.948 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:07.998 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:07.998 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.048 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.098 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.098 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.148 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.198 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.198 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.248 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.298 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.298 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.348 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.398 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.398 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.448 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.499 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.499 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.549 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.599 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.599 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.649 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.699 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.699 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.749 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.799 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.799 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.849 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.899 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.899 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:08.949 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:08.999 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:08.999 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.049 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:09.099 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:09.099 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.149 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:09.199 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:09.199 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.249 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:09.299 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:09.299 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.349 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:09.399 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:09.399 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.449 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:09.499 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:09.499 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.549 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:09.599 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:09.599 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.649 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:09.699 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:09.699 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.749 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:09.799 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:09.799 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.849 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:09.899 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:09.899 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:09.949 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.000 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.000 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.050 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.100 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.100 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.150 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.150 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:10.150 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 58
+09:31:10.150 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 58
+09:31:10.200 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.200 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.250 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.300 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.300 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.350 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.400 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.400 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.450 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.500 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.500 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.550 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.600 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.600 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.650 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.700 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.700 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.750 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.800 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.800 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.850 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:10.900 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:10.900 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:10.950 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.000 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.000 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.050 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.100 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.100 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.150 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.200 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.200 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.250 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.300 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.300 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.350 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.400 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.400 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.450 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.500 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.500 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.551 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.601 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.601 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.651 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.701 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.701 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.751 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.751 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:11.751 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+09:31:11.751 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+09:31:11.801 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.801 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.851 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:11.901 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.901 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:11.901 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 got message successfully
+09:31:11.914 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+09:31:11.964 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:11.964 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.014 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.064 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.064 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.114 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.164 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.164 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.214 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.264 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.264 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.314 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.364 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.364 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.414 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.464 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.464 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.514 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.564 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.564 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.614 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.664 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.664 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.714 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.764 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.764 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.814 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.864 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.864 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:12.914 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:12.964 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:12.964 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.014 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.065 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.065 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.115 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.165 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.165 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.215 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.265 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.265 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.315 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.365 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.365 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.415 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.465 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.465 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.515 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.565 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.565 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.615 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.665 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.665 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.715 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.765 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.765 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.815 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.865 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.865 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:13.915 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:13.965 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:13.965 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.015 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.065 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.065 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.115 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.165 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.165 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.215 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.265 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.265 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.315 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.365 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.365 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.415 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.465 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.465 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.515 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.566 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.566 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.616 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.666 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.666 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.716 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.766 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.766 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.816 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.866 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.866 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:14.916 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:14.966 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:14.966 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.016 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.066 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.066 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.116 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.166 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.166 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.216 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.266 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.266 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.316 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.366 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.366 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.416 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.466 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.466 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.516 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.566 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.566 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.616 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.666 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.666 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.716 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.766 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.766 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.816 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.866 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.866 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:15.916 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:15.966 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:15.966 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.016 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.067 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.067 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.117 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.167 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.167 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.217 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.267 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.267 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.317 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.367 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.367 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.417 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.467 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.467 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.517 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.567 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.567 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.617 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.667 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.667 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.717 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.767 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.767 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.817 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.867 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.867 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:16.917 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:16.967 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:16.967 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.017 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:17.067 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.067 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.117 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:17.167 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.167 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.217 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:17.267 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.267 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.317 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:17.367 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.367 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.417 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:17.467 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.467 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.517 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:17.567 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.567 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.618 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:17.668 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.668 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.718 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:17.718 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:17.718 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+09:31:17.718 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+09:31:17.768 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.768 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.818 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:17.868 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.868 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.868 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 got message successfully
+09:31:17.868 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+09:31:17.918 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:17.918 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:17.968 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.018 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.018 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.068 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.118 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.118 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.168 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.218 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.218 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.268 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.318 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.318 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.368 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.418 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.418 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.468 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.518 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.518 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.568 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.618 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.618 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.668 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.718 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.718 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.768 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.818 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.818 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.868 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:18.918 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:18.918 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:18.968 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.018 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.018 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.068 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.119 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.119 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.169 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.219 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.219 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.269 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.269 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:19.269 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+09:31:19.269 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+09:31:19.319 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.319 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.369 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.419 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.419 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.419 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 got message successfully
+09:31:19.419 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+09:31:19.469 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.469 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.519 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.569 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.569 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.619 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.669 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.669 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.719 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.769 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.769 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.819 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.869 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.869 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:19.919 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:19.969 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:19.969 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.019 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.069 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.069 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.119 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.119 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:20.119 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 58
+09:31:20.119 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 58
+09:31:20.169 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.169 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.219 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.269 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.269 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.319 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.369 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.369 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.419 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.469 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.469 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.519 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.569 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.569 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.619 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.670 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.670 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.720 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.770 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.770 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.820 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.870 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.870 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:20.920 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:20.970 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:20.970 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.020 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:21.020 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:21.020 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+09:31:21.020 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+09:31:21.070 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.070 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.120 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:21.170 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.170 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.170 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 got message successfully
+09:31:21.170 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+09:31:21.220 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.220 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.270 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:21.320 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.320 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.370 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:21.420 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.420 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.470 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:21.520 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.520 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.570 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:21.620 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.620 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.670 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:21.720 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.720 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.770 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:21.820 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.820 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.870 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:21.920 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:21.920 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:21.970 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.020 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.020 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.070 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.070 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:22.070 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+09:31:22.070 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+09:31:22.120 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.120 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.171 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.221 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.221 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.221 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 got message successfully
+09:31:22.221 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+09:31:22.271 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.271 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.321 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.371 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.371 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.421 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.471 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.471 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.521 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.571 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.571 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.621 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.671 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.671 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.721 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.771 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.771 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.821 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.821 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:22.821 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+09:31:22.821 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+09:31:22.871 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.871 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.921 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:22.971 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:22.971 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:22.971 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 got message successfully
+09:31:22.971 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+09:31:23.021 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.021 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.071 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:23.121 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.121 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.171 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:23.221 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.221 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.271 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:23.321 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.321 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.371 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:23.371 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:23.371 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+09:31:23.371 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+09:31:23.421 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.421 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.471 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:23.521 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.521 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.521 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 got message successfully
+09:31:23.521 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+09:31:23.571 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.571 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.621 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:23.672 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.672 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.722 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:23.772 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.772 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.822 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:23.872 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.872 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:23.922 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:23.972 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:23.972 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.022 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:24.072 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.072 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.122 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:24.172 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.172 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.222 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:24.272 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.272 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.322 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:24.372 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.372 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.422 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:24.472 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.472 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.522 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:24.522 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:24.522 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+09:31:24.522 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+09:31:24.572 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.572 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.622 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:24.672 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.672 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.672 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 got message successfully
+09:31:24.672 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+09:31:24.722 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.722 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.772 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:24.822 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.822 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.872 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:24.922 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:24.922 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:24.972 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.022 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.022 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.072 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.122 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.122 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.172 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.223 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.223 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.273 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.323 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.323 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.373 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.423 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.423 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.473 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.523 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.523 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.573 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.623 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.623 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.673 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.723 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.723 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.773 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.823 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.823 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.873 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:25.923 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:25.923 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:25.973 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.023 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.023 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.073 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.123 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.123 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.173 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.223 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.223 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.273 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.323 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.323 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.373 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.423 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.423 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.473 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.523 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.523 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.573 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.623 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.623 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.673 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.724 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.724 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.774 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.824 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.824 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.874 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:26.924 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:26.924 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:26.974 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.024 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.024 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.074 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.124 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.124 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.174 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.224 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.224 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.274 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.324 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.324 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.374 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.424 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.424 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.474 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.524 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.524 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.574 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.624 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.624 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.674 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.724 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.724 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.774 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.824 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.824 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.874 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:27.924 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:27.924 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:27.974 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.024 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.024 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.074 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.124 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.124 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.174 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.225 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.225 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.275 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.325 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.325 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.375 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.425 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.425 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.475 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.525 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.525 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.575 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.625 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.625 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.675 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.675 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 outputQueue not empty, trying to send the message
+09:31:28.675 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Starting to try to send message of length: 70
+09:31:28.675 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator sendMessage
+	 Sent successfully length: 70
+09:31:28.725 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.725 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.775 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.825 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.825 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.825 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 got message successfully
+09:31:28.825 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 adding envelope to inputQueue
+09:31:28.875 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.875 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:28.925 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:28.975 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:28.975 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.025 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.075 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.075 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.125 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.175 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.175 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.225 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.275 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.275 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.325 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.375 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.375 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.425 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.475 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.475 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.525 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.575 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.575 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.625 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.675 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.675 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.725 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.776 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.776 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.826 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.876 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.876 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:29.926 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:29.976 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:29.976 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.026 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.076 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.076 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.126 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.176 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.176 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.226 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.276 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.276 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.326 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.376 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.376 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.426 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.476 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.476 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.526 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.576 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.576 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.626 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.676 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.676 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.726 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.776 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.776 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.826 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.876 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.876 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:30.926 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:30.976 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:30.976 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.026 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.076 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.076 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.126 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.176 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.176 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.226 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.277 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.277 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.327 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.377 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.377 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.427 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.477 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.477 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.527 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.577 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.577 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.627 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.677 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.677 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.727 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.777 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.777 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.827 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.877 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.877 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:31.927 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:31.977 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:31.977 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.027 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.077 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.077 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.127 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.177 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.177 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.227 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.277 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.277 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.327 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.377 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.377 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.427 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.477 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.477 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.527 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.577 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.577 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.627 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.677 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.677 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.727 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.777 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.777 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.828 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.878 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.878 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:32.928 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:32.978 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:32.978 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.028 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.078 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.078 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.128 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.178 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.178 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.228 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.278 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.278 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.328 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.378 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.378 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.428 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.478 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.478 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.528 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.578 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.578 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.628 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.678 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.678 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.728 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.778 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.778 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.828 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.878 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.878 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:33.928 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:33.978 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:33.978 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:34.028 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:34.078 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:34.078 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message
+09:31:34.128 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage socket timed out:
+	 SocketTimeoutException
+09:31:34.178 [Communicator] DEBUG TanksCommon.Communicator1 - Communicator run:
+	 at beginning of run
+09:31:34.178 [Communicator] DEBUG TanksCommon.Communicator1 - getMessage:
+	 starting to try to get message

@@ -4,6 +4,7 @@ import GeneralPackage.Shell;
 import Strategy.FillShellStrategy;
 import TanksCommon.Model.GameRulesModel;
 import Strategy.GetShellStrategy;
+import Strategy.JoinFightStrategy;
 import Strategy.RegisterStrategy;
 import Strategy.Strategy;
 import TanksCommon.Communicator;
@@ -18,6 +19,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
@@ -28,8 +30,6 @@ public class TanksUIController extends Controller implements Initializable
     private static ClientDoer[] doers = new ClientDoer[3];
     
     private static final int MAIN_DOER_NUMBER=0;
-    private static final int PLAYER_LIST_DOER_NUMBER=1;
-    private static final int FIGHT_LIST_DOER_NUMBER=2;
     
     // <editor-fold defaultstate="collapsed" desc=" GUI component fill ">
     @FXML
@@ -45,9 +45,7 @@ public class TanksUIController extends Controller implements Initializable
     @FXML
     private Label emptyShellsLabel;
     @FXML
-    private Label filledShellsLabel;
-    @FXML
-    private BorderPane mapPane;
+    private ListView statusListView;
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc=" Button Handlers ">
@@ -75,7 +73,33 @@ public class TanksUIController extends Controller implements Initializable
         Task task = new Task(s);
         TanksUIController.getDoer(MAIN_DOER_NUMBER).addTask(task);
     }
-
+    @FXML
+    private void handleJoinFightButton(ActionEvent event) throws IOException
+    {
+        Strategy s = new JoinFightStrategy(1);
+        Task task = new Task(s);
+        TanksUIController.getDoer(MAIN_DOER_NUMBER).addTask(task);
+    }
+    @FXML
+    private void handlePlayerListButton(ActionEvent event) throws IOException
+    {
+        
+    }
+    @FXML
+    private void handleFightListButton(ActionEvent event) throws IOException
+    {
+        
+    }
+    @FXML
+    private void handleLocationListButton(ActionEvent event) throws IOException
+    {
+        
+    }
+    @FXML
+    private void handleUnregisterButton(ActionEvent event) throws IOException
+    {
+        
+    }
     // </editor-fold>
     
     @Override
@@ -89,10 +113,10 @@ public class TanksUIController extends Controller implements Initializable
         
         GameRulesModel.setMapMaxX(100);
         GameRulesModel.setMapMaxY(100);
-        GameMap gameMap = new GameMap();
+        //GameMap gameMap = new GameMap();
         //gameMap.setHeight(100);
         //gameMap.setWidth(100);
-        mapPane.setCenter(gameMap);
+        //mapPane.setCenter(gameMap);
         
     }
     
@@ -116,6 +140,7 @@ public class TanksUIController extends Controller implements Initializable
         TanksClientModel.getPlayerIDProperty().bindBidirectional(this.playerID.textProperty());
         TanksClientModel.getPlayerNameProperty().bindBidirectional(this.playerNameTextField.textProperty());
         TanksClientModel.getNumberOfShellsProperty().bindBidirectional(this.emptyShellsLabel.textProperty());
+        TanksClientModel.getStatusList().bindBidirectional(this.statusListView.itemsProperty());
     }
     
     private void readServerAddresses()

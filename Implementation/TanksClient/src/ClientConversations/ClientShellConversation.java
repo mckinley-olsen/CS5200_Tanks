@@ -114,6 +114,7 @@ public class ClientShellConversation extends ShellConversation
             });
             this.cleanupTask.run();
             this.hasProcessedReply = true;
+            TanksModel.addStatus("Received get shell reply");
         }
     }
     

@@ -60,20 +60,7 @@ public class ClientDoer extends Doer
     {
         Message m = envelope.getMessage();
         Conversation c = null;
-        if(m instanceof RegisterReply)
-        {
-            //this.processRegisterReply(envelope, (RegisterReply)m);
-            c = TanksClientModel.getConversation(m.getConversationID().getProcessID(), m.getConversationID().getSequenceNumber());
-            //TanksClientModel.addCommunication(envelope);
-        }
-        else if(m instanceof GetShellReply)
-        {
-            System.out.println(m.getConversationID().getProcessID());
-            System.out.println(m.getConversationID().getSequenceNumber());
-            //this.processGetShellReply(envelope, (GetShellReply)m);
-            c = TanksClientModel.getConversation(m.getConversationID().getProcessID(), m.getConversationID().getSequenceNumber());
-            //TanksClientModel.addCommunication(envelope);
-        }
+        c = TanksClientModel.getConversation(m.getConversationID().getProcessID(), m.getConversationID().getSequenceNumber());
         
         if(c != null)
         {

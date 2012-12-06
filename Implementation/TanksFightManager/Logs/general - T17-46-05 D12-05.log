@@ -1,0 +1,30 @@
+17:46:05.831 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+17:46:05.847 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+17:46:05.847 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+17:46:05.849 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+17:46:05.850 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+17:46:05.851 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+17:46:05.851 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+17:46:05.852 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+17:46:05.852 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+17:46:05.852 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+17:46:05.852 [main] DEBUG F.FightManagerPlayerListConversation - FightManagerPlayerListConversation sendReply
+	sent PlayerList reply
+17:46:05.854 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+17:46:05.854 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized
+17:46:05.857 [main] DEBUG TanksCommon.Communicator7 - Communicator constructor:
+	 communicator created
+17:46:05.857 [main] INFO  TanksCommon.Communicator7 - Communicator initializeSocket:
+	 Socket initialized

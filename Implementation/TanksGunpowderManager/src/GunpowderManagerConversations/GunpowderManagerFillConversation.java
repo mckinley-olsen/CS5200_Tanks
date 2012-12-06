@@ -9,6 +9,7 @@ import MessagePackage.Message;
 import MessagePackage.Reply.Status;
 import TanksCommon.Envelope;
 import java.net.InetSocketAddress;
+import tanksgunpowdermanager.TanksGunpowderManagerModel;
 
 public class GunpowderManagerFillConversation extends FillConversation
 {
@@ -68,7 +69,7 @@ public class GunpowderManagerFillConversation extends FillConversation
             reply.setConversationID(this.getRequest().getConversationID());
             this.setReply(reply);
             this.getLogger().debug("GunpowderManagerFillConversation buildReply\n\tcreated shell with capacity: "+capacity+" and fill: "+fill);
-            this.addStatus("Processed GetShellRequest; Sent shell with capacity: "+capacity+" and fill: "+fill+"\n\tSent to: "+this.getRequesterAddress());
+            this.addStatus("Processed GetFillRequest; Sent shell with capacity: "+capacity+" and fill: "+fill+"\n\tSent to: "+this.getRequesterAddress());
             reply.setConversationID(this.getRequest().getConversationID());
             this.setReply(reply);
         }

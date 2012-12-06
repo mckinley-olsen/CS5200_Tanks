@@ -1,9 +1,11 @@
 package FightManagerConversations;
 
+import Conversation.Conversation;
 import MessagePackage.FightListProtocol.FightListReply;
 import MessagePackage.FightListProtocol.FightListRequest;
 import TanksCommon.Communicator;
 import TanksCommon.Envelope;
+import TanksCommon.Model.TanksModel;
 import java.net.InetSocketAddress;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -11,6 +13,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.BeforeClass;
+import tanksfightmanager.TanksFightManagerModel;
 
 public class FightManagerFightListConversationTest extends Application
 {
@@ -82,6 +85,10 @@ public class FightManagerFightListConversationTest extends Application
     public void testContinueProtocol() 
     {
         FightManagerFightListConversation c = new FightManagerFightListConversation();
+        int initiator=5; int conversationNumber=5;
+        c.setConversationInitiator(initiator);
+        c.setConversationNumber(conversationNumber);
+        TanksModel.add(c, initiator, conversationNumber);
         FightListRequest request = new FightListRequest();
         InetSocketAddress a = new InetSocketAddress(1);
         Envelope e = Envelope.createIncomingEnvelope(request, a);
@@ -95,33 +102,61 @@ public class FightManagerFightListConversationTest extends Application
         c.continueProtocol();
         assertEquals(r, c.getReply());
         assertEquals(2,Communicator.getMainCommunicator().getOutputQueue().size());
-
+        
+        try
+        {
+            Thread.sleep(Conversation.getConversationCleanupDuration());
+        } 
+        catch (InterruptedException exc)
+        {
+            System.out.println("couldn't sleep");
+        }
+        
+        assertNull(TanksFightManagerModel.getConversation(initiator, conversationNumber));
     }
     
     @Test
     public void testBuildReply()
     {
-        
+        FightManagerFightListConversation c = new FightManagerFightListConversation();
+        c.setConversationInitiator(0);
+        c.setConversationNumber(0);
+        FightListReply r = c.buildReply();
+        assertEquals(r.getConversationID().getProcessID(), 0);
+        assertEquals(r.getConversationID().getSequenceNumber(), 0);
     }
     
     @Test
     public void testSendReply()
     {
+        FightManagerFightListConversation c = new FightManagerFightListConversation();
+        c.setConversationInitiator(0);
+        c.setConversationNumber(0);
         
+        FightListReply r = new FightListReply(null, null, null);
+        c.sendReply(r);
+        assertEquals(Communicator.getMainCommunicator().getOutputQueue().size(), 3);
     }
 
-    /**
-     * Test of setRequesterAddress method, of class FightManagerFightListConversation.
-     */
     @Test
-    public void testSetRequesterAddress() {
+    public void testSetRequesterAddress() 
+    {
+        FightManagerFightListConversation c = new FightManagerFightListConversation();
+        InetSocketAddress a = new InetSocketAddress(1);
+        c.setRequesterAddress(a);
+        assertEquals(a, c.getRequesterAddress());
     }
 
     /**
      * Test of getRequesterAddress method, of class FightManagerFightListConversation.
      */
     @Test
-    public void testGetRequesterAddress() {
+    public void testGetRequesterAddress() 
+    {
+        FightManagerFightListConversation c = new FightManagerFightListConversation();
+        InetSocketAddress a = new InetSocketAddress(1);
+        c.setRequesterAddress(a);
+        assertEquals(a, c.getRequesterAddress());
     }
     
     @Override

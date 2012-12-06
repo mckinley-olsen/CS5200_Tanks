@@ -1,10 +1,13 @@
 package tanksfightmanager;
 
+import Conversation.Conversation;
+import FightManagerConversations.FightManagerJoinFightConversation;
 import GeneralPackage.Location;
 import GeneralPackage.Player;
 import GeneralPackage.Rate;
 import MessagePackage.AckNak;
 import MessagePackage.FireShellRequest;
+import MessagePackage.JoinFightProtocol.JoinFightRequest;
 import MessagePackage.LocationListProtocol.LastLocationsRequest;
 import MessagePackage.LocationListProtocol.LocationListReply;
 import MessagePackage.LocationListProtocol.LocationListRequest;
@@ -18,6 +21,7 @@ import TanksCommon.Communicator;
 import TanksCommon.Doer.Doer;
 import TanksCommon.Envelope;
 import TanksCommon.Model.GameRulesModel;
+import TanksCommon.Model.TanksModel;
 import java.util.LinkedList;
 import java.util.Random;
 import javafx.application.Platform;
@@ -77,24 +81,45 @@ public class FightManagerDoer extends Doer
                 Envelope reply = this.processRegisterRequest(envelope, (RegisterRequest)m);
                 this.getCommunicator().addToOutputQueue(reply);
             }
-            else if(m instanceof LocationListRequest)
+            else
             {
-                this.getLogger().info("FightManagerDoer process\n\tdetected LocationList request");
-                Envelope reply = this.processLocationListRequest(envelope, (LocationListRequest)m);
-                if(reply != null)
+                Conversation c=null;
+                if(m instanceof JoinFightRequest)
                 {
+                    this.getLogger().info("FightManagerDoer process\n\tdetected JoinFightRequest request");
+                    FightManagerJoinFightConversation.Create(m.getConversationID().getProcessID(), m.getConversationID().getSequenceNumber());
+                    Envelope reply = this.processLocationListRequest(envelope, (LocationListRequest)m);
+                    if(reply != null)
+                    {
+                        this.getCommunicator().addToOutputQueue(reply);
+                    }
+                }
+                else if(m instanceof LocationListRequest)
+                {
+                    this.getLogger().info("FightManagerDoer process\n\tdetected LocationList request");
+                    Envelope reply = this.processLocationListRequest(envelope, (LocationListRequest)m);
+                    if(reply != null)
+                    {
+                        this.getCommunicator().addToOutputQueue(reply);
+                    }
+                }
+                else if(m instanceof UnregisterRequest)
+                {
+                    this.getLogger().info("FightManagerDoer process\n\tdetected Unregister request");
+                    Envelope reply = this.processUnregisterRequest(envelope, (UnregisterRequest)m);
                     this.getCommunicator().addToOutputQueue(reply);
                 }
-            }
-            else if(m instanceof UnregisterRequest)
-            {
-                this.getLogger().info("FightManagerDoer process\n\tdetected Unregister request");
-                Envelope reply = this.processUnregisterRequest(envelope, (UnregisterRequest)m);
-                this.getCommunicator().addToOutputQueue(reply);
-            }
-            else if(m instanceof FireShellRequest)
-            {
+                else if(m instanceof FireShellRequest)
+                {
+
+                }
                 
+                if(c!=null)
+                {
+                    TanksModel.add(c, c.getConversationInitiator(), c.getConversationNumber());
+                    c.add(envelope, m);
+                    c.continueProtocol();
+                }
             }
         }
         else

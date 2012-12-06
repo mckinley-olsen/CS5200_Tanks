@@ -1,0 +1,42 @@
+18:00:21.202 [main] TRACE F.FightManagerPlayerListConversation - FightManagerPlayerListConversation buildReply
+	created PlayerList reply
+18:00:21.204 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+18:00:21.204 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+18:00:21.204 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+18:00:21.205 [main] DEBUG F.FightManagerPlayerListConversation - FightManagerPlayerListConversation sendReply
+	sent PlayerList reply
+18:00:21.206 [main] DEBUG TanksCommon.Communicator3 - Communicator constructor:
+	 communicator created
+18:00:21.206 [main] INFO  TanksCommon.Communicator3 - Communicator initializeSocket:
+	 Socket initialized
+18:00:21.206 [main] DEBUG TanksCommon.Communicator4 - Communicator constructor:
+	 communicator created
+18:00:21.207 [main] INFO  TanksCommon.Communicator4 - Communicator initializeSocket:
+	 Socket initialized
+18:00:21.207 [main] DEBUG TanksCommon.Communicator5 - Communicator constructor:
+	 communicator created
+18:00:21.207 [main] INFO  TanksCommon.Communicator5 - Communicator initializeSocket:
+	 Socket initialized
+18:00:21.208 [main] DEBUG TanksCommon.Model.TanksModel - TanksModel add
+	Added conversation to conversations
+18:00:21.209 [main] TRACE F.FightManagerPlayerListConversation - FightManagerPlayerListConversation buildReply
+	created PlayerList reply
+18:00:21.209 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+18:00:21.209 [main] DEBUG F.FightManagerPlayerListConversation - FightManagerPlayerListConversation sendReply
+	sent PlayerList reply
+18:00:21.209 [main] DEBUG Conversation.Conversation - Conversation sendMessageTo
+	 message added to communicator output queue
+18:00:21.209 [main] DEBUG F.FightManagerPlayerListConversation - FightManagerPlayerListConversation sendReply
+	sent PlayerList reply
+18:01:21.210 [main] DEBUG TanksCommon.Communicator6 - Communicator constructor:
+	 communicator created
+18:01:21.210 [main] INFO  TanksCommon.Communicator6 - Communicator initializeSocket:
+	 Socket initialized
+18:01:21.211 [main] DEBUG TanksCommon.Communicator7 - Communicator constructor:
+	 communicator created
+18:01:21.211 [main] INFO  TanksCommon.Communicator7 - Communicator initializeSocket:
+	 Socket initialized

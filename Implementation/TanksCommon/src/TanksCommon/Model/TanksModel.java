@@ -4,6 +4,8 @@ import Conversation.Conversation;
 import MessagePackage.Message;
 import TanksCommon.Envelope;
 import java.util.HashMap;
+import javafx.application.Platform;
+import javafx.beans.property.SimpleListProperty;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +17,19 @@ public class TanksModel
     private static int nextConversationNumber=0;
     private static Logger logger = LoggerFactory.getLogger(TanksModel.getLogName());
     
+    private static SimpleListProperty<String> statusList = new SimpleListProperty();
+    
+    public static void addStatus(final String status)
+    {
+        Platform.runLater(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                getStatusList().add(0, status);
+            }
+        });
+    }
     public static void addCommunication(Envelope e)
     {
         Message m = e.getMessage();
@@ -88,6 +103,10 @@ public class TanksModel
     protected TanksModel(){}
     
     //<editor-fold defaultstate="collapsed" desc="getters">
+    public static SimpleListProperty getStatusList()
+    {
+        return statusList;
+    }
     public static HashMap getConversations()
     {
         return TanksModel.conversations;
