@@ -1,0 +1,50 @@
+13:50:35.281 [JavaFX Application Thread] DEBUG t.FightManagerController - setupPropertiesReader
+	properties reader setup correctly
+13:50:35.647 [JavaFX Application Thread] INFO  tanksfightmanager.StatsManager - StatsManager initialize
+	initailized StatsManager. Set: 
+		guid: 4eefb07a-4709-4f63-a0a3-5b0eaed890ea
+		managerName: MrManager
+		operatorName: McKinley Olsen
+		operatorAddress: m.olsen@aggiemail.usu.edu
+13:50:35.860 [JavaFX Application Thread] DEBUG t.FightManagerController - readProperties
+	properties read correctly
+13:50:35.948 [JavaFX Application Thread] INFO  tanksfightmanager.StatsManager - StatsManager register
+	registered with service without exception. Received result: SUCCESS
+13:50:47.927 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	read classID from bytes, got: 202
+	Write: 1024
+	Read: 4
+13:50:47.927 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	got object length; got: 64
+	Write: 1024
+	Read: 6
+13:50:47.927 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	decoding super
+	Write: 1024
+	Read: 6
+13:50:47.927 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	got classID: 201
+	Write: 1024
+	Read: 10
+13:50:47.927 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	got length: 42
+	Write: 1024
+	Read: 12
+13:50:47.927 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	decoding super42
+	Write: 1024
+	Read: 12
+13:50:47.927 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	setting requestType
+	Write: 1024
+	Read: 46
+13:50:47.927 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	setting playerID
+	Write: 1024
+	Read: 50
+13:50:47.927 [Communicator] TRACE M.RegisterProtocol.RegisterRequest - RegisterRequest decode
+	setting player name to: Mickey
+	Write: 1024
+	Read: 70
+13:51:16.155 [JavaFX Application Thread] DEBUG t.FightManagerController - Controller stopBackgroundTasks 
+	Starting to stop background tasks

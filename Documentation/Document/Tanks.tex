@@ -3,6 +3,7 @@
 \usepackage{hyperref}
 \usepackage{enumerate}
 \usepackage{supertabular}
+\usepackage{verbatim}
 %\usepackage{fullpage}
 \usepackage[margin=2.5cm]{geometry}
 
@@ -298,7 +299,7 @@
 					AckNak&Used when some component of the system wishes to either acknowledge or negatively acknowledge the correct receive of a message. Means a message previously sent by the receiving component reached the destination, and that this component must determine whether that message's transmittal succeeded.&Unregister Protocol, Join Fight Protocol&N/A\\ \hline
 					
 					%PLAYER LIST, FIGHT LIST
-					New Connection Message&Used by the Fight Manager to communicate the need and specifications of a new connection for communication. To the player, the receipt of this message means they must create a new thread to create a TCP connection with the port number specified in this message and listen on that communication.&Fight List Protocol, Player List Protocol&portNumber:1255\\ \hline
+					%New Connection Message&Used by the Fight Manager to communicate the need and specifications of a new connection for communication. To the player, the receipt of this message means they must create a new thread to create a TCP connection with the port number specified in this message and listen on that communication.&Fight List Protocol, Player List Protocol&portNumber:1255\\ \hline
 			\end{supertabular}
 		
 \section{Message Sequences and Timing}
@@ -314,6 +315,7 @@
 			\end{figure}
 		\end{center}
 	\newpage
+	\begin{comment}
 	\subsection{Player List Protocol}
 		\begin{center}
 			\begin{figure}[htp]
@@ -323,6 +325,7 @@
 			\end{figure}
 		\end{center}
 	\newpage
+	
 	\subsection{Fight List Protocol}
 		\begin{center}
 			\begin{figure}[htp]
@@ -332,6 +335,7 @@
 			\end{figure}
 		\end{center}
 	\newpage
+	\end{comment}
 	\subsection{Location List Protocol}
 		\begin{center}
 			\begin{figure}[htp]
@@ -412,5 +416,10 @@
 		Another concern is knowing where entities in the system are. This concern is mitigated by a series of progressive steps. As previously described, a client is first known to the system when they register with the fight manager. It is expected in the system that each client knows at startup, without any outside communication, where each manager is located. This allows clients to initiate conversations with every manager. 
 		Managers, in order to communicate with clients, track the initiators endpoint in simple request-reply protocols to communicate back to the client. In order to facilitate the communications with clients that did not initiate the conversation, which must occur in the more complex protocols, the fight manager keeps a list of the most recent endpoint used by a client. Whenever the fight manager needs to communicate in this manner, such as when the fight manager must get the last locations of a client, the fight manager uses this list.
 	\subsection{Message Tracking}
-		
+		For each type of conversation there are specific messages that are expected and that contain information vital to the conversation. An object oriented approach is taken in order to organize messages related to a conversation to some type. An object of a base type Conversation is created and kept for each unique conversation number, process ID combination at every endpoint participating in the conversation. Every protocol described previously within the document has specializations of this base type which allows for the types of messages expected within that conversation to be kept within. In this way each conversation has access to all messages relevant to it.
+	\subsection{Message Resends}
+		The specialized conversation types also maintain a timer which tracks how long it has been since the last message was sent without a response. A specific time has been determined for every conversation type of when a response is expected. When a timer expires, the original sent message is sent again. These duplicate messages maintain the same identifying message number, conversation number, and process ID that the original did.
+		As requests in a conversation may be resent, it is also possible that the receiving endpoint receive duplicate messages. In the case that this message corresponds to an active and available conversation, the conversation simply determines whether to reprocess the message or if a reply to the message needs to be resent. In the case a reply needs to be resent, the same reply message previously sent is resent, without modification to message, conversation, or process number. If a message is received that does not correspond to an active and available conversation, it is determined whether it is old. A message is determined to be old when its conversation number is less than our lowest conversation number in reference to the initiating process ID. If it is old, the message is simply ignored and assumed to have taken much longer than expected to get to this endpoint. If the message is not old, a new conversation is created based on what type of message it is, and the appropriate action taken by that conversation. 
+	\subsection{Conversation Completeness}
+		Each specialized Conversation type knows the last message expected in a conversation. When a conversation's initiator receives the last message in a protocol and adds it to the conversation, the conversation may then clean itself up by freeing up its memory. Other participants in the conversation are expected to wait a determined amount of time, usually 1 minute, before deletion to ensure the last message they sent was received correctly and that no resends are needed.
 \end{document}

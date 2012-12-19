@@ -28,6 +28,8 @@
     <ListView fx:id="statusListView" layoutX="122.0" layoutY="18.0" prefHeight="305.0" prefWidth="312.0" />
     <Button id="joi" fx:id="joinFightButton" layoutX="8.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleJoinFightButton" text="Join Fight" />
     <Button fx:id="playerListButton" layoutX="9.0" layoutY="160.0" mnemonicParsing="false" onAction="#handlePlayerListButton" text="Player List" />
-    <Button layoutX="224.0" layoutY="169.0" mnemonicParsing="false" text="Button" />
+    <Button fx:id="fightListButton" layoutX="10.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleFightListButton" text="Fight List" />
+    <Button fx:id="locationListButton" layoutX="8.0" layoutY="218.0" minHeight="16.0" mnemonicParsing="false" onAction="#handleLocationListButton" prefHeight="21.0" prefWidth="98.0" text="Location List" />
+    <Button fx:id="unregisterButton" layoutX="10.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleUnregisterButton" text="Unregister" />
   </children>
 </AnchorPane>

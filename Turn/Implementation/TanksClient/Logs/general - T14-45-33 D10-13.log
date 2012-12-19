@@ -1,0 +1,18 @@
+14:45:33.868 [main] DEBUG TanksCommon.Communicator2 - Communicator constructor:
+	 communicator created
+14:45:33.868 [main] INFO  TanksCommon.Communicator2 - Communicator initializeSocket:
+	 Socket initialized
+14:45:33.871 [main] INFO  TanksCommon.Communicator2 - Communicator sendMessage
+	 Starting to try to send message of length: 72
+14:45:33.871 [main] INFO  TanksCommon.Communicator2 - Communicator sendMessage
+	 Sent successfully length: 72
+14:45:33.872 [main] INFO  tanks.ClientDoer - BackgroundThread Start: 
+	Thread Started
+14:45:33.873 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+14:45:33.873 [ClientDoer] TRACE tanks.ClientDoer - Communicator sleepWorker:
+	 sleeping worker
+14:45:33.923 [ClientDoer] DEBUG tanks.ClientDoer - tanks.ClientDoerrun:
+	 at beginning of run
+14:45:33.923 [ClientDoer] INFO  tanks.ClientDoer - tanks.ClientDoerrun:
+	 Got envelope from communicator inputqueue

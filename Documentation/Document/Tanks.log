@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.13)  2 NOV 2012 21:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.13)  7 DEC 2012 19:58
 entering extended mode
 **Tanks.tex
 (C:\Repos\CS5200_Tanks\Documentation\Document\Tanks.tex
@@ -192,7 +192,13 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@toadd=\dimen117
 \ST@dimen=\dimen118
 \ST@pbox=\box26
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read1
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count99
 \Gm@cntv=\count100
@@ -205,24 +211,24 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutheight=\dimen124
 \Gm@layouthoffset=\dimen125
 \Gm@layoutvoffset=\dimen126
-\Gm@dimlist=\toks16
+\Gm@dimlist=\toks18
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 (C:\Repos\CS5200_Tanks\Documentation\Document\Tanks.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (C:\Users\McKinley\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -231,15 +237,15 @@ LaTeX Font Info:    ... okay on input line 9.
 \scratchbox=\box27
 \nofMPsegments=\count103
 \nofMParguments=\count104
-\everyMPshowfont=\toks17
+\everyMPshowfont=\toks19
 \MPscratchCnt=\count105
 \MPscratchDim=\dimen128
 \MPnumerator=\count106
 \makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks18
+\everyMPtoPDFconversion=\toks20
 )
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 9.
+Package hyperref Info: Link coloring OFF on input line 10.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -248,9 +254,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count108
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
 
 (C:\Repos\CS5200_Tanks\Documentation\Document\Tanks.out)
 (C:\Repos\CS5200_Tanks\Documentation\Document\Tanks.out)
@@ -291,9 +297,9 @@ LaTeX Info: Redefining \nameref on input line 9.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 17.
+(Font)              <14.4> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
+(Font)              <7> on input line 18.
 [1
 
 {C:/Users/McKinley/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -310,7 +316,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 \newpage
+l.23 \newpage
               [1]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -322,117 +328,102 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
  [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 108.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 109.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
 
-Overfull \hbox (57.94629pt too wide) in paragraph at lines 114--114
+Overfull \hbox (57.94629pt too wide) in paragraph at lines 115--115
 [] 
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 117--117
+Underfull \hbox (badness 1168) in paragraph at lines 118--118
 []\OT1/cmr/m/n/12 Allows a player to reg-is-
  []
 
 
-Underfull \hbox (badness 1292) in paragraph at lines 117--117
+Underfull \hbox (badness 1292) in paragraph at lines 118--118
 \OT1/cmr/m/n/12 ter with the Fight Man-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []\OT1/cmr/m/n/12 Fight Man-
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 118--118
+Underfull \hbox (badness 1365) in paragraph at lines 119--119
 \OT1/cmr/m/n/12 pli-ca-tion er-ror oc-curs, or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
 []\OT1/cmr/m/n/12 Player,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
 \OT1/cmr/m/n/12 Fight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
 []\OT1/cmr/m/n/12 Fight Man-
  []
 
 
-Overfull \hbox (57.94629pt too wide) in paragraph at lines 114--118
+Overfull \hbox (57.94629pt too wide) in paragraph at lines 115--119
  [] 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 []\OT1/cmr/m/n/12 Fight Man-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []\OT1/cmr/m/n/12 Location
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 124--124
+Underfull \hbox (badness 1881) in paragraph at lines 125--125
 \OT1/cmr/m/n/12 formed of the up to 10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []\OT1/cmr/m/n/12 Fight Man-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 \OT1/cmr/m/n/12 ager, Spec-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
 []\OT1/cmr/m/n/12 Fight Man-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 []\OT1/cmr/m/n/12 Create
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 []\OT1/cmr/m/n/12 Fight Man-
  []
 
 
-Underfull \hbox (badness 5388) in paragraph at lines 133--133
+Underfull \hbox (badness 5388) in paragraph at lines 134--134
 []\OT1/cmr/m/n/12 Allows a player to en-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[]\OT1/cmr/m/n/12 Fight Man-
- []
-
-
-Overfull \hbox (57.94629pt too wide) in paragraph at lines 118--133
- [] 
- []
-
-[5]
-Underfull \hbox (badness 1917) in paragraph at lines 134--134
-\OT1/cmr/m/n/12 the player wishes to see
  []
 
 
@@ -441,207 +432,202 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--134
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 137--137
+Overfull \hbox (57.94629pt too wide) in paragraph at lines 119--134
+ [] 
+ []
+
+[5]
+Underfull \hbox (badness 1917) in paragraph at lines 135--135
+\OT1/cmr/m/n/12 the player wishes to see
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]\OT1/cmr/m/n/12 Fight Man-
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 138--138
 \OT1/cmr/m/n/12 an empty shell from the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []\OT1/cmr/m/n/12 Shell Man-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 []\OT1/cmr/m/n/12 Gunpowder
  []
 
 
-Overfull \hbox (57.94629pt too wide) in paragraph at lines 133--142
+Overfull \hbox (57.94629pt too wide) in paragraph at lines 134--143
  [] 
  []
 
 [6]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Message Classes.jpg' not found on 
-input line 153.
+input line 154.
 
-<Diagrams/Class Diagrams/Message Classes.jpg, id=249, 1059.96pt x 638.385pt>
+<Diagrams/Class Diagrams/Message Classes.jpg, id=269, 1059.96pt x 638.385pt>
 File: Diagrams/Class Diagrams/Message Classes.jpg Graphic file (type jpg)
 
 <use Diagrams/Class Diagrams/Message Classes.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Message Classes.jpg used on in
-put line 153.
+put line 154.
 (pdftex.def)             Requested size: 472.03123pt x 284.28986pt.
  [7 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Messa
 ge Classes.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Register Protocol.jpg' not found o
-n input line 162.
+n input line 163.
 
 
-<Diagrams/Class Diagrams/Register Protocol.jpg, id=255, 1019.81pt x 536.0025pt>
+<Diagrams/Class Diagrams/Register Protocol.jpg, id=275, 1019.81pt x 536.0025pt>
 File: Diagrams/Class Diagrams/Register Protocol.jpg Graphic file (type jpg)
 <use Diagrams/Class Diagrams/Register Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Register Protocol.jpg used on 
-input line 162.
+input line 163.
 (pdftex.def)             Requested size: 472.03123pt x 248.09357pt.
  [8 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Regis
 ter Protocol.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Unregister Protocol.jpg' not found
- on input line 171.
+ on input line 172.
 
 
-<Diagrams/Class Diagrams/Unregister Protocol.jpg, id=261, 809.0225pt x 497.86pt
+<Diagrams/Class Diagrams/Unregister Protocol.jpg, id=281, 809.0225pt x 497.86pt
 >
 File: Diagrams/Class Diagrams/Unregister Protocol.jpg Graphic file (type jpg)
  <use Diagrams/Class Diagrams/Unregister Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Unregister Protocol.jpg used o
-n input line 171.
+n input line 172.
 (pdftex.def)             Requested size: 472.03123pt x 290.48346pt.
  [9 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Unreg
 ister Protocol.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Location List Protocol.jpg' not fo
-und on input line 180.
+und on input line 181.
 
 
-<Diagrams/Class Diagrams/Location List Protocol.jpg, id=267, 651.43375pt x 497.
+<Diagrams/Class Diagrams/Location List Protocol.jpg, id=287, 651.43375pt x 497.
 86pt>
 File: Diagrams/Class Diagrams/Location List Protocol.jpg Graphic file (type jpg
 )
  <use Diagrams/Class Diagrams/Location List Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Location List Protocol.jpg use
-d on input line 180.
+d on input line 181.
 (pdftex.def)             Requested size: 472.03123pt x 360.76073pt.
  [10 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Loca
 tion List Protocol.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Player List Protocol.jpg' not foun
-d on input line 189.
+d on input line 190.
 
 
-<Diagrams/Class Diagrams/Player List Protocol.jpg, id=273, 678.535pt x 618.31pt
->
+<Diagrams/Class Diagrams/Player List Protocol.jpg, id=293, 587.19376pt x 618.31
+pt>
 File: Diagrams/Class Diagrams/Player List Protocol.jpg Graphic file (type jpg)
  <use Diagrams/Class Diagrams/Player List Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Player List Protocol.jpg used 
-on input line 189.
-(pdftex.def)             Requested size: 472.03123pt x 430.13461pt.
- [11 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Play
-er List Protocol.jpg>]
+on input line 190.
+(pdftex.def)             Requested size: 472.03123pt x 497.04507pt.
+ [11] [12 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams
+/Player List Protocol.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Fight List Protocol.jpg' not found
- on input line 198.
+ on input line 199.
 
 
-<Diagrams/Class Diagrams/Fight List Protocol.jpg, id=279, 608.2725pt x 447.6725
-pt>
+<Diagrams/Class Diagrams/Fight List Protocol.jpg, id=304, 512.91624pt x 387.447
+5pt>
 File: Diagrams/Class Diagrams/Fight List Protocol.jpg Graphic file (type jpg)
  <use Diagrams/Class Diagrams/Fight List Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Fight List Protocol.jpg used o
-n input line 198.
-(pdftex.def)             Requested size: 377.62642pt x 277.92978pt.
- [12 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Figh
+n input line 199.
+(pdftex.def)             Requested size: 377.62642pt x 285.2523pt.
+ [13 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Figh
 t List Protocol.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Join Fight Protocol.jpg' not found
- on input line 207.
+ on input line 208.
 
 
-<Diagrams/Class Diagrams/Join Fight Protocol.jpg, id=286, 447.6725pt x 387.4475
+<Diagrams/Class Diagrams/Join Fight Protocol.jpg, id=310, 447.6725pt x 387.4475
 pt>
 File: Diagrams/Class Diagrams/Join Fight Protocol.jpg Graphic file (type jpg)
  <use Diagrams/Class Diagrams/Join Fight Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Join Fight Protocol.jpg used o
-n input line 207.
+n input line 208.
 (pdftex.def)             Requested size: 330.42041pt x 285.97357pt.
- [13 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Join
+ [14 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Join
  Fight Protocol.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Create Fight Protocol.jpg' not fou
-nd on input line 216.
+nd on input line 217.
 
 
-<Diagrams/Class Diagrams/Create Fight Protocol.jpg, id=292, 1210.5225pt x 548.0
+<Diagrams/Class Diagrams/Create Fight Protocol.jpg, id=316, 1210.5225pt x 548.0
 475pt>
 File: Diagrams/Class Diagrams/Create Fight Protocol.jpg Graphic file (type jpg)
 
  <use Diagrams/Class Diagrams/Create Fight Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Create Fight Protocol.jpg used
- on input line 216.
+ on input line 217.
 (pdftex.def)             Requested size: 472.03123pt x 213.70421pt.
- [14 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Crea
+ [15 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Crea
 te Fight Protocol.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Fire Shell Protocol.jpg' not found
- on input line 225.
+ on input line 226.
 
 
-<Diagrams/Class Diagrams/Fire Shell Protocol.jpg, id=298, 1210.5225pt x 550.055
+<Diagrams/Class Diagrams/Fire Shell Protocol.jpg, id=322, 1210.5225pt x 550.055
 pt>
 File: Diagrams/Class Diagrams/Fire Shell Protocol.jpg Graphic file (type jpg)
  <use Diagrams/Class Diagrams/Fire Shell Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Fire Shell Protocol.jpg used o
-n input line 225.
+n input line 226.
 (pdftex.def)             Requested size: 472.03123pt x 214.48701pt.
- [15 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Fire
+ [16 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Fire
  Shell Protocol.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Fill Shell Protocol.jpg' not found
- on input line 234.
+ on input line 235.
 
 
-<Diagrams/Class Diagrams/Fill Shell Protocol.jpg, id=304, 368.37625pt x 477.785
+<Diagrams/Class Diagrams/Fill Shell Protocol.jpg, id=328, 368.37625pt x 477.785
 pt>
 File: Diagrams/Class Diagrams/Fill Shell Protocol.jpg Graphic file (type jpg)
  <use Diagrams/Class Diagrams/Fill Shell Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Fill Shell Protocol.jpg used o
-n input line 234.
+n input line 235.
 (pdftex.def)             Requested size: 330.42041pt x 428.55173pt.
- [16 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Fill
+ [17 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Fill
  Shell Protocol.jpg>]
 
 LaTeX Warning: File `Diagrams/Class Diagrams/Get Shell Protocol.jpg' not found 
-on input line 243.
+on input line 244.
 
 
-<Diagrams/Class Diagrams/Get Shell Protocol.jpg, id=310, 357.335pt x 417.56pt>
+<Diagrams/Class Diagrams/Get Shell Protocol.jpg, id=334, 357.335pt x 417.56pt>
 File: Diagrams/Class Diagrams/Get Shell Protocol.jpg Graphic file (type jpg)
 
 <use Diagrams/Class Diagrams/Get Shell Protocol.jpg>
 Package pdftex.def Info: Diagrams/Class Diagrams/Get Shell Protocol.jpg used on
- input line 243.
+ input line 244.
 (pdftex.def)             Requested size: 330.42041pt x 386.12862pt.
- [17 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Get 
+ [18 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Class Diagrams/Get 
 Shell Protocol.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
 []\OT1/cmr/bx/n/12 Valid At-tribute
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
 []\OT1/cmr/bx/n/12 Valid At-tribute
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
-[]\OT1/cmr/m/n/12 Register
- []
-
-
-Underfull \hbox (badness 1939) in paragraph at lines 255--255
-\OT1/cmr/m/n/12 with the Fight Man-ager.
- []
-
-
-Underfull \hbox (badness 3884) in paragraph at lines 255--255
-[]\OT1/cmr/m/n/12 Register Pro-to-
- []
-
-
-Underfull \hbox (badness 4341) in paragraph at lines 255--255
-[]\OT1/cmr/m/n/12 playerName: "John
  []
 
 
@@ -650,8 +636,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--256
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 256--256
-\OT1/cmr/m/n/12 ter Re-quest, a client re-
+Underfull \hbox (badness 1939) in paragraph at lines 256--256
+\OT1/cmr/m/n/12 with the Fight Man-ager.
  []
 
 
@@ -660,163 +646,178 @@ Underfull \hbox (badness 3884) in paragraph at lines 256--256
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 4341) in paragraph at lines 256--256
+[]\OT1/cmr/m/n/12 playerName: "John
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+[]\OT1/cmr/m/n/12 Register
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 257--257
+\OT1/cmr/m/n/12 ter Re-quest, a client re-
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 257--257
+[]\OT1/cmr/m/n/12 Register Pro-to-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
 []\OT1/cmr/m/n/12 Unregister
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 259--259
+Underfull \hbox (badness 2229) in paragraph at lines 260--260
 \OT1/cmr/m/n/12 Man-ager, and that their
  []
 
 
-Underfull \hbox (badness 5147) in paragraph at lines 259--259
+Underfull \hbox (badness 5147) in paragraph at lines 260--260
 []\OT1/cmr/m/n/12 Unregister pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
 []\OT1/cmr/m/n/12 unregisterReason:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
 []\OT1/cmr/m/n/12 note:``System
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 262--262
+Underfull \hbox (badness 5519) in paragraph at lines 263--263
 []\OT1/cmr/m/n/12 Fire Shell
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 262--262
+Underfull \hbox (badness 1442) in paragraph at lines 263--263
 \OT1/cmr/m/n/12 fully and that its ef-fects
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 []\OT1/cmr/bx/n/12 Valid At-tribute
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
 []\OT1/cmr/m/n/12 Location
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
 \OT1/cmr/m/n/12 List Re-
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 265--265
+Underfull \hbox (badness 2334) in paragraph at lines 266--266
 \OT1/cmr/m/n/12 must query the spec-i-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
 []\OT1/cmr/m/n/12 Location List
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []\OT1/cmr/m/n/12 Last Lo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 \OT1/cmr/m/n/12 ca-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []\OT1/cmr/m/n/12 Location List
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
 []\OT1/cmr/m/n/12 Location
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 267--267
+Underfull \hbox (badness 2884) in paragraph at lines 268--268
 []\OT1/cmr/m/n/12 Used when a player re-
  []
 
 
-Underfull \hbox (badness 2961) in paragraph at lines 267--267
+Underfull \hbox (badness 2961) in paragraph at lines 268--268
 \OT1/cmr/m/n/12 sponds to a Last Lo-ca-
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 267--267
+Underfull \hbox (badness 2941) in paragraph at lines 268--268
 \OT1/cmr/m/n/12 tions Re-quest and sends
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 267--267
+Underfull \hbox (badness 1852) in paragraph at lines 268--268
 \OT1/cmr/m/n/12 back their pre-vi-ous lo-ca-
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 267--267
+Underfull \hbox (badness 1496) in paragraph at lines 268--268
 \OT1/cmr/m/n/12 tions. Means the Fight
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 267--267
+Underfull \hbox (badness 1424) in paragraph at lines 268--268
 \OT1/cmr/m/n/12 tion the player re-quested
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 267--267
+Underfull \hbox (badness 3601) in paragraph at lines 268--268
 \OT1/cmr/m/n/12 mes-sage onto the player
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
 []\OT1/cmr/m/n/12 Location List
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 267--267
+Underfull \hbox (badness 7012) in paragraph at lines 268--268
 []\OT1/cmr/m/n/12 locationList: Lo-ca-
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 270--270
+Underfull \hbox (badness 1596) in paragraph at lines 271--271
 \OT1/cmr/m/n/12 a list of cur-rent play-ers.
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
 []\OT1/cmr/bx/n/12 Valid At-tribute
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []\OT1/cmr/m/n/12 Fight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 \OT1/cmr/m/n/12 Cre-ation
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 274--274
+Underfull \hbox (badness 3884) in paragraph at lines 275--275
 \OT1/cmr/m/n/12 was not in any of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []\OT1/cmr/m/n/12 Create Fight
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 280--280
-[]\OT1/cmr/m/n/12 Fight List
  []
 
 
@@ -824,19 +825,14 @@ Underfull \hbox (badness 2334) in paragraph at lines 281--281
 []\OT1/cmr/m/n/12 Fight List
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+
+Underfull \hbox (badness 2334) in paragraph at lines 282--282
+[]\OT1/cmr/m/n/12 Fight List
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 []\OT1/cmr/bx/n/12 Valid At-tribute
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 284--284
-[]\OT1/cmr/m/n/12 Get Shell
- []
-
-
-Underfull \hbox (badness 2884) in paragraph at lines 284--284
-[]\OT1/cmr/m/n/12 Used when a player re-
  []
 
 
@@ -845,8 +841,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 285--285
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--288
-[]\OT1/cmr/m/n/12 Fill Shell
+Underfull \hbox (badness 2884) in paragraph at lines 285--285
+[]\OT1/cmr/m/n/12 Used when a player re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--286
+[]\OT1/cmr/m/n/12 Get Shell
  []
 
 
@@ -854,298 +855,247 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--289
 []\OT1/cmr/m/n/12 Fill Shell
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]\OT1/cmr/m/n/12 Fill Shell
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 []\OT1/cmr/bx/n/12 Valid At-tribute
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 293--293
+Underfull \hbox (badness 5519) in paragraph at lines 294--294
 []\OT1/cmr/m/n/12 Fire Shell
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 293--293
+Underfull \hbox (badness 1694) in paragraph at lines 294--294
 \OT1/cmr/m/n/12 ager must broad-cast this
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 294--294
+Underfull \hbox (badness 2050) in paragraph at lines 295--295
 \OT1/cmr/m/n/12 ager wishes to broad-cast
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 294--294
+Underfull \hbox (badness 3128) in paragraph at lines 295--295
 \OT1/cmr/m/n/12 to all play-ers the event
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 298--298
+Underfull \hbox (badness 1831) in paragraph at lines 299--299
 []\OT1/cmr/m/n/12 Used when some com-po-
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 298--298
+Underfull \hbox (badness 2253) in paragraph at lines 299--299
 \OT1/cmr/m/n/12 to ei-ther ac-knowl-edge or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 \OT1/cmr/m/n/12 neg-a-tively ac-knowl-edge
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 298--298
+Underfull \hbox (badness 3281) in paragraph at lines 299--299
 \OT1/cmr/m/n/12 the cor-rect re-ceive of a
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 298--298
+Underfull \hbox (badness 1168) in paragraph at lines 299--299
 \OT1/cmr/m/n/12 mes-sage. Means a mes-
  []
 
 
-Underfull \hbox (badness 6461) in paragraph at lines 298--298
+Underfull \hbox (badness 6461) in paragraph at lines 299--299
 \OT1/cmr/m/n/12 sage pre-vi-ously sent by
  []
 
 
-Underfull \hbox (badness 7613) in paragraph at lines 298--298
+Underfull \hbox (badness 7613) in paragraph at lines 299--299
 \OT1/cmr/m/n/12 the re-ceiv-ing com-po-nent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 \OT1/cmr/m/n/12 reached the des-ti-na-tion,
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 298--298
+Underfull \hbox (badness 1629) in paragraph at lines 299--299
 \OT1/cmr/m/n/12 and that this com-po-nent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 \OT1/cmr/m/n/12 must de-ter-mine whether
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 298--298
+Underfull \hbox (badness 2626) in paragraph at lines 299--299
 []\OT1/cmr/m/n/12 Unregister Pro-
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 []\OT1/cmr/bx/n/12 Valid At-tribute
  []
 
-
-Underfull \hbox (badness 2418) in paragraph at lines 301--301
-[]\OT1/cmr/m/n/12 New Con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--301
-\OT1/cmr/m/n/12 nec-tion
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 301--301
-\OT1/cmr/m/n/12 to com-mu-ni-cate the need
- []
-
-
-Underfull \hbox (badness 2237) in paragraph at lines 301--301
-\OT1/cmr/m/n/12 they must cre-ate a new
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--301
-\OT1/cmr/m/n/12 to-col, Player
- []
-
-[23]
+[24]
 
 LaTeX Warning: File `Diagrams/Sequence Diagrams/General.jpg' not found on input
- line 312.
+ line 313.
 
-<Diagrams/Sequence Diagrams/General.jpg, id=341, 668.4975pt x 387.4475pt>
+<Diagrams/Sequence Diagrams/General.jpg, id=366, 668.4975pt x 387.4475pt>
 File: Diagrams/Sequence Diagrams/General.jpg Graphic file (type jpg)
 
 <use Diagrams/Sequence Diagrams/General.jpg>
 Package pdftex.def Info: Diagrams/Sequence Diagrams/General.jpg used on input l
-ine 312.
+ine 313.
 (pdftex.def)             Requested size: 472.03123pt x 273.588pt.
- [24 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/G
+ [25 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/G
 eneral.jpg>]
 
-LaTeX Warning: File `Diagrams/Sequence Diagrams/Player List Protocol Sequence.j
-pg' not found on input line 321.
-
-
-<Diagrams/Sequence Diagrams/Player List Protocol Sequence.jpg, id=348, 929.4725
-pt x 447.6725pt>
-File: Diagrams/Sequence Diagrams/Player List Protocol Sequence.jpg Graphic file
- (type jpg)
-
-<use Diagrams/Sequence Diagrams/Player List Protocol Sequence.jpg>
-Package pdftex.def Info: Diagrams/Sequence Diagrams/Player List Protocol Sequen
-ce.jpg used on input line 321.
-(pdftex.def)             Requested size: 472.03123pt x 227.34679pt.
- [25 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/P
-layer List Protocol Sequence.jpg>]
-
-LaTeX Warning: File `Diagrams/Sequence Diagrams/Fight List Protocol Sequence.jp
-g' not found on input line 330.
-
-
-<Diagrams/Sequence Diagrams/Fight List Protocol Sequence.jpg, id=354, 927.465pt
- x 447.6725pt>
-File: Diagrams/Sequence Diagrams/Fight List Protocol Sequence.jpg Graphic file 
-(type jpg)
-
-<use Diagrams/Sequence Diagrams/Fight List Protocol Sequence.jpg>
-Package pdftex.def Info: Diagrams/Sequence Diagrams/Fight List Protocol Sequenc
-e.jpg used on input line 330.
-(pdftex.def)             Requested size: 472.03123pt x 227.84544pt.
- [26 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/F
-ight List Protocol Sequence.jpg>]
-
 LaTeX Warning: File `Diagrams/Sequence Diagrams/Location List Protocol Sequence
-.jpg' not found on input line 339.
+.jpg' not found on input line 343.
 
 
-<Diagrams/Sequence Diagrams/Location List Protocol Sequence.jpg, id=360, 716.67
+<Diagrams/Sequence Diagrams/Location List Protocol Sequence.jpg, id=372, 716.67
 75pt x 295.1025pt>
 File: Diagrams/Sequence Diagrams/Location List Protocol Sequence.jpg Graphic fi
 le (type jpg)
 
 <use Diagrams/Sequence Diagrams/Location List Protocol Sequence.jpg>
 Package pdftex.def Info: Diagrams/Sequence Diagrams/Location List Protocol Sequ
-ence.jpg used on input line 339.
+ence.jpg used on input line 343.
 (pdftex.def)             Requested size: 330.42041pt x 136.05498pt.
- [27 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/L
+ [26 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/L
 ocation List Protocol Sequence.jpg>]
 
 LaTeX Warning: File `Diagrams/Sequence Diagrams/Fire Shell Protocol Sequence.jp
-g' not found on input line 348.
+g' not found on input line 352.
 
 
-<Diagrams/Sequence Diagrams/Fire Shell Protocol Sequence.jpg, id=366, 819.06pt 
+<Diagrams/Sequence Diagrams/Fire Shell Protocol Sequence.jpg, id=378, 819.06pt 
 x 517.935pt>
 File: Diagrams/Sequence Diagrams/Fire Shell Protocol Sequence.jpg Graphic file 
 (type jpg)
  <use Diagrams/Sequence Diagrams/Fire Shell Protocol Sequence.jpg>
 Package pdftex.def Info: Diagrams/Sequence Diagrams/Fire Shell Protocol Sequenc
-e.jpg used on input line 348.
+e.jpg used on input line 352.
 (pdftex.def)             Requested size: 472.03123pt x 298.49786pt.
 
-[28 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/Fi
+[27 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/Fi
 re Shell Protocol Sequence.jpg>]
 
 LaTeX Warning: File `Diagrams/Sequence Diagrams/Create Fight Protocol Sequence.
-jpg' not found on input line 357.
+jpg' not found on input line 361.
 
 
-<Diagrams/Sequence Diagrams/Create Fight Protocol Sequence.jpg, id=372, 997.727
+<Diagrams/Sequence Diagrams/Create Fight Protocol Sequence.jpg, id=384, 997.727
 5pt x 556.0775pt>
 File: Diagrams/Sequence Diagrams/Create Fight Protocol Sequence.jpg Graphic fil
 e (type jpg)
 
 <use Diagrams/Sequence Diagrams/Create Fight Protocol Sequence.jpg>
 Package pdftex.def Info: Diagrams/Sequence Diagrams/Create Fight Protocol Seque
-nce.jpg used on input line 357.
+nce.jpg used on input line 361.
 (pdftex.def)             Requested size: 472.03123pt x 263.07892pt.
- [29 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/C
+ [28 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Sequence Diagrams/C
 reate Fight Protocol Sequence.jpg>]
 
 LaTeX Warning: File `Diagrams/Structure Diagrams/ThreadingStructure.jpg' not fo
-und on input line 374.
+und on input line 378.
 
 
-<Diagrams/Structure Diagrams/ThreadingStructure.jpg, id=378, 849.1725pt x 497.8
+<Diagrams/Structure Diagrams/ThreadingStructure.jpg, id=390, 849.1725pt x 497.8
 6pt>
 File: Diagrams/Structure Diagrams/ThreadingStructure.jpg Graphic file (type jpg
 )
  <use Diagrams/Structure Diagrams/ThreadingStructure.jpg>
 Package pdftex.def Info: Diagrams/Structure Diagrams/ThreadingStructure.jpg use
-d on input line 374.
+d on input line 378.
 (pdftex.def)             Requested size: 472.03123pt x 276.74858pt.
- [30 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Structure Diagrams/
+ [29 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Structure Diagrams/
 ThreadingStructure.jpg>]
 
 LaTeX Warning: File `Diagrams/Structure Diagrams/ModelAndStrategyStructure.jpg'
- not found on input line 380.
+ not found on input line 384.
 
 
-<Diagrams/Structure Diagrams/ModelAndStrategyStructure.jpg, id=384, 608.2725pt 
+<Diagrams/Structure Diagrams/ModelAndStrategyStructure.jpg, id=395, 608.2725pt 
 x 538.01pt>
 File: Diagrams/Structure Diagrams/ModelAndStrategyStructure.jpg Graphic file (t
 ype jpg)
  <use Diagrams/Structure Diagrams/ModelAndStrategyStructure.jpg>
 Package pdftex.def Info: Diagrams/Structure Diagrams/ModelAndStrategyStructure.
-jpg used on input line 380.
+jpg used on input line 384.
 (pdftex.def)             Requested size: 472.03123pt x 417.51988pt.
 
-[31 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Structure Diagrams/M
+[30 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Structure Diagrams/M
 odelAndStrategyStructure.jpg>]
 
 LaTeX Warning: File `Diagrams/Structure Diagrams/ComponentDiagram.jpg' not foun
-d on input line 387.
+d on input line 391.
 
 
-<Diagrams/Structure Diagrams/ComponentDiagram.jpg, id=389, 1203.49625pt x 758.8
+<Diagrams/Structure Diagrams/ComponentDiagram.jpg, id=401, 1203.49625pt x 758.8
 35pt>
 File: Diagrams/Structure Diagrams/ComponentDiagram.jpg Graphic file (type jpg)
  <use Diagrams/Structure Diagrams/ComponentDiagram.jpg>
 Package pdftex.def Info: Diagrams/Structure Diagrams/ComponentDiagram.jpg used 
-on input line 387.
+on input line 391.
 (pdftex.def)             Requested size: 472.03123pt x 297.6234pt.
- [32 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Structure Diagrams/
+ [31 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Structure Diagrams/
 ComponentDiagram.jpg>]
 
 LaTeX Warning: File `Diagrams/Structure Diagrams/StatsManager.jpg' not found on
- input line 400.
+ input line 404.
 
 
-<Diagrams/Structure Diagrams/StatsManager.jpg, id=394, 218.8175pt x 304.13625pt
+<Diagrams/Structure Diagrams/StatsManager.jpg, id=406, 218.8175pt x 304.13625pt
 >
 File: Diagrams/Structure Diagrams/StatsManager.jpg Graphic file (type jpg)
  <use Diagrams/Structure Diagrams/StatsManager.jpg>
 Package pdftex.def Info: Diagrams/Structure Diagrams/StatsManager.jpg used on i
-nput line 400.
+nput line 404.
 (pdftex.def)             Requested size: 141.61081pt x 196.82767pt.
 
 
 LaTeX Warning: File `Diagrams/Structure Diagrams/ComponentDiagram2.jpg' not fou
-nd on input line 405.
+nd on input line 409.
 
 
-<Diagrams/Structure Diagrams/ComponentDiagram2.jpg, id=395, 688.5725pt x 266.99
+<Diagrams/Structure Diagrams/ComponentDiagram2.jpg, id=407, 688.5725pt x 266.99
 75pt>
 File: Diagrams/Structure Diagrams/ComponentDiagram2.jpg Graphic file (type jpg)
 
  <use Diagrams/Structure Diagrams/ComponentDiagram2.jpg>
 Package pdftex.def Info: Diagrams/Structure Diagrams/ComponentDiagram2.jpg used
- on input line 405.
+ on input line 409.
 (pdftex.def)             Requested size: 472.03123pt x 183.03069pt.
- [33 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Structure Diagrams/
-StatsManager.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
-[34 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Structure Diagrams/C
-omponentDiagram2.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
- (C:\Repos\CS5200_Tanks\Documentation\Document\Tanks.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
+ [32 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/Structure Diagrams/
+StatsManager.jpg>] [33 <C:/Repos/CS5200_Tanks/Documentation/Document/Diagrams/S
+tructure Diagrams/ComponentDiagram2.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
+ [34]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
+
+(C:\Repos\CS5200_Tanks\Documentation\Document\Tanks.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
 Package rerunfilecheck Info: File `Tanks.out' has not changed.
-(rerunfilecheck)             Checksum: 309881ABE83A103B64E60E5DC09652F8;2386.
+(rerunfilecheck)             Checksum: D8EF5A37A8447B891BCC1A2138A4E490;2653.
  ) 
 Here is how much of TeX's memory you used:
- 5642 strings out of 494045
- 86936 string characters out of 3145960
- 172675 words of memory out of 3000000
- 8783 multiletter control sequences out of 15000+200000
+ 5667 strings out of 494045
+ 86991 string characters out of 3145960
+ 173309 words of memory out of 3000000
+ 8804 multiletter control sequences out of 15000+200000
  8808 words of font info for 31 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  29i,9n,32p,1218b,420s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1153,9 +1103,9 @@ Here is how much of TeX's memory you used:
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Tanks.pdf (35 pages, 2443315 bytes).
+Output written on Tanks.pdf (35 pages, 2200432 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
- 383 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 405 words of extra memory for PDF output out of 10000 (max. 10000000)
 

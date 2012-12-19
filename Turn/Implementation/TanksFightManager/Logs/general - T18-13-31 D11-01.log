@@ -1,0 +1,14 @@
+18:13:31.699 [JavaFX Application Thread] DEBUG t.FightManagerController - setupPropertiesReader
+	properties reader setup correctly
+18:13:31.904 [JavaFX Application Thread] INFO  tanksfightmanager.StatsManager - StatsManager initialize
+	initailized StatsManager. Set: 
+		guid: 4eefb07a-4709-4f63-a0a3-5b0eaed890ea
+		managerName: MrManager
+		operatorName: McKinley Olsen
+		operatorAddress: m.olsen@aggiemail.usu.edu
+18:13:32.054 [JavaFX Application Thread] DEBUG t.FightManagerController - readProperties
+	properties read correctly
+18:13:32.139 [JavaFX Application Thread] INFO  tanksfightmanager.StatsManager - StatsManager register
+	registered with service without exception. Received result: SUCCESS
+18:14:01.493 [JavaFX Application Thread] DEBUG t.FightManagerController - Controller stopBackgroundTasks 
+	Starting to stop background tasks

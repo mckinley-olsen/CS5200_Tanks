@@ -20,15 +20,19 @@
 \BOOKMARK [1][-]{section.4}{Message Sequences and Timing}{}% 20
 \BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 21
 \BOOKMARK [2][-]{subsection.4.2}{General Request-Reply}{section.4}% 22
-\BOOKMARK [2][-]{subsection.4.3}{Player List Protocol}{section.4}% 23
-\BOOKMARK [2][-]{subsection.4.4}{Fight List Protocol}{section.4}% 24
-\BOOKMARK [2][-]{subsection.4.5}{Location List Protocol}{section.4}% 25
-\BOOKMARK [2][-]{subsection.4.6}{Fire Shell Protocol}{section.4}% 26
-\BOOKMARK [2][-]{subsection.4.7}{Create Fight Protocol}{section.4}% 27
-\BOOKMARK [1][-]{section.5}{Structure}{}% 28
-\BOOKMARK [2][-]{subsection.5.1}{Introduction}{section.5}% 29
-\BOOKMARK [2][-]{subsection.5.2}{Classes}{section.5}% 30
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Worker Classes}{subsection.5.2}% 31
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Models and Strategies}{subsection.5.2}% 32
-\BOOKMARK [2][-]{subsection.5.3}{Components}{section.5}% 33
-\BOOKMARK [2][-]{subsection.5.4}{Statistics Management}{section.5}% 34
+\BOOKMARK [2][-]{subsection.4.3}{Location List Protocol}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.4}{Fire Shell Protocol}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.5}{Create Fight Protocol}{section.4}% 25
+\BOOKMARK [1][-]{section.5}{Structure}{}% 26
+\BOOKMARK [2][-]{subsection.5.1}{Introduction}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.2}{Classes}{section.5}% 28
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Worker Classes}{subsection.5.2}% 29
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Models and Strategies}{subsection.5.2}% 30
+\BOOKMARK [2][-]{subsection.5.3}{Components}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.4}{Statistics Management}{section.5}% 32
+\BOOKMARK [1][-]{section.6}{Protocol Conversations}{}% 33
+\BOOKMARK [2][-]{subsection.6.1}{Uniqueness}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.2}{End Points in a Conversation}{section.6}% 35
+\BOOKMARK [2][-]{subsection.6.3}{Message Tracking}{section.6}% 36
+\BOOKMARK [2][-]{subsection.6.4}{Message Resends}{section.6}% 37
+\BOOKMARK [2][-]{subsection.6.5}{Conversation Completeness}{section.6}% 38

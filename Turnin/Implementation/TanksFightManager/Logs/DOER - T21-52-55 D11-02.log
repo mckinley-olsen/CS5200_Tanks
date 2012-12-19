@@ -1,0 +1,14 @@
+21:52:55.774 [JavaFX Application Thread] INFO  TanksCommon.Doer.Doer - BackgroundThread Start: 
+	Thread Started
+21:55:05.810 [FightManagerDoer] INFO  TanksCommon.Doer.Doer - tanksfightmanager.FightManagerDoerrun:
+	 Got envelope from communicator inputqueue
+21:55:05.810 [FightManagerDoer] INFO  TanksCommon.Doer.Doer - FightManagerDoer process
+	detected register request
+21:55:05.810 [FightManagerDoer] INFO  TanksCommon.Doer.Doer - FightManagerDoer processRegisterRequest
+	Processing register request
+21:55:05.811 [FightManagerDoer] INFO  TanksCommon.Doer.Doer - FightManagerDoer processRegisterRequest
+	Set player ID to: 1
+21:59:10.367 [JavaFX Application Thread] INFO  TanksCommon.Doer.Doer - BackgroundThread Stop:
+	 Stopping Thread
+21:59:11.368 [JavaFX Application Thread] INFO  TanksCommon.Doer.Doer - BackgroundThread Stop:
+	 Thread Stopped
